@@ -41,6 +41,7 @@ export default function LoginPage() {
             {loading ? "Logging in..." : "Log in"}
           </button>
         </form>
+        <p className="muted"><a href="/forgot-password">Forgot password?</a></p>
       </div>
     </div>
   );
