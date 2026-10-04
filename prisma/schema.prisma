@@ -1,0 +1,51 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// status: pending_verification -> pending_payment -> pending_approval -> active
+model User {
+  id               String    @id @default(cuid())
+  name             String
+  email            String    @unique
+  age              Int
+  region           String
+  passwordHash     String?
+  status           String    @default("pending_verification")
+  verifyToken      String?   @unique
+  paymentReference String?
+  isAdmin          Boolean   @default(false)
+  createdAt        DateTime  @default(now())
+  attempts         Attempt[]
+}
+
+model Exam {
+  id              String    @id @default(cuid())
+  title           String
+  description     String?
+  durationMinutes Int
+  questions       Json      // [{ id, text, options: string[], correctIndex, marks }]
+  totalMarks      Int
+  isPublished     Boolean   @default(true)
+  createdAt       DateTime  @default(now())
+  attempts        Attempt[]
+}
+
+model Attempt {
+  id            String    @id @default(cuid())
+  userId        String
+  examId        String
+  attemptNumber Int
+  answers       Json?     // { [questionId]: selectedOptionIndex }
+  score         Int?
+  startedAt     DateTime  @default(now())
+  submittedAt   DateTime?
+  user          User      @relation(fields: [userId], references: [id])
+  exam          Exam      @relation(fields: [examId], references: [id])
+
+  @@unique([userId, examId, attemptNumber])
+}
