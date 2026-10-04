@@ -28,7 +28,9 @@ model Exam {
   title           String
   description     String?
   durationMinutes Int
-  questions       Json      // [{ id, text, options: string[], correctIndex, marks }]
+  questions       Json      // [{ id, text, options: string[], correctIndex, marks }] - stored as
+                             // jsonb (Prisma's Postgres default for Json), capped only by Postgres's
+                             // ~1GB per-field limit, so 50+ long questions fit with room to spare
   totalMarks      Int
   isPublished     Boolean   @default(true)
   createdAt       DateTime  @default(now())
@@ -41,7 +43,7 @@ model Attempt {
   examId        String
   attemptNumber Int
   answers       Json?     // { [questionId]: selectedOptionIndex }
-  score         Int?
+  score         Float?    // can go negative / fractional: 1/4 negative marking on wrong answers
   startedAt     DateTime  @default(now())
   submittedAt   DateTime?
   user          User      @relation(fields: [userId], references: [id])

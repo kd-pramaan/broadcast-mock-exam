@@ -21,31 +21,20 @@ export default async function ExamPage({ params }) {
   return (
     <div>
       <Nav isAdmin={user.isAdmin} />
-      <div className="wrap">
-        <div className="card">
-          <h1>{exam.title}</h1>
-          <p className="muted">
-            {exam.durationMinutes} minutes - {exam.totalMarks} marks - attempt as many times as you like
-          </p>
-        </div>
-        {pastAttempts.length > 0 && (
-          <div className="card">
-            <h2>Your past attempts</h2>
-            <table>
-              <thead><tr><th>#</th><th>Score</th><th>Submitted</th></tr></thead>
-              <tbody>
-                {pastAttempts.map((a) => (
-                  <tr key={a.id}>
-                    <td>{a.attemptNumber}</td>
-                    <td>{a.score} / {exam.totalMarks}</td>
-                    <td>{new Date(a.submittedAt).toLocaleString()}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        )}
-        <ExamRunner examId={exam.id} />
+      <div className="exam-wrap">
+        <ExamRunner
+          examId={exam.id}
+          title={exam.title}
+          durationMinutes={exam.durationMinutes}
+          totalMarks={exam.totalMarks}
+          questionCount={exam.questions.length}
+          pastAttempts={pastAttempts.map((a) => ({
+            id: a.id,
+            attemptNumber: a.attemptNumber,
+            score: a.score,
+            submittedAt: a.submittedAt.toLocaleString(),
+          }))}
+        />
       </div>
     </div>
   );

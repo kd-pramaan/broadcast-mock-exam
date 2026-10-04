@@ -1,4 +1,5 @@
 import { redirect } from "next/navigation";
+import Link from "next/link";
 import { getCurrentUser } from "../../lib/auth.js";
 import { prisma } from "../../lib/db.js";
 import Nav from "../../components/Nav.js";
@@ -18,6 +19,10 @@ export default async function AdminPage() {
     <div>
       <Nav isAdmin={user.isAdmin} />
       <div className="wrap">
+        <div className="card">
+          <h1>Exams</h1>
+          <Link className="btn" href="/admin/exams/new">+ New exam</Link>
+        </div>
         <div className="card">
           <h1>Pending payments</h1>
           {pending.length === 0 && <p className="muted">Nothing to review.</p>}
