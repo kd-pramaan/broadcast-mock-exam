@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { prisma } from "../../../../../lib/db.js";
 import { getCurrentUser } from "../../../../../lib/auth.js";
-import { sendActivationEmail } from "../../../../../lib/email.js";
+import { sendPlanUpgradedEmail } from "../../../../../lib/email.js";
 
 export async function POST(request, { params }) {
   const admin = await getCurrentUser();
@@ -11,8 +11,8 @@ export async function POST(request, { params }) {
   const { userId } = await params;
   const user = await prisma.user.update({
     where: { id: userId },
-    data: { status: "active" },
+    data: { plan: "paid" },
   });
-  await sendActivationEmail(user.email);
+  await sendPlanUpgradedEmail(user.email);
   return NextResponse.json({ ok: true });
 }

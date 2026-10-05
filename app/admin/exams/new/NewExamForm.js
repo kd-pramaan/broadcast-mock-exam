@@ -40,6 +40,11 @@ export default function NewExamForm() {
         Publish immediately
       </label>
 
+      <label style={{ display: "flex", alignItems: "center", gap: 8, fontWeight: 400, margin: "6px 0 14px" }}>
+        <input type="checkbox" name="isFree" style={{ width: "auto" }} />
+        Free sample paper (included in the Basic plan, no payment needed)
+      </label>
+
       <label>Questions (JSON file)</label>
       <input className="input" name="questionsFile" type="file" accept="application/json,.json" required />
 

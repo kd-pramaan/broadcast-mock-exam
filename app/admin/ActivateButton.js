@@ -15,7 +15,7 @@ export default function ActivateButton({ userId }) {
 
   return (
     <button className="btn" disabled={loading} onClick={activate}>
-      {loading ? "..." : "Activate"}
+      {loading ? "..." : "Approve"}
     </button>
   );
 }

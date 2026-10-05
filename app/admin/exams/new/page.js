@@ -10,7 +10,7 @@ export default async function NewExamPage() {
 
   return (
     <div>
-      <Nav isAdmin={user.isAdmin} />
+      <Nav isAdmin={user.isAdmin} crumbs={[{ label: "Admin", href: "/admin" }, { label: "New exam" }]} />
       <div className="wrap">
         <div className="card">
           <h1>Create exam</h1>

@@ -6,7 +6,6 @@ import Nav from "../../../../components/Nav.js";
 export default async function RankPage({ params }) {
   const user = await getCurrentUser();
   if (!user) redirect("/login");
-  if (user.status !== "active") redirect("/pay");
 
   const { id } = await params;
   const exam = await prisma.exam.findUnique({ where: { id } });
@@ -21,8 +20,8 @@ export default async function RankPage({ params }) {
 
   return (
     <div>
-      <Nav isAdmin={user.isAdmin} />
-      <div className="wrap">
+      <Nav isAdmin={user.isAdmin} crumbs={[{ label: "Exams", href: "/exams" }, { label: exam.title, href: `/exams/${exam.id}` }, { label: "Leaderboard" }]} />
+      <div className="exam-wrap">
         <div className="card">
           <h1>{exam.title} - leaderboard</h1>
           <p className="muted">Ranked by first attempt only.</p>

@@ -4,13 +4,18 @@ import { getCurrentUser } from "../../../../../lib/auth.js";
 
 export async function POST(request, { params }) {
   const user = await getCurrentUser();
-  if (!user || user.status !== "active") {
+  if (!user) {
     return NextResponse.json({ error: "Not authorized." }, { status: 401 });
   }
   const { id } = await params;
   const exam = await prisma.exam.findUnique({ where: { id } });
   if (!exam || !exam.isPublished) {
     return NextResponse.json({ error: "Exam not found." }, { status: 404 });
+  }
+  // Never trust the UI to have hidden the "Attempt" button - re-check the
+  // plan gate server-side too.
+  if (!exam.isFree && user.plan !== "paid") {
+    return NextResponse.json({ error: "Upgrade to the paid plan to attempt this exam." }, { status: 403 });
   }
 
   const last = await prisma.attempt.findFirst({

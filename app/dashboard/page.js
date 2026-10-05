@@ -7,7 +7,6 @@ import Nav from "../../components/Nav.js";
 export default async function DashboardPage() {
   const user = await getCurrentUser();
   if (!user) redirect("/login");
-  if (user.status !== "active") redirect("/pay");
 
   const attempts = await prisma.attempt.findMany({
     where: { userId: user.id, attemptNumber: 1, submittedAt: { not: null } },
@@ -24,16 +23,17 @@ export default async function DashboardPage() {
   return (
     <div>
       <Nav isAdmin={user.isAdmin} />
-      <div className="wrap">
-        <div className="card">
+      <div className="exam-wrap">
+        <div className="card exam-hero">
           <h1>Welcome, {user.name}</h1>
           <p className="muted">{user.email} - {user.region} region</p>
-        </div>
-        <div className="card">
-          <h2>Your performance</h2>
-          <p>Exams attempted: <b>{examsAttempted}</b></p>
-          <p>Average score (first attempts): <b>{avgPercent === null ? "-" : `${avgPercent}%`}</b></p>
-          <Link className="btn" href="/exams">Go to exams</Link>
+          <div className="exam-hero-grid">
+            <div><span className="muted">Plan</span><b>{user.plan === "paid" ? "Paid - all papers" : user.plan === "pending_approval" ? "Upgrade pending" : "Basic - free paper"}</b></div>
+            <div><span className="muted">Exams attempted</span><b>{examsAttempted}</b></div>
+            <div><span className="muted">Average score (first attempts)</span><b>{avgPercent === null ? "-" : `${avgPercent}%`}</b></div>
+          </div>
+          <Link className="btn" href="/exams">Go to exams</Link>{" "}
+          {user.plan === "basic" && <Link className="btn secondary" href="/pay">Upgrade plan</Link>}
         </div>
       </div>
     </div>

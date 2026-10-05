@@ -17,6 +17,7 @@ async function main() {
       region: "North",
       passwordHash: await bcrypt.hash(adminPassword, 10),
       status: "active",
+      plan: "paid",
       isAdmin: true,
     },
   });
@@ -30,6 +31,7 @@ async function main() {
         durationMinutes: 20,
         totalMarks: 6,
         isPublished: true,
+        isFree: true, // the one free paper Basic-plan users get today
         questions: [
           { id: "q1", text: "Which frequency range is used for FM radio broadcasting?", options: ["3-30 kHz", "88-108 MHz", "300-3000 MHz", "1-2 GHz"], correctIndex: 1, marks: 2 },
           { id: "q2", text: "What does SNR stand for?", options: ["Signal-to-Noise Ratio", "Satellite Network Relay", "Studio Network Router", "Signal Network Reach"], correctIndex: 0, marks: 2 },

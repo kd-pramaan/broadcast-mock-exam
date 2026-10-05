@@ -6,11 +6,10 @@ import ChangePasswordForm from "./ChangePasswordForm.js";
 export default async function ProfilePage() {
   const user = await getCurrentUser();
   if (!user) redirect("/login");
-  if (user.status !== "active") redirect("/pay");
 
   return (
     <div>
-      <Nav isAdmin={user.isAdmin} />
+      <Nav isAdmin={user.isAdmin} crumbs={[{ label: "Profile" }]} />
       <div className="wrap">
         <div className="card">
           <h1>Profile</h1>

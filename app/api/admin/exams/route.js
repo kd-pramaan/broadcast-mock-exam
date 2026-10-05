@@ -36,6 +36,7 @@ export async function POST(request) {
   const description = (form.get("description") || "").toString().trim();
   const durationMinutes = Number(form.get("durationMinutes"));
   const isPublished = form.get("isPublished") === "on";
+  const isFree = form.get("isFree") === "on";
   const file = form.get("questionsFile");
 
   if (!title) return NextResponse.json({ error: "Title is required." }, { status: 400 });
@@ -60,7 +61,7 @@ export async function POST(request) {
   const id = crypto.randomUUID();
 
   const exam = await prisma.exam.create({
-    data: { id, title, description: description || null, durationMinutes, totalMarks, questions, isPublished },
+    data: { id, title, description: description || null, durationMinutes, totalMarks, questions, isPublished, isFree },
   });
 
   return NextResponse.json({ id: exam.id });

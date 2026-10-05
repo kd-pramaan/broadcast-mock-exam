@@ -1,16 +1,21 @@
 "use client";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const REGIONS = ["North", "South", "East", "West"];
 
 export default function RegisterPage() {
-  const [form, setForm] = useState({ name: "", email: "", age: "", region: REGIONS[0] });
+  const [form, setForm] = useState({
+    name: "", email: "", age: "", region: REGIONS[0], password: "", confirmPassword: "",
+  });
   const [error, setError] = useState("");
-  const [done, setDone] = useState(false);
   const [loading, setLoading] = useState(false);
+  const router = useRouter();
 
   async function onSubmit(e) {
     e.preventDefault();
+    if (form.password.length < 8) { setError("Password must be at least 8 characters."); return; }
+    if (form.password !== form.confirmPassword) { setError("Passwords don't match."); return; }
     setError("");
     setLoading(true);
     const res = await fetch("/api/register", {
@@ -21,24 +26,17 @@ export default function RegisterPage() {
     const data = await res.json();
     setLoading(false);
     if (!res.ok) { setError(data.error || "Registration failed."); return; }
-    setDone(true);
-  }
-
-  if (done) {
-    return (
-      <div className="wrap">
-        <div className="card">
-          <h1>Check your email</h1>
-          <p>We sent a verification link to <b>{form.email}</b>. Open it to set your password.</p>
-        </div>
-      </div>
-    );
+    router.push(data.redirect || "/dashboard");
+    router.refresh();
   }
 
   return (
     <div className="wrap">
       <div className="card">
         <h1>Register</h1>
+        <p className="muted">
+          Create your account and start right away - you'll get free access to a sample paper on the Basic plan.
+        </p>
         {error && <p className="error">{error}</p>}
         <form onSubmit={onSubmit}>
           <label>Full name</label>
@@ -59,8 +57,16 @@ export default function RegisterPage() {
             {REGIONS.map((r) => <option key={r} value={r}>{r}</option>)}
           </select>
 
+          <label>Password</label>
+          <input className="input" type="password" required value={form.password}
+            onChange={(e) => setForm({ ...form, password: e.target.value })} />
+
+          <label>Confirm password</label>
+          <input className="input" type="password" required value={form.confirmPassword}
+            onChange={(e) => setForm({ ...form, confirmPassword: e.target.value })} />
+
           <button className="btn" disabled={loading} type="submit">
-            {loading ? "Submitting..." : "Register"}
+            {loading ? "Creating account..." : "Create account"}
           </button>
         </form>
       </div>

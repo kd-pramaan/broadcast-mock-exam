@@ -18,7 +18,7 @@ export default async function ReviewPage({ params }) {
 
   return (
     <div>
-      <Nav isAdmin={user.isAdmin} />
+      <Nav isAdmin={user.isAdmin} crumbs={[{ label: "Exams", href: "/exams" }, { label: exam.title, href: `/exams/${id}` }, { label: "Review" }]} />
       <div className="wrap">
         <div className="card">
           <h1>{exam.title} - review (attempt {attempt.attemptNumber})</h1>

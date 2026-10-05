@@ -17,11 +17,17 @@ export default function ExamRunner({ examId, title, durationMinutes, totalMarks,
   const attemptRef = useRef(null);
   const answersRef = useRef(answers);
   answersRef.current = answers;
+  // Guards against submit() firing twice (timer hitting 0 at the same
+  // moment the Submit button is clicked, React re-running an effect, etc.)
+  // - a second, already-submitted response has no score and was overwriting
+  // the real result with a blank one.
+  const submittedRef = useRef(false);
 
   async function start() {
     const res = await fetch(`/api/exams/${examId}/attempts`, { method: "POST" });
     const data = await res.json();
     if (!res.ok) { alert(data.error || "Could not start attempt."); return; }
+    submittedRef.current = false;
     setAttempt(data);
     attemptRef.current = data;
     setAnswers({});
@@ -32,6 +38,8 @@ export default function ExamRunner({ examId, title, durationMinutes, totalMarks,
   }
 
   async function submit() {
+    if (submittedRef.current) return;
+    submittedRef.current = true;
     clearInterval(timerRef.current);
     const a = attemptRef.current;
     const res = await fetch(`/api/attempts/${a.attemptId}/submit`, {
@@ -40,26 +48,28 @@ export default function ExamRunner({ examId, title, durationMinutes, totalMarks,
       body: JSON.stringify({ answers: answersRef.current }),
     });
     const data = await res.json();
+    if (!res.ok) { alert(data.error || "Could not submit."); return; }
     setResult(data);
     setPhase("done");
     router.refresh(); // pick up the new attempt in the past-attempts list
   }
 
+  // Tick the clock. Side effects (clearing the interval, submitting) live
+  // here, not inside the setSecondsLeft updater - an updater can run more
+  // than once for the same tick (e.g. React Strict Mode), which would fire
+  // submit() twice.
   useEffect(() => {
     if (phase !== "running") return;
     timerRef.current = setInterval(() => {
-      setSecondsLeft((s) => {
-        if (s <= 1) {
-          clearInterval(timerRef.current);
-          submit();
-          return 0;
-        }
-        return s - 1;
-      });
+      setSecondsLeft((s) => (s > 0 ? s - 1 : 0));
     }, 1000);
     return () => clearInterval(timerRef.current);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phase]);
+
+  useEffect(() => {
+    if (phase === "running" && secondsLeft === 0) submit();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phase, secondsLeft]);
 
   const pastAttemptsPanel = pastAttempts.length > 0 && (
     <div className="card">

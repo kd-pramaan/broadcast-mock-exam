@@ -7,11 +7,11 @@ import ExamRunner from "./ExamRunner.js";
 export default async function ExamPage({ params }) {
   const user = await getCurrentUser();
   if (!user) redirect("/login");
-  if (user.status !== "active") redirect("/pay");
 
   const { id } = await params;
   const exam = await prisma.exam.findUnique({ where: { id } });
   if (!exam || !exam.isPublished) notFound();
+  if (!exam.isFree && user.plan !== "paid") redirect("/pay");
 
   const pastAttempts = await prisma.attempt.findMany({
     where: { userId: user.id, examId: exam.id, submittedAt: { not: null } },
@@ -20,7 +20,7 @@ export default async function ExamPage({ params }) {
 
   return (
     <div>
-      <Nav isAdmin={user.isAdmin} />
+      <Nav isAdmin={user.isAdmin} crumbs={[{ label: "Exams", href: "/exams" }, { label: exam.title }]} />
       <div className="exam-wrap">
         <ExamRunner
           examId={exam.id}
