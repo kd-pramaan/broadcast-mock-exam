@@ -33,9 +33,9 @@ async function main() {
         isPublished: true,
         isFree: true, // the one free paper Basic-plan users get today
         questions: [
-          { id: "q1", text: "Which frequency range is used for FM radio broadcasting?", options: ["3-30 kHz", "88-108 MHz", "300-3000 MHz", "1-2 GHz"], correctIndex: 1, marks: 2 },
-          { id: "q2", text: "What does SNR stand for?", options: ["Signal-to-Noise Ratio", "Satellite Network Relay", "Studio Network Router", "Signal Network Reach"], correctIndex: 0, marks: 2 },
-          { id: "q3", text: "Which modulation scheme does ATSC digital TV broadcasting use?", options: ["AM", "FM", "8-VSB", "QPSK only"], correctIndex: 2, marks: 2 },
+          { id: "q1", topic: "Broadcast Engineering", text: "Which frequency range is used for FM radio broadcasting?", options: ["3-30 kHz", "88-108 MHz", "300-3000 MHz", "1-2 GHz"], correctIndex: 1, marks: 2, explanation: "FM broadcast radio is assigned to the 88-108 MHz VHF band." },
+          { id: "q2", topic: "Signal Fundamentals", text: "What does SNR stand for?", options: ["Signal-to-Noise Ratio", "Satellite Network Relay", "Studio Network Router", "Signal Network Reach"], correctIndex: 0, marks: 2, explanation: "SNR measures signal quality relative to background noise." },
+          { id: "q3", topic: "Digital TV", text: "Which modulation scheme does ATSC digital TV broadcasting use?", options: ["AM", "FM", "8-VSB", "QPSK only"], correctIndex: 2, marks: 2, explanation: "ATSC uses 8-VSB for terrestrial digital over-the-air transmission." },
         ],
       },
     });

@@ -3,6 +3,19 @@ import crypto from "node:crypto";
 import { prisma } from "../../../../lib/db.js";
 import { getCurrentUser } from "../../../../lib/auth.js";
 
+function normalizeQuestions(value) {
+  if (Array.isArray(value)) return value;
+  if (!value || typeof value !== "object") return null;
+  if (Array.isArray(value.questions)) return value.questions;
+  if (Array.isArray(value.papers)) {
+    return value.papers.flatMap((paper) => {
+      if (!paper || typeof paper !== "object") return [];
+      return Array.isArray(paper.questions) ? paper.questions : [];
+    });
+  }
+  return null;
+}
+
 function validateQuestions(questions) {
   if (!Array.isArray(questions) || questions.length === 0) {
     return "The JSON file must contain a non-empty array of questions.";
@@ -15,6 +28,8 @@ function validateQuestions(questions) {
     if (seenIds.has(q.id)) return `${where}: duplicate id "${q.id}".`;
     seenIds.add(q.id);
     if (!q.text || typeof q.text !== "string") return `${where}: missing string "text".`;
+    if (!q.topic || typeof q.topic !== "string") return `${where}: missing string "topic".`;
+    if (!q.explanation || typeof q.explanation !== "string") return `${where}: missing string "explanation".`;
     if (!Array.isArray(q.options) || q.options.length < 2) return `${where}: "options" must be an array of at least 2 choices.`;
     if (!q.options.every((o) => typeof o === "string" && o)) return `${where}: every option must be a non-empty string.`;
     if (!Number.isInteger(q.correctIndex) || q.correctIndex < 0 || q.correctIndex >= q.options.length) {
@@ -50,7 +65,7 @@ export async function POST(request) {
   const raw = await file.text();
   let questions;
   try {
-    questions = JSON.parse(raw);
+    questions = normalizeQuestions(JSON.parse(raw));
   } catch {
     return NextResponse.json({ error: "That file isn't valid JSON." }, { status: 400 });
   }

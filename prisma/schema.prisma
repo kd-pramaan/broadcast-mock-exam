@@ -33,7 +33,7 @@ model Exam {
   title           String
   description     String?
   durationMinutes Int
-  questions       Json      // [{ id, text, options: string[], correctIndex, marks }] - stored as
+  questions       Json      // [{ id, text, topic, options: string[], correctIndex, marks, explanation }] - stored as
                              // jsonb (Prisma's Postgres default for Json), capped only by Postgres's
                              // ~1GB per-field limit, so 50+ long questions fit with room to spare
   totalMarks      Int
