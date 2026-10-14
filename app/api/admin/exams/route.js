@@ -28,8 +28,6 @@ function validateQuestions(questions) {
     if (seenIds.has(q.id)) return `${where}: duplicate id "${q.id}".`;
     seenIds.add(q.id);
     if (!q.text || typeof q.text !== "string") return `${where}: missing string "text".`;
-    if (!q.topic || typeof q.topic !== "string") return `${where}: missing string "topic".`;
-    if (!q.explanation || typeof q.explanation !== "string") return `${where}: missing string "explanation".`;
     if (!Array.isArray(q.options) || q.options.length < 2) return `${where}: "options" must be an array of at least 2 choices.`;
     if (!q.options.every((o) => typeof o === "string" && o)) return `${where}: every option must be a non-empty string.`;
     if (!Number.isInteger(q.correctIndex) || q.correctIndex < 0 || q.correctIndex >= q.options.length) {
