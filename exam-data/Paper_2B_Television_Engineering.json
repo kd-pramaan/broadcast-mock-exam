@@ -1,0 +1,702 @@
+[
+    {
+        "id":  "tv-1",
+        "topic":  "STPL",
+        "text":  "An IP-based studio-transmitter link primarily carries:",
+        "options":  [
+                        "encoded programme streams over an IP network",
+                        "only analog mains",
+                        "only antenna DC",
+                        "only cooling air"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "IP STL transports programme content using packet networks."
+    },
+    {
+        "id":  "tv-2",
+        "topic":  "TV Transmitter",
+        "text":  "A modern digital TV transmitter normally includes:",
+        "options":  [
+                        "source processing/encoding, modulation and RF amplification",
+                        "only an audio amplifier",
+                        "only a microphone",
+                        "only a battery"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Digital TV transmission requires baseband processing, channel coding/modulation and RF amplification."
+    },
+    {
+        "id":  "tv-3",
+        "topic":  "TV Modulation",
+        "text":  "In analogue terrestrial TV, the vision carrier traditionally uses:",
+        "options":  [
+                        "vestigial sideband AM",
+                        "pure FM only",
+                        "QPSK only",
+                        "FSK only"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Analogue television vision transmission uses AM with vestigial sideband to reduce bandwidth."
+    },
+    {
+        "id":  "tv-4",
+        "topic":  "TV Modulation",
+        "text":  "In analogue TV, the sound carrier is commonly:",
+        "options":  [
+                        "FM modulated",
+                        "AM suppressed carrier only",
+                        "PCM without RF",
+                        "unmodulated DC"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Analogue TV sound is typically FM modulated on a separate sound carrier."
+    },
+    {
+        "id":  "tv-5",
+        "topic":  "VHF/UHF",
+        "text":  "A VHF/UHF TV transmitter\u0027s exciter primarily:",
+        "options":  [
+                        "generates/modulates the RF signal at the required channel frequency",
+                        "provides room acoustics",
+                        "stores programme archives",
+                        "controls studio lighting only"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "The exciter produces the low-power modulated RF signal that is subsequently amplified."
+    },
+    {
+        "id":  "tv-6",
+        "topic":  "TV RF",
+        "text":  "A diplexer in a TV transmitter installation can:",
+        "options":  [
+                        "combine separate vision/sound RF paths toward a common antenna",
+                        "convert RF to audio",
+                        "measure lux",
+                        "compress video"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A diplexer/combining network permits appropriate frequency-separated signals to share antenna infrastructure."
+    },
+    {
+        "id":  "tv-7",
+        "topic":  "Dummy Load",
+        "text":  "A TV transmitter dummy load should present:",
+        "options":  [
+                        "a suitable matched non-radiating load",
+                        "an open circuit",
+                        "a short circuit",
+                        "a microphone input"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A matched dummy load absorbs RF power while minimizing reflections."
+    },
+    {
+        "id":  "tv-8",
+        "topic":  "TV Antenna",
+        "text":  "A VHF/UHF broadcast antenna array is designed mainly to control:",
+        "options":  [
+                        "coverage pattern, polarization and gain",
+                        "audio reverberation",
+                        "storage capacity",
+                        "UPS runtime"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Antenna arrays determine radiation pattern, gain, polarization and coverage."
+    },
+    {
+        "id":  "tv-9",
+        "topic":  "DTH",
+        "text":  "A DTH downlink is received at the user\u0027s premises by:",
+        "options":  [
+                        "satellite dish and LNB/LNBF",
+                        "AM loop only",
+                        "audio mixer",
+                        "field strength meter alone"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "The dish collects the Ku/C-band signal and the LNB/LNBF converts it to a lower IF/L-band range."
+    },
+    {
+        "id":  "tv-10",
+        "topic":  "LNB",
+        "text":  "An LNB primarily:",
+        "options":  [
+                        "provides low-noise amplification and frequency conversion",
+                        "performs studio mixing",
+                        "creates mains power",
+                        "measures MER only"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "The Low Noise Block downconverter amplifies the weak satellite signal and converts it to a lower frequency."
+    },
+    {
+        "id":  "tv-11",
+        "topic":  "ASI",
+        "text":  "ASI is commonly associated with:",
+        "options":  [
+                        "transport-stream serial interface in broadcast equipment",
+                        "audio speaker impedance",
+                        "AC mains",
+                        "antenna grounding"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Asynchronous Serial Interface is widely used for MPEG transport streams in broadcast chains."
+    },
+    {
+        "id":  "tv-12",
+        "topic":  "MPEG",
+        "text":  "MPEG-4 is generally associated with:",
+        "options":  [
+                        "digital audio/video compression standards",
+                        "RF earthing",
+                        "antenna polarization",
+                        "mains protection"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "MPEG-4 includes standards for efficient digital media representation/compression."
+    },
+    {
+        "id":  "tv-13",
+        "topic":  "HEVC",
+        "text":  "HEVC/H.265 was developed mainly to provide:",
+        "options":  [
+                        "higher coding efficiency than earlier video coding generations",
+                        "higher RF voltage",
+                        "larger antenna size",
+                        "more audio channels without coding"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "HEVC targets substantially improved compression efficiency at comparable visual quality."
+    },
+    {
+        "id":  "tv-14",
+        "topic":  "DVB-S2",
+        "text":  "DVB-S2 is a standard for:",
+        "options":  [
+                        "digital satellite broadcasting",
+                        "analog FM broadcasting",
+                        "audio tape recording",
+                        "TV studio lighting"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "DVB-S2 specifies satellite transmission techniques including advanced modulation and FEC."
+    },
+    {
+        "id":  "tv-15",
+        "topic":  "FEC",
+        "text":  "In DTH systems, FEC is used to:",
+        "options":  [
+                        "improve robustness against transmission errors",
+                        "increase camera resolution directly",
+                        "remove the dish",
+                        "replace the LNB"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Forward error correction adds redundancy so the receiver can correct some channel errors."
+    },
+    {
+        "id":  "tv-16",
+        "topic":  "STB",
+        "text":  "An STB in a DTH setup performs functions such as:",
+        "options":  [
+                        "demodulation/decoding and service presentation",
+                        "tower erection",
+                        "RF power generation",
+                        "studio acoustic treatment"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A set-top box receives, demodulates, decrypts where applicable, decodes and presents services."
+    },
+    {
+        "id":  "tv-17",
+        "topic":  "Satellite",
+        "text":  "Ku-band is widely used for:",
+        "options":  [
+                        "satellite communication and DTH links",
+                        "only LF ground wave",
+                        "audio studio wiring",
+                        "DC battery charging"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Ku-band is common in satellite contribution and DTH services."
+    },
+    {
+        "id":  "tv-18",
+        "topic":  "DSNG",
+        "text":  "DSNG is designed mainly for:",
+        "options":  [
+                        "mobile satellite news gathering",
+                        "digital studio noise generation",
+                        "DC supply networking",
+                        "audio-only tape recording"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Digital Satellite News Gathering provides portable/vehicle-based satellite contribution."
+    },
+    {
+        "id":  "tv-19",
+        "topic":  "Satellite",
+        "text":  "An uplink normally operates at:",
+        "options":  [
+                        "a higher frequency than its corresponding downlink",
+                        "exactly the same frequency always",
+                        "audio frequency",
+                        "DC"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Satellite transponders use frequency translation, commonly with uplink above downlink."
+    },
+    {
+        "id":  "tv-20",
+        "topic":  "Link Budget",
+        "text":  "Eb/N0 is a measure related to:",
+        "options":  [
+                        "energy per bit relative to noise spectral density",
+                        "video frame size",
+                        "antenna height",
+                        "audio dynamic range"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Eb/N0 is widely used to characterize digital link quality."
+    },
+    {
+        "id":  "tv-21",
+        "topic":  "MER",
+        "text":  "MER is particularly useful for assessing:",
+        "options":  [
+                        "digital modulation quality",
+                        "microphone directionality",
+                        "AC power factor",
+                        "room reverberation"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Modulation Error Ratio compares ideal constellation signal power with modulation error power."
+    },
+    {
+        "id":  "tv-22",
+        "topic":  "BER",
+        "text":  "A lower BER generally indicates:",
+        "options":  [
+                        "better digital reception quality",
+                        "higher antenna loss",
+                        "worse link quality",
+                        "more compression artifacts always"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "BER is the fraction of bits received incorrectly; lower values generally indicate better link quality."
+    },
+    {
+        "id":  "tv-23",
+        "topic":  "Studio Sync",
+        "text":  "An SPG in a TV studio provides:",
+        "options":  [
+                        "reference synchronization signals",
+                        "RF high power",
+                        "audio storage",
+                        "air conditioning"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A Sync Pulse Generator supplies timing references such as black/bilevel/trilevel sync as required."
+    },
+    {
+        "id":  "tv-24",
+        "topic":  "Sync",
+        "text":  "Genlocking means:",
+        "options":  [
+                        "locking equipment timing to a common reference",
+                        "locking a camera physically",
+                        "compressing a video file",
+                        "tuning an antenna"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Genlock synchronizes video timing among sources and studio equipment."
+    },
+    {
+        "id":  "tv-25",
+        "topic":  "Frame Synchronizer",
+        "text":  "A frame synchronizer is used to:",
+        "options":  [
+                        "align an incoming asynchronous video source to local timing",
+                        "increase transmitter power",
+                        "replace a camera lens",
+                        "generate mains"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "It buffers and retimes incoming video to match the facility\u0027s reference."
+    },
+    {
+        "id":  "tv-26",
+        "topic":  "VDA",
+        "text":  "A VDA/DVDA is mainly used for:",
+        "options":  [
+                        "video distribution/amplification",
+                        "RF frequency synthesis only",
+                        "audio recording only",
+                        "satellite pointing"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Video distribution amplifiers distribute and buffer video signals to multiple destinations."
+    },
+    {
+        "id":  "tv-27",
+        "topic":  "ARC",
+        "text":  "An aspect ratio converter changes:",
+        "options":  [
+                        "image aspect ratio while managing geometry/cropping/letterboxing",
+                        "RF impedance only",
+                        "audio sample rate only",
+                        "power factor"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "ARC equipment converts between formats such as 4:3 and 16:9."
+    },
+    {
+        "id":  "tv-28",
+        "topic":  "Camera",
+        "text":  "CCD is a type of:",
+        "options":  [
+                        "image sensor",
+                        "RF amplifier",
+                        "audio codec",
+                        "satellite antenna"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A CCD is an electronic image sensor used in cameras."
+    },
+    {
+        "id":  "tv-29",
+        "topic":  "SDI",
+        "text":  "HD-SDI is a:",
+        "options":  [
+                        "serial digital interface for high-definition video",
+                        "satellite frequency band",
+                        "microphone connector",
+                        "power relay"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "HD-SDI transports uncompressed/low-compression baseband HD video in serial form."
+    },
+    {
+        "id":  "tv-30",
+        "topic":  "UHD",
+        "text":  "4K/UHD refers primarily to:",
+        "options":  [
+                        "higher-resolution television/video formats",
+                        "RF power level",
+                        "audio sample frequency only",
+                        "antenna polarization"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "4K/UHD denotes high-resolution video formats, commonly around 3840×2160 for UHDTV."
+    },
+    {
+        "id":  "tv-31",
+        "topic":  "Video Codec",
+        "text":  "A codec performs:",
+        "options":  [
+                        "encoding and/or decoding of media",
+                        "only antenna tuning",
+                        "only AC conversion",
+                        "only camera focusing"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Codec is a contraction of coder-decoder and refers to media encoding/decoding technology."
+    },
+    {
+        "id":  "tv-32",
+        "topic":  "Container",
+        "text":  "A media container such as MXF primarily:",
+        "options":  [
+                        "packages video, audio and metadata streams",
+                        "defines RF carrier frequency",
+                        "replaces a codec",
+                        "measures BER"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Containers organize one or more encoded streams and associated metadata."
+    },
+    {
+        "id":  "tv-33",
+        "topic":  "Video Switcher",
+        "text":  "A vision mixer/video switcher is used to:",
+        "options":  [
+                        "select and transition between video sources",
+                        "measure antenna gain",
+                        "control UPS batteries",
+                        "convert RF to DC"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Switchers select sources and create transitions, keys and programme outputs."
+    },
+    {
+        "id":  "tv-34",
+        "topic":  "Keying",
+        "text":  "Chroma keying selects an image region based mainly on:",
+        "options":  [
+                        "colour characteristics",
+                        "RF frequency",
+                        "audio impedance",
+                        "mains phase"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Chroma key removes/keys a selected colour range, often green or blue."
+    },
+    {
+        "id":  "tv-35",
+        "topic":  "Lighting",
+        "text":  "Three-point lighting uses:",
+        "options":  [
+                        "key, fill and back/rim lights",
+                        "three antennas",
+                        "three microphones only",
+                        "three RF carriers"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "The classic arrangement uses key, fill and back light to shape the subject."
+    },
+    {
+        "id":  "tv-36",
+        "topic":  "Colour Temperature",
+        "text":  "Colour temperature is expressed in:",
+        "options":  [
+                        "kelvin",
+                        "ohm",
+                        "dBm",
+                        "hertz"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Colour temperature of a light source is expressed in kelvin."
+    },
+    {
+        "id":  "tv-37",
+        "topic":  "Lux Meter",
+        "text":  "A lux meter measures:",
+        "options":  [
+                        "illuminance",
+                        "audio SPL",
+                        "RF power",
+                        "video bitrate"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Illuminance is measured in lux."
+    },
+    {
+        "id":  "tv-38",
+        "topic":  "DMX",
+        "text":  "DMX512 is widely used for:",
+        "options":  [
+                        "lighting control",
+                        "audio compression",
+                        "satellite uplink",
+                        "RF matching"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "DMX512 is a digital control protocol widely used for stage/studio lighting."
+    },
+    {
+        "id":  "tv-39",
+        "topic":  "VTR",
+        "text":  "A video tape recorder stores signals using:",
+        "options":  [
+                        "magnetic recording on tape",
+                        "only optical pits",
+                        "only semiconductor memory",
+                        "RF radiation in air"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "VTRs record video/audio magnetically on tape."
+    },
+    {
+        "id":  "tv-40",
+        "topic":  "TBC",
+        "text":  "A time base corrector is used to:",
+        "options":  [
+                        "correct timing variations in recorded video",
+                        "increase satellite power",
+                        "measure sound pressure",
+                        "compress audio"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "TBCs correct timing instability such as jitter and sync variations from tape playback."
+    },
+    {
+        "id":  "tv-41",
+        "topic":  "TV Monitor",
+        "text":  "A professional video monitor is designed primarily to:",
+        "options":  [
+                        "display and assess video accurately",
+                        "transmit RF power",
+                        "perform satellite uplink",
+                        "provide UPS output"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Broadcast monitors are used for accurate picture evaluation and monitoring."
+    },
+    {
+        "id":  "tv-42",
+        "topic":  "Multiviewer",
+        "text":  "A multiviewer displays:",
+        "options":  [
+                        "multiple video/audio source previews and status on one screen",
+                        "multiple RF transmitters physically",
+                        "only one camera sensor",
+                        "only power readings"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Multiviewers combine several source thumbnails and monitoring information."
+    },
+    {
+        "id":  "tv-43",
+        "topic":  "TV OB",
+        "text":  "An ENG camera is intended mainly for:",
+        "options":  [
+                        "electronic news gathering and field production",
+                        "satellite orbit control",
+                        "AC distribution",
+                        "audio-only recording"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "ENG cameras are designed for portable news and field acquisition."
+    },
+    {
+        "id":  "tv-44",
+        "topic":  "Backpack",
+        "text":  "A backpack live-production system is useful for:",
+        "options":  [
+                        "portable IP contribution from field locations",
+                        "high-power RF broadcasting",
+                        "tower grounding",
+                        "studio acoustic treatment"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Backpack systems combine cameras/encoders/network links for mobile contribution."
+    },
+    {
+        "id":  "tv-45",
+        "topic":  "Video Measurement",
+        "text":  "CNR in a video/RF system compares:",
+        "options":  [
+                        "carrier signal level to noise level",
+                        "camera colour to luminance",
+                        "audio to video bitrate",
+                        "RF to DC voltage"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Carrier-to-noise ratio indicates the strength of the carrier relative to noise."
+    },
+    {
+        "id":  "tv-46",
+        "topic":  "Video Measurement",
+        "text":  "PER in packetized digital systems means:",
+        "options":  [
+                        "Packet Error Rate",
+                        "Picture Exposure Ratio",
+                        "Power Efficiency Reading",
+                        "Phase Error Receiver"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "PER measures the fraction of transmitted/received packets containing errors."
+    },
+    {
+        "id":  "tv-47",
+        "topic":  "SNR",
+        "text":  "A higher SNR generally means:",
+        "options":  [
+                        "signal is stronger relative to noise",
+                        "more noise relative to signal",
+                        "lower link margin always",
+                        "zero carrier"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Signal-to-noise ratio improves as desired signal becomes larger relative to noise."
+    },
+    {
+        "id":  "tv-48",
+        "topic":  "TV Studio",
+        "text":  "A teleprompter is positioned so that:",
+        "options":  [
+                        "the presenter can read script while maintaining an appropriate camera eye-line",
+                        "the antenna can be tuned",
+                        "the HPA can be cooled",
+                        "the LNB can be powered"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "The prompter displays script close to the lens to support natural on-camera delivery."
+    },
+    {
+        "id":  "tv-49",
+        "topic":  "TV Performance",
+        "text":  "Link margin in a digital satellite link indicates:",
+        "options":  [
+                        "available performance headroom between actual and required link quality",
+                        "camera focal length",
+                        "audio loudness",
+                        "tower height"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Link margin is the excess received link quality/power above the required threshold."
+    },
+    {
+        "id":  "tv-50",
+        "topic":  "TV Performance",
+        "text":  "A higher CNR generally provides:",
+        "options":  [
+                        "better resistance to noise-induced degradation",
+                        "more antenna mismatch",
+                        "lower received signal quality",
+                        "more tape jitter"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A higher carrier-to-noise ratio generally improves the quality of a received RF/digital link."
+    }
+]

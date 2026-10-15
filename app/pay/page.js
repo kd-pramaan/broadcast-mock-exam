@@ -30,12 +30,14 @@ export default async function PayPage() {
       <Nav isAdmin={user.isAdmin} crumbs={[{ label: "Upgrade" }]} />
       <div className="wrap">
         <div className="card">
-          <h1>Upgrade to the paid plan</h1>
+          <h1>Unlock every mock exam</h1>
           <p className="muted">
-            You're on the Basic plan, with free access to our sample paper. Pay the
-            one-time fee below to unlock every mock exam.
+            Build confidence with more practice and prepare at your own pace. Upgrade
+            from the free sample paper to full mock-exam access with one simple payment.
           </p>
-          <p>Scan the QR code below to pay, then submit your payment reference.</p>
+          <h2>Full access for just ₹200</h2>
+          <p className="muted">One-time payment. No recurring subscription.</p>
+          <p>Scan the QR code to pay ₹200, then submit your payment reference to get started.</p>
           <img className="qr" src="/qr-code.png" alt="Payment QR code" />
           <PayForm />
         </div>

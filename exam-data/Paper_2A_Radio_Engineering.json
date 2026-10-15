@@ -1,0 +1,702 @@
+[
+    {
+        "id":  "radio-1",
+        "topic":  "STPL",
+        "text":  "A studio-transmitter programme link carries:",
+        "options":  [
+                        "programme audio/data from studio to transmitter site",
+                        "only mains power",
+                        "only antenna DC",
+                        "only cooling water"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "STPL provides the programme feed between studio and transmitter."
+    },
+    {
+        "id":  "radio-2",
+        "topic":  "Microwave Link",
+        "text":  "A microwave link normally requires:",
+        "options":  [
+                        "line-of-sight path and suitable antennas",
+                        "an underwater cable",
+                        "only ground-wave propagation",
+                        "no frequency planning"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Point-to-point microwave links generally depend on LOS propagation and adequate Fresnel clearance."
+    },
+    {
+        "id":  "radio-3",
+        "topic":  "Audio Processing",
+        "text":  "An audio limiter is used mainly to:",
+        "options":  [
+                        "prevent excessive peaks/overload",
+                        "increase RF carrier frequency",
+                        "change antenna polarization",
+                        "generate DC"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Limiters constrain peak levels and help protect downstream equipment from overload."
+    },
+    {
+        "id":  "radio-4",
+        "topic":  "AM Transmitter",
+        "text":  "In an AM transmitter, the modulator changes the:",
+        "options":  [
+                        "amplitude of the RF carrier according to the audio",
+                        "antenna height",
+                        "mains frequency only",
+                        "coolant temperature"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "AM varies carrier amplitude in accordance with the modulating signal."
+    },
+    {
+        "id":  "radio-5",
+        "topic":  "AM Transmitter",
+        "text":  "A dummy load is connected to a transmitter to:",
+        "options":  [
+                        "provide a known non-radiating load for testing",
+                        "increase antenna radiation",
+                        "replace the exciter permanently",
+                        "cool the studio"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A dummy load absorbs RF power so transmitter tests can be performed without radiating."
+    },
+    {
+        "id":  "radio-6",
+        "topic":  "AM Transmitter",
+        "text":  "DSB in AM means:",
+        "options":  [
+                        "double sideband",
+                        "digital sound bandwidth",
+                        "dual source battery",
+                        "direct spectrum balance"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "DSB transmission contains both upper and lower sidebands."
+    },
+    {
+        "id":  "radio-7",
+        "topic":  "Digital Transmitter",
+        "text":  "PWM stands for:",
+        "options":  [
+                        "Pulse Width Modulation",
+                        "Power Wave Mixing",
+                        "Phase Wave Measurement",
+                        "Pulse Watt Matching"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "PWM varies pulse width according to the modulating/control signal."
+    },
+    {
+        "id":  "radio-8",
+        "topic":  "AM Power",
+        "text":  "For ideal AM with carrier, increasing modulation depth primarily increases:",
+        "options":  [
+                        "sideband power",
+                        "carrier frequency",
+                        "antenna height",
+                        "mains voltage"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "The sidebands carry the information and their power rises with modulation index."
+    },
+    {
+        "id":  "radio-9",
+        "topic":  "Aerial",
+        "text":  "An ATU is used mainly for:",
+        "options":  [
+                        "antenna/feeder impedance matching",
+                        "audio compression",
+                        "battery charging",
+                        "video switching"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "An Antenna Tuning Unit transforms the antenna impedance toward the required feeder/transmitter impedance."
+    },
+    {
+        "id":  "radio-10",
+        "topic":  "Transmission Line",
+        "text":  "Characteristic impedance of a lossless line is determined by:",
+        "options":  [
+                        "its distributed inductance and capacitance per unit length",
+                        "transmitter brand",
+                        "audio level",
+                        "tower height only"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "For a lossless line, Z0=sqrt(L/C)."
+    },
+    {
+        "id":  "radio-11",
+        "topic":  "Transmission Line",
+        "text":  "VSWR=1 indicates:",
+        "options":  [
+                        "perfect impedance match",
+                        "complete reflection",
+                        "maximum mismatch",
+                        "open circuit always"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A VSWR of 1 corresponds to reflection coefficient magnitude zero."
+    },
+    {
+        "id":  "radio-12",
+        "topic":  "Transmission Line",
+        "text":  "Return loss is related to:",
+        "options":  [
+                        "reflection coefficient magnitude",
+                        "audio sampling rate",
+                        "tower loading only",
+                        "battery capacity"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Return loss is -20 log10|Γ|; larger return loss indicates better matching."
+    },
+    {
+        "id":  "radio-13",
+        "topic":  "Transmission Line",
+        "text":  "A quarter-wave line can be used to:",
+        "options":  [
+                        "transform impedances",
+                        "convert AC to DC without components",
+                        "measure audio pitch",
+                        "remove all harmonics"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A λ/4 line provides impedance transformation depending on its characteristic impedance and termination."
+    },
+    {
+        "id":  "radio-14",
+        "topic":  "Smith Chart",
+        "text":  "A Smith chart is primarily used for:",
+        "options":  [
+                        "transmission-line impedance/admittance calculations",
+                        "video compression",
+                        "sound recording",
+                        "power-factor correction"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "It graphically handles complex impedances, reflection coefficients and matching."
+    },
+    {
+        "id":  "radio-15",
+        "topic":  "AM Aerial",
+        "text":  "Directional AM arrays use multiple radiators mainly to:",
+        "options":  [
+                        "shape the horizontal radiation pattern",
+                        "reduce audio bandwidth",
+                        "create optical signals",
+                        "increase microphone sensitivity"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Relative amplitudes/phases of array elements produce desired azimuthal radiation."
+    },
+    {
+        "id":  "radio-16",
+        "topic":  "Earth System",
+        "text":  "Earth radials at an MW transmitting site help:",
+        "options":  [
+                        "provide a low-loss RF return path near the ground",
+                        "cool the transmitter",
+                        "increase audio sampling",
+                        "replace the feeder"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A radial ground system reduces ground losses for vertically polarized MW radiation."
+    },
+    {
+        "id":  "radio-17",
+        "topic":  "FM",
+        "text":  "FM conveys information by varying the carrier\u0027s:",
+        "options":  [
+                        "instantaneous frequency",
+                        "amplitude only",
+                        "DC voltage",
+                        "antenna impedance"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Frequency modulation varies instantaneous frequency according to the message."
+    },
+    {
+        "id":  "radio-18",
+        "topic":  "FM Antenna",
+        "text":  "A common FM broadcast antenna is a:",
+        "options":  [
+                        "polarized VHF dipole/panel array",
+                        "LF loop only",
+                        "waveguide slot used as microphone",
+                        "audio transformer"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "FM broadcast stations use VHF antenna arrays such as dipoles/panels."
+    },
+    {
+        "id":  "radio-19",
+        "topic":  "RF Combiner",
+        "text":  "An RF combiner is used to:",
+        "options":  [
+                        "combine RF power from multiple transmitters/channels",
+                        "convert audio to light",
+                        "measure BER only",
+                        "store programme files"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Combiners combine RF outputs while maintaining controlled impedance and isolation."
+    },
+    {
+        "id":  "radio-20",
+        "topic":  "Coupler",
+        "text":  "A directional coupler is used to:",
+        "options":  [
+                        "sample a known fraction of travelling RF power",
+                        "supply phantom power",
+                        "convert video to audio",
+                        "store RF"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Directional couplers provide a coupled sample with defined coupling/directivity."
+    },
+    {
+        "id":  "radio-21",
+        "topic":  "Diplexer",
+        "text":  "A diplexer generally allows:",
+        "options":  [
+                        "two frequency bands/channels to share a common antenna path",
+                        "DC and AC to short together",
+                        "two batteries to be paralleled without protection",
+                        "audio and mains to mix"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A diplexer combines/separates two frequency bands with isolation."
+    },
+    {
+        "id":  "radio-22",
+        "topic":  "Dehydrator",
+        "text":  "A feeder dehydrator is used to:",
+        "options":  [
+                        "keep pressurized transmission lines dry",
+                        "increase RF modulation",
+                        "generate stereo audio",
+                        "measure room noise"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Dry air/nitrogen pressurization prevents moisture entering RF feeder systems."
+    },
+    {
+        "id":  "radio-23",
+        "topic":  "Power Distribution",
+        "text":  "In a three-phase system, load balancing aims to:",
+        "options":  [
+                        "reduce phase imbalance and neutral/feeder stress",
+                        "increase harmonic distortion",
+                        "eliminate earthing",
+                        "remove the need for protection"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Balanced loading improves system performance and reduces unwanted current imbalance."
+    },
+    {
+        "id":  "radio-24",
+        "topic":  "UPS",
+        "text":  "A UPS primarily provides:",
+        "options":  [
+                        "continuity/conditioned power during supply interruptions",
+                        "RF modulation",
+                        "antenna polarization",
+                        "audio compression"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A UPS bridges mains interruptions and can provide conditioned power to critical loads."
+    },
+    {
+        "id":  "radio-25",
+        "topic":  "Earthing",
+        "text":  "Equipment earthing primarily provides:",
+        "options":  [
+                        "a low-impedance fault path for safety",
+                        "higher audio gain",
+                        "higher VSWR",
+                        "more carrier power"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Protective earthing helps fault current operate protective devices and limits touch voltage."
+    },
+    {
+        "id":  "radio-26",
+        "topic":  "Sound",
+        "text":  "Sound pressure level is commonly expressed in:",
+        "options":  [
+                        "dB SPL",
+                        "dBm only",
+                        "dBuV/m only",
+                        "Hz"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Sound pressure level is referenced to 20 µPa and expressed in dB SPL."
+    },
+    {
+        "id":  "radio-27",
+        "topic":  "Microphones",
+        "text":  "A condenser microphone normally requires:",
+        "options":  [
+                        "polarization/electronics power, often phantom power",
+                        "a high-power RF transmitter",
+                        "a feeder dehydrator",
+                        "a waveguide"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Condenser microphones use an electrically biased capsule and internal electronics; many use phantom power."
+    },
+    {
+        "id":  "radio-28",
+        "topic":  "Microphones",
+        "text":  "A cardioid microphone has maximum sensitivity primarily:",
+        "options":  [
+                        "toward the front",
+                        "equally in all directions",
+                        "only at the rear",
+                        "only upward"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Cardioid polar response favours sound arriving from the front and rejects much of the rear."
+    },
+    {
+        "id":  "radio-29",
+        "topic":  "Phantom Power",
+        "text":  "Standard phantom power for many studio condenser microphones is:",
+        "options":  [
+                        "48 V DC",
+                        "5 V AC",
+                        "230 V AC",
+                        "1.2 V DC"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "48 V phantom power is a common professional microphone powering standard."
+    },
+    {
+        "id":  "radio-30",
+        "topic":  "Speakers",
+        "text":  "A loudspeaker converts:",
+        "options":  [
+                        "electrical energy into acoustic energy",
+                        "light into RF",
+                        "RF into DC only",
+                        "mechanical motion into data"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "The loudspeaker\u0027s transducer converts electrical signal into diaphragm motion and sound."
+    },
+    {
+        "id":  "radio-31",
+        "topic":  "Audio Recording",
+        "text":  "A DAW primarily provides:",
+        "options":  [
+                        "digital recording, editing and playback",
+                        "RF antenna matching",
+                        "power distribution",
+                        "satellite orbit control"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Digital Audio Workstations handle recording, editing, mixing and playback."
+    },
+    {
+        "id":  "radio-32",
+        "topic":  "Audio Compression",
+        "text":  "Lossy audio compression:",
+        "options":  [
+                        "discards information judged less perceptually important",
+                        "always preserves every sample bit-for-bit",
+                        "increases RF power",
+                        "replaces microphones"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Lossy codecs reduce bitrate by removing or approximating perceptually less important information."
+    },
+    {
+        "id":  "radio-33",
+        "topic":  "Studio",
+        "text":  "Reverberation time is commonly defined using:",
+        "options":  [
+                        "the time for sound level to decay by 60 dB",
+                        "the time for RF to travel 1 km",
+                        "microphone sensitivity",
+                        "bit rate"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "RT60 is the time required for a 60 dB decay after the source stops."
+    },
+    {
+        "id":  "radio-34",
+        "topic":  "Audio Mixer",
+        "text":  "A mixer channel typically provides:",
+        "options":  [
+                        "level, routing and processing controls",
+                        "antenna beam tilt only",
+                        "RF carrier generation",
+                        "UPS charging"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A mixing console controls gain/level, routing, EQ and other audio functions."
+    },
+    {
+        "id":  "radio-35",
+        "topic":  "OB",
+        "text":  "An OB van is designed primarily for:",
+        "options":  [
+                        "outside-broadcast acquisition, mixing and transmission/recording",
+                        "only transmitter cooling",
+                        "only satellite orbit control",
+                        "only antenna construction"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "OB facilities provide mobile production for outdoor events."
+    },
+    {
+        "id":  "radio-36",
+        "topic":  "Radio Receiver",
+        "text":  "A superheterodyne receiver uses a local oscillator and mixer to create:",
+        "options":  [
+                        "an intermediate frequency",
+                        "only DC",
+                        "a second antenna",
+                        "optical modulation"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "The mixer converts the received RF to a fixed IF for selective amplification/demodulation."
+    },
+    {
+        "id":  "radio-37",
+        "topic":  "AM Receiver",
+        "text":  "An envelope detector is suitable for:",
+        "options":  [
+                        "conventional AM with carrier",
+                        "FM only",
+                        "QAM only",
+                        "PCM only"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "The envelope contains the AM message when the carrier is sufficiently large and the modulation is appropriate."
+    },
+    {
+        "id":  "radio-38",
+        "topic":  "FM Receiver",
+        "text":  "The discriminator in an FM receiver converts:",
+        "options":  [
+                        "frequency variations into amplitude/voltage variations",
+                        "audio into optical power",
+                        "DC into RF only",
+                        "video into storage"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "FM discriminators produce an output proportional to instantaneous frequency deviation."
+    },
+    {
+        "id":  "radio-39",
+        "topic":  "Performance",
+        "text":  "THD measures:",
+        "options":  [
+                        "harmonic distortion relative to the desired signal",
+                        "antenna height",
+                        "battery capacity",
+                        "RF wavelength"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Total Harmonic Distortion quantifies unwanted harmonics relative to the fundamental/reference signal."
+    },
+    {
+        "id":  "radio-40",
+        "topic":  "Performance",
+        "text":  "A VIM is associated with measurement of:",
+        "options":  [
+                        "vector impedance",
+                        "audio loudness only",
+                        "optical attenuation only",
+                        "video frame rate"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A Vector Impedance Meter measures impedance magnitude and phase-related parameters."
+    },
+    {
+        "id":  "radio-41",
+        "topic":  "Satellite Networking",
+        "text":  "SCPC means:",
+        "options":  [
+                        "Single Channel Per Carrier",
+                        "Serial Carrier Power Control",
+                        "Satellite Channel Phase Converter",
+                        "Single Codec Per Console"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "SCPC allocates a dedicated carrier to a single channel."
+    },
+    {
+        "id":  "radio-42",
+        "topic":  "Satellite Networking",
+        "text":  "MCPC means:",
+        "options":  [
+                        "Multiple Channels Per Carrier",
+                        "Multiple Carrier Power Correction",
+                        "Microwave Channel Phase Control",
+                        "Main Carrier Power Coupler"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "MCPC multiplexes multiple programme channels onto one carrier."
+    },
+    {
+        "id":  "radio-43",
+        "topic":  "Satellite Link",
+        "text":  "Link budget accounts for:",
+        "options":  [
+                        "gains and losses from transmitter to receiver",
+                        "only studio noise",
+                        "only antenna weight",
+                        "only AC frequency"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A link budget sums transmit power, antenna gains, propagation losses and other gains/losses."
+    },
+    {
+        "id":  "radio-44",
+        "topic":  "Satellite",
+        "text":  "Look angles from an earth station describe:",
+        "options":  [
+                        "azimuth/elevation pointing toward the satellite",
+                        "audio phase",
+                        "RF modulation depth",
+                        "room reverberation"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Look angles determine where the earth-station antenna must point."
+    },
+    {
+        "id":  "radio-45",
+        "topic":  "Earth Station",
+        "text":  "An HPA in an earth station is a:",
+        "options":  [
+                        "High Power Amplifier",
+                        "High Phase Antenna",
+                        "Harmonic Processing Adapter",
+                        "Horizontal Power Attenuator"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "The HPA amplifies the uplink RF signal to the required transmit power."
+    },
+    {
+        "id":  "radio-46",
+        "topic":  "Audio Measurements",
+        "text":  "Frequency response of an audio chain describes:",
+        "options":  [
+                        "variation of level with frequency",
+                        "variation of RF power with tower height",
+                        "battery voltage versus time",
+                        "satellite elevation only"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Frequency response shows how the system gain changes across the audio frequency range."
+    },
+    {
+        "id":  "radio-47",
+        "topic":  "Studio",
+        "text":  "A phone-in system in broadcasting is intended to:",
+        "options":  [
+                        "interface telephone callers with the studio audio chain",
+                        "provide RF antenna matching",
+                        "generate satellite uplink power",
+                        "measure VSWR"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Phone-in equipment interfaces telephone audio to the studio console with suitable isolation and level control."
+    },
+    {
+        "id":  "radio-48",
+        "topic":  "Satellite",
+        "text":  "An IRD at a satellite receiving terminal is used to:",
+        "options":  [
+                        "demodulate/decode received programme services",
+                        "increase antenna height",
+                        "generate uplink RF",
+                        "cool the HPA"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "An Integrated Receiver Decoder recovers the transport/programme streams from the satellite signal."
+    },
+    {
+        "id":  "radio-49",
+        "topic":  "Audio",
+        "text":  "The purpose of an audio equalizer in a transmitter input chain is to:",
+        "options":  [
+                        "shape frequency response of the programme signal",
+                        "change satellite orbit",
+                        "measure VSWR",
+                        "provide DC backup"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "An equalizer shapes spectral response to meet the required transmission characteristic."
+    },
+    {
+        "id":  "radio-50",
+        "topic":  "Power",
+        "text":  "A voltage stabilizer at a transmitting station is used primarily to:",
+        "options":  [
+                        "maintain supply voltage within an acceptable range",
+                        "modulate FM",
+                        "increase antenna gain",
+                        "decode MPEG"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A stabilizer regulates variations in supply voltage for connected equipment."
+    }
+]

@@ -1,0 +1,702 @@
+[
+    {
+        "id":  "broadcast-1",
+        "topic":  "Semiconductors",
+        "text":  "Which device is primarily used as a voltage-controlled current device?",
+        "options":  [
+                        "MOSFET",
+                        "BJT",
+                        "SCR",
+                        "DIAC"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A MOSFET is controlled by gate voltage and its drain current is controlled by the electric field."
+    },
+    {
+        "id":  "broadcast-2",
+        "topic":  "Semiconductors",
+        "text":  "A circulator is generally a:",
+        "options":  [
+                        "three-port non-reciprocal microwave device",
+                        "two-terminal filter",
+                        "four-port reciprocal attenuator",
+                        "low-frequency oscillator"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A circulator routes microwave power from one port to the next in a specified direction."
+    },
+    {
+        "id":  "broadcast-3",
+        "topic":  "Waveguides",
+        "text":  "The dominant mode in a rectangular waveguide is:",
+        "options":  [
+                        "TE10",
+                        "TE01",
+                        "TM10",
+                        "TM11"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "TE10 has the lowest cutoff frequency in a conventional rectangular waveguide."
+    },
+    {
+        "id":  "broadcast-4",
+        "topic":  "Power Supply",
+        "text":  "The ripple frequency of a full-wave rectifier supplied from 50 Hz mains is:",
+        "options":  [
+                        "50 Hz",
+                        "100 Hz",
+                        "150 Hz",
+                        "25 Hz"
+                    ],
+        "correctIndex":  1,
+        "marks":  2,
+        "explanation":  "A full-wave rectifier produces two ripple cycles per mains cycle, hence 100 Hz."
+    },
+    {
+        "id":  "broadcast-5",
+        "topic":  "Power Supply",
+        "text":  "In an SMPS, high-frequency switching mainly permits:",
+        "options":  [
+                        "larger transformers",
+                        "smaller magnetics and higher power density",
+                        "zero EMI",
+                        "operation without feedback"
+                    ],
+        "correctIndex":  1,
+        "marks":  2,
+        "explanation":  "Higher switching frequency reduces the size of magnetic components, although EMI must be controlled."
+    },
+    {
+        "id":  "broadcast-6",
+        "topic":  "Amplifiers",
+        "text":  "For a common-emitter amplifier, the output voltage is normally:",
+        "options":  [
+                        "in phase with input",
+                        "180° out of phase with input",
+                        "90° ahead",
+                        "always zero"
+                    ],
+        "correctIndex":  1,
+        "marks":  2,
+        "explanation":  "The CE configuration gives voltage gain with phase inversion."
+    },
+    {
+        "id":  "broadcast-7",
+        "topic":  "Amplifiers",
+        "text":  "The main purpose of negative feedback in an amplifier is to:",
+        "options":  [
+                        "increase distortion",
+                        "improve stability and reduce distortion",
+                        "eliminate bandwidth",
+                        "make gain infinite"
+                    ],
+        "correctIndex":  1,
+        "marks":  2,
+        "explanation":  "Negative feedback trades some gain for improved stability, linearity and bandwidth."
+    },
+    {
+        "id":  "broadcast-8",
+        "topic":  "Amplifiers",
+        "text":  "A push-pull power amplifier is mainly used to:",
+        "options":  [
+                        "provide high output power with reduced even-harmonic distortion",
+                        "generate DC only",
+                        "replace a rectifier",
+                        "measure frequency"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Complementary or phase-split push-pull operation can cancel many even-order distortion components."
+    },
+    {
+        "id":  "broadcast-9",
+        "topic":  "Oscillators",
+        "text":  "The Barkhausen criterion for sustained sinusoidal oscillation requires loop gain magnitude of approximately:",
+        "options":  [
+                        "0",
+                        "1",
+                        "10",
+                        "infinite"
+                    ],
+        "correctIndex":  1,
+        "marks":  2,
+        "explanation":  "At the oscillation frequency, |Aβ|≈1 and total loop phase is 0°/360°."
+    },
+    {
+        "id":  "broadcast-10",
+        "topic":  "Oscillators",
+        "text":  "A crystal oscillator is preferred when the application requires:",
+        "options":  [
+                        "very poor frequency stability",
+                        "high frequency stability",
+                        "only low DC voltage",
+                        "high rectifier ripple"
+                    ],
+        "correctIndex":  1,
+        "marks":  2,
+        "explanation":  "Quartz crystals have a high Q and therefore provide excellent frequency stability."
+    },
+    {
+        "id":  "broadcast-11",
+        "topic":  "Oscillators",
+        "text":  "A Schmitt trigger is characterized by:",
+        "options":  [
+                        "hysteresis",
+                        "zero threshold",
+                        "only analog integration",
+                        "no switching"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A Schmitt trigger has different upper and lower switching thresholds, giving hysteresis."
+    },
+    {
+        "id":  "broadcast-12",
+        "topic":  "Modulation",
+        "text":  "In conventional AM, the carrier power is concentrated:",
+        "options":  [
+                        "only in the sidebands",
+                        "mainly in the carrier",
+                        "only in the lower sideband",
+                        "equally in noise"
+                    ],
+        "correctIndex":  1,
+        "marks":  2,
+        "explanation":  "For standard AM with carrier, the carrier component contains most of the transmitted power at ordinary modulation indices."
+    },
+    {
+        "id":  "broadcast-13",
+        "topic":  "Modulation",
+        "text":  "The bandwidth of an FM signal by Carson\u0027s rule is approximately:",
+        "options":  [
+                        "2(Δf+fm)",
+                        "Δf/fm",
+                        "Δf−fm",
+                        "fm/2"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Carson\u0027s rule gives BW≈2(peak frequency deviation + highest modulating frequency)."
+    },
+    {
+        "id":  "broadcast-14",
+        "topic":  "Digital Modulation",
+        "text":  "QPSK carries how many bits per symbol?",
+        "options":  [
+                        "1",
+                        "2",
+                        "3",
+                        "4"
+                    ],
+        "correctIndex":  1,
+        "marks":  2,
+        "explanation":  "QPSK has four phase states, so log2(4)=2 bits/symbol."
+    },
+    {
+        "id":  "broadcast-15",
+        "topic":  "Digital Modulation",
+        "text":  "QAM conveys information by varying:",
+        "options":  [
+                        "amplitude only",
+                        "phase only",
+                        "amplitude and phase",
+                        "frequency only"
+                    ],
+        "correctIndex":  2,
+        "marks":  2,
+        "explanation":  "QAM uses both amplitude and phase states to represent symbols."
+    },
+    {
+        "id":  "broadcast-16",
+        "topic":  "COFDM",
+        "text":  "The principal benefit of a cyclic prefix in OFDM/COFDM is to:",
+        "options":  [
+                        "increase audio bandwidth",
+                        "reduce inter-symbol interference from multipath",
+                        "remove all noise",
+                        "increase carrier frequency"
+                    ],
+        "correctIndex":  1,
+        "marks":  2,
+        "explanation":  "A cyclic prefix converts much of the multipath-induced delay spread into a guard interval."
+    },
+    {
+        "id":  "broadcast-17",
+        "topic":  "PLL",
+        "text":  "A phase-locked loop can be used for:",
+        "options":  [
+                        "frequency synthesis and tracking",
+                        "only DC amplification",
+                        "only audio recording",
+                        "mechanical switching"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "PLL systems are widely used for synchronization, carrier recovery and frequency synthesis."
+    },
+    {
+        "id":  "broadcast-18",
+        "topic":  "ADC/DAC",
+        "text":  "An anti-aliasing filter is normally placed:",
+        "options":  [
+                        "after a DAC only",
+                        "before an ADC",
+                        "inside a loudspeaker",
+                        "after a power amplifier"
+                    ],
+        "correctIndex":  1,
+        "marks":  2,
+        "explanation":  "It limits input bandwidth before sampling to prevent spectral aliasing."
+    },
+    {
+        "id":  "broadcast-19",
+        "topic":  "Sampling",
+        "text":  "For a baseband signal limited to 15 kHz, the minimum ideal sampling rate is greater than:",
+        "options":  [
+                        "7.5 kHz",
+                        "15 kHz",
+                        "30 kHz",
+                        "60 Hz"
+                    ],
+        "correctIndex":  2,
+        "marks":  2,
+        "explanation":  "Nyquist sampling requires a rate greater than twice the highest frequency: \u003e30 kHz."
+    },
+    {
+        "id":  "broadcast-20",
+        "topic":  "Video",
+        "text":  "SD-SDI is primarily an interface for:",
+        "options":  [
+                        "serial digital video",
+                        "RF power",
+                        "AC mains",
+                        "audio microphone bias"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "SD-SDI carries standard-definition digital video and associated data in a serial digital stream."
+    },
+    {
+        "id":  "broadcast-21",
+        "topic":  "Video",
+        "text":  "HD-SDI differs from SD-SDI mainly in its support for:",
+        "options":  [
+                        "higher-rate high-definition video",
+                        "only analog audio",
+                        "lower sampling rates",
+                        "DC power distribution"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "HD-SDI provides a higher serial data rate suitable for HD video formats."
+    },
+    {
+        "id":  "broadcast-22",
+        "topic":  "Compression",
+        "text":  "An IRD in a digital broadcast chain commonly performs:",
+        "options":  [
+                        "receive, demodulate/decode and output programme streams",
+                        "only RF amplification",
+                        "only antenna tuning",
+                        "only power conversion"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Integrated Receiver Decoders receive the broadcast carrier and recover/decode the programme stream."
+    },
+    {
+        "id":  "broadcast-23",
+        "topic":  "Error Control",
+        "text":  "FEC improves a digital link by:",
+        "options":  [
+                        "adding controlled redundancy for error correction",
+                        "removing all bandwidth",
+                        "eliminating modulation",
+                        "raising antenna height"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Forward error correction adds redundancy so the receiver can correct some errors without retransmission."
+    },
+    {
+        "id":  "broadcast-24",
+        "topic":  "Measurements",
+        "text":  "BER is the ratio of:",
+        "options":  [
+                        "bit errors to received/transmitted bits considered",
+                        "power to voltage",
+                        "carrier to noise only",
+                        "audio to video"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Bit Error Rate quantifies the fraction of bits received incorrectly."
+    },
+    {
+        "id":  "broadcast-25",
+        "topic":  "Optical Fibre",
+        "text":  "The main cause of attenuation in optical fibre includes:",
+        "options":  [
+                        "absorption and scattering",
+                        "only gravity",
+                        "only impedance mismatch at RF",
+                        "thermal noise in copper"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Optical loss arises mainly from absorption, Rayleigh scattering and related mechanisms."
+    },
+    {
+        "id":  "broadcast-26",
+        "topic":  "Optical Fibre",
+        "text":  "Single-mode fibre is preferred for long-haul links because it has:",
+        "options":  [
+                        "less modal dispersion",
+                        "more modal dispersion",
+                        "no optical source",
+                        "only copper conductors"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Single-mode propagation largely removes intermodal dispersion."
+    },
+    {
+        "id":  "broadcast-27",
+        "topic":  "Optical Devices",
+        "text":  "A photodiode is used in an optical receiver to:",
+        "options":  [
+                        "convert light into electrical current",
+                        "convert DC to RF",
+                        "generate microwave power",
+                        "store audio"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Photodiodes convert incident optical power into a proportional electrical signal."
+    },
+    {
+        "id":  "broadcast-28",
+        "topic":  "Digital Logic",
+        "text":  "A multiplexer performs:",
+        "options":  [
+                        "many-to-one data selection",
+                        "one-to-many power conversion",
+                        "analog amplification only",
+                        "frequency multiplication"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A multiplexer selects one of multiple inputs and routes it to a single output."
+    },
+    {
+        "id":  "broadcast-29",
+        "topic":  "Digital Logic",
+        "text":  "A demultiplexer performs:",
+        "options":  [
+                        "one-to-many routing",
+                        "many-to-one routing",
+                        "only counting",
+                        "only inversion"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A demultiplexer routes one input to one selected output."
+    },
+    {
+        "id":  "broadcast-30",
+        "topic":  "Digital Logic",
+        "text":  "A flip-flop is fundamentally a:",
+        "options":  [
+                        "bistable storage element",
+                        "rectifier",
+                        "power transistor",
+                        "filter"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A flip-flop has two stable states and stores one bit."
+    },
+    {
+        "id":  "broadcast-31",
+        "topic":  "Memory",
+        "text":  "RAM is generally:",
+        "options":  [
+                        "volatile read/write memory",
+                        "permanent optical storage",
+                        "only read-only memory",
+                        "an RF filter"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Conventional RAM loses stored information when power is removed."
+    },
+    {
+        "id":  "broadcast-32",
+        "topic":  "Computer",
+        "text":  "TCP/IP is best described as:",
+        "options":  [
+                        "a suite of networking protocols",
+                        "a video codec",
+                        "a storage medium",
+                        "an audio amplifier"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "TCP/IP is the protocol suite used for internetwork communication."
+    },
+    {
+        "id":  "broadcast-33",
+        "topic":  "Networking",
+        "text":  "A LAN normally covers:",
+        "options":  [
+                        "a limited local area",
+                        "the entire globe",
+                        "only satellites",
+                        "only a single CPU register"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A LAN connects devices within a relatively limited geographic area."
+    },
+    {
+        "id":  "broadcast-34",
+        "topic":  "Storage",
+        "text":  "NAS provides storage primarily over:",
+        "options":  [
+                        "a network",
+                        "a loudspeaker line",
+                        "an RF feeder",
+                        "a crystal oscillator"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Network Attached Storage exposes file-based storage over a network."
+    },
+    {
+        "id":  "broadcast-35",
+        "topic":  "Storage",
+        "text":  "SAN is primarily associated with:",
+        "options":  [
+                        "block-level storage networking",
+                        "FM modulation",
+                        "microphone pickup",
+                        "antenna polarization"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A Storage Area Network provides high-speed block-level storage access to servers."
+    },
+    {
+        "id":  "broadcast-36",
+        "topic":  "Virtualization",
+        "text":  "A hypervisor is software/firmware that:",
+        "options":  [
+                        "creates and manages virtual machines",
+                        "compresses audio only",
+                        "measures RF power",
+                        "controls a microphone diaphragm"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "The hypervisor abstracts hardware resources for virtual machines."
+    },
+    {
+        "id":  "broadcast-37",
+        "topic":  "Measurements",
+        "text":  "An oscilloscope is primarily used to observe:",
+        "options":  [
+                        "waveform versus time",
+                        "only optical attenuation",
+                        "only storage capacity",
+                        "only antenna height"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "An oscilloscope displays electrical signal amplitude as a function of time."
+    },
+    {
+        "id":  "broadcast-38",
+        "topic":  "Measurements",
+        "text":  "A spectrum analyser displays signal level as a function of:",
+        "options":  [
+                        "frequency",
+                        "time only",
+                        "temperature",
+                        "distance"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "It shows spectral components and their amplitudes versus frequency."
+    },
+    {
+        "id":  "broadcast-39",
+        "topic":  "Log Units",
+        "text":  "0 dBm corresponds to:",
+        "options":  [
+                        "1 mW",
+                        "1 W",
+                        "10 W",
+                        "1 μW"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "dBm is referenced to 1 mW, so 0 dBm=1 mW."
+    },
+    {
+        "id":  "broadcast-40",
+        "topic":  "Propagation",
+        "text":  "Ground-wave propagation is especially useful for:",
+        "options":  [
+                        "lower-frequency surface coverage near the ground",
+                        "optical fibre only",
+                        "satellite-only links",
+                        "UHF studio wiring"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Ground waves follow the Earth\u0027s surface and are important at lower frequencies."
+    },
+    {
+        "id":  "broadcast-41",
+        "topic":  "Propagation",
+        "text":  "Sky-wave propagation primarily involves:",
+        "options":  [
+                        "ionospheric refraction/reflection effects",
+                        "optical fibre dispersion",
+                        "waveguide cutoff only",
+                        "audio compression"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "HF signals can be returned toward Earth through ionospheric propagation."
+    },
+    {
+        "id":  "broadcast-42",
+        "topic":  "Propagation",
+        "text":  "A Fresnel zone is important in:",
+        "options":  [
+                        "line-of-sight radio links",
+                        "DC battery charging only",
+                        "audio mixing",
+                        "digital storage"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Obstructions in the Fresnel zone can cause diffraction loss and impair LOS links."
+    },
+    {
+        "id":  "broadcast-43",
+        "topic":  "Antennas",
+        "text":  "Antenna gain includes the effect of:",
+        "options":  [
+                        "directivity and efficiency",
+                        "only cable length",
+                        "only transmitter voltage",
+                        "only microphone impedance"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Gain combines directional concentration with antenna efficiency."
+    },
+    {
+        "id":  "broadcast-44",
+        "topic":  "Antennas",
+        "text":  "Polarization describes the:",
+        "options":  [
+                        "orientation of the electric-field vector",
+                        "RF frequency only",
+                        "cable resistance",
+                        "audio bit depth"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Polarization is defined by the time-varying orientation of the electric field."
+    },
+    {
+        "id":  "broadcast-45",
+        "topic":  "Satellite",
+        "text":  "A geostationary satellite has an orbital period approximately equal to:",
+        "options":  [
+                        "one sidereal day",
+                        "one hour",
+                        "one week",
+                        "one minute"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A geostationary satellite orbits in the equatorial plane with a period matching Earth\u0027s rotation."
+    },
+    {
+        "id":  "broadcast-46",
+        "topic":  "Satellite",
+        "text":  "A satellite transponder primarily:",
+        "options":  [
+                        "receives, frequency-converts/amplifies and retransmits signals",
+                        "only records video locally",
+                        "only supplies mains power",
+                        "only measures rainfall"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A transponder is the RF repeater chain between uplink and downlink."
+    },
+    {
+        "id":  "broadcast-47",
+        "topic":  "Streaming",
+        "text":  "HLS is commonly used for:",
+        "options":  [
+                        "HTTP-based adaptive media streaming",
+                        "RF antenna tuning",
+                        "power-factor correction",
+                        "waveguide measurement"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "HTTP Live Streaming segments media for delivery over HTTP and supports adaptive bitrate."
+    },
+    {
+        "id":  "broadcast-48",
+        "topic":  "Streaming",
+        "text":  "A CDN improves media delivery mainly by:",
+        "options":  [
+                        "placing content closer to end users",
+                        "increasing transmitter carrier frequency",
+                        "removing all encoding",
+                        "replacing antennas"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A Content Delivery Network distributes cached content across edge locations."
+    },
+    {
+        "id":  "broadcast-49",
+        "topic":  "Media Streaming",
+        "text":  "RTMP, HLS and SRT are examples of technologies used in:",
+        "options":  [
+                        "media streaming/contribution workflows",
+                        "power-factor correction",
+                        "antenna grounding",
+                        "audio loudspeaker design"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "These protocols/technologies are used in live media delivery or contribution workflows."
+    },
+    {
+        "id":  "broadcast-50",
+        "topic":  "Computer",
+        "text":  "Virtualization allows a physical server to:",
+        "options":  [
+                        "run multiple isolated virtual machines sharing hardware resources",
+                        "operate without an operating system",
+                        "eliminate all network traffic",
+                        "replace every storage device"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Virtualization abstracts physical resources so multiple virtual machines can share them."
+    }
+]

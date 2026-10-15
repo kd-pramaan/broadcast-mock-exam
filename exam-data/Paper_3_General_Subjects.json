@@ -1,0 +1,702 @@
+[
+    {
+        "id":  "general-1",
+        "topic":  "Safety",
+        "text":  "The most important reason for electrical isolation before maintenance is to:",
+        "options":  [
+                        "prevent accidental energization and shock",
+                        "increase RF power",
+                        "improve audio quality",
+                        "reduce video resolution"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Isolation removes the hazardous energy source before work."
+    },
+    {
+        "id":  "general-2",
+        "topic":  "Safety",
+        "text":  "A fire extinguisher should be selected based primarily on:",
+        "options":  [
+                        "the class/type of fire and equipment involved",
+                        "its colour alone",
+                        "its weight only",
+                        "the nearest location only"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Extinguishing media must be compatible with the fire and hazards present."
+    },
+    {
+        "id":  "general-3",
+        "topic":  "Safety",
+        "text":  "Artificial respiration/CPR should be started when:",
+        "options":  [
+                        "a casualty is not breathing normally and it is safe to intervene, following trained procedure",
+                        "the person is fully conscious and breathing normally",
+                        "equipment is still live",
+                        "only after several hours"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Resuscitation is an emergency response for absent/abnormal breathing after ensuring scene safety."
+    },
+    {
+        "id":  "general-4",
+        "topic":  "Stores",
+        "text":  "Surplus and unserviceable stores should be:",
+        "options":  [
+                        "disposed of through prescribed procedures and records",
+                        "discarded secretly",
+                        "mixed with essential spares",
+                        "sold privately without authorization"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Government stores require controlled disposal and documentation."
+    },
+    {
+        "id":  "general-5",
+        "topic":  "Stores",
+        "text":  "Transit insurance is intended to cover:",
+        "options":  [
+                        "specified risks/losses while goods are in transit",
+                        "studio reverberation",
+                        "RF reflection",
+                        "air conditioner efficiency"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Transit insurance protects consignments against covered transport risks."
+    },
+    {
+        "id":  "general-6",
+        "topic":  "Procurement",
+        "text":  "GST is primarily a:",
+        "options":  [
+                        "goods and services tax",
+                        "generator safety test",
+                        "grounding standard",
+                        "gain setting tool"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "GST is India\u0027s indirect tax on specified supplies of goods and services."
+    },
+    {
+        "id":  "general-7",
+        "topic":  "Power",
+        "text":  "Power factor is the ratio of:",
+        "options":  [
+                        "real power to apparent power",
+                        "reactive power to voltage",
+                        "current to resistance",
+                        "frequency to wavelength"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Power factor = P/S for sinusoidal steady-state systems under the usual definition."
+    },
+    {
+        "id":  "general-8",
+        "topic":  "Power",
+        "text":  "A CT in a power system is used mainly to:",
+        "options":  [
+                        "step down current for measurement/protection",
+                        "step up voltage for transmission",
+                        "cool transformers",
+                        "generate audio"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Current transformers provide scaled current signals to meters and protective relays."
+    },
+    {
+        "id":  "general-9",
+        "topic":  "Power",
+        "text":  "A PT/VT is used mainly to:",
+        "options":  [
+                        "provide a scaled voltage for measurement/protection",
+                        "increase antenna gain",
+                        "compress video",
+                        "supply microphone phantom power"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Potential/voltage transformers provide isolated, scaled voltage signals."
+    },
+    {
+        "id":  "general-10",
+        "topic":  "Protection",
+        "text":  "A series trip coil is used to:",
+        "options":  [
+                        "trip a circuit breaker through its trip mechanism",
+                        "measure audio level",
+                        "increase UPS capacity",
+                        "control camera focus"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "A trip coil actuates breaker opening when energized by the protection/control circuit."
+    },
+    {
+        "id":  "general-11",
+        "topic":  "Protection",
+        "text":  "An overcurrent relay operates when:",
+        "options":  [
+                        "current exceeds its configured pickup characteristic",
+                        "temperature reaches room temperature only",
+                        "audio becomes stereo",
+                        "RF frequency falls to zero"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Overcurrent relays detect current above a set threshold according to their characteristic."
+    },
+    {
+        "id":  "general-12",
+        "topic":  "DG",
+        "text":  "The frequency of an alternator in a generator set depends directly on:",
+        "options":  [
+                        "rotational speed and number of poles",
+                        "fuel colour",
+                        "battery capacity only",
+                        "room temperature only"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "f = PN/120 for an alternator, with P poles and N rpm."
+    },
+    {
+        "id":  "general-13",
+        "topic":  "DG",
+        "text":  "Preventive maintenance of a DG set commonly includes:",
+        "options":  [
+                        "checking oil, coolant, batteries, belts and filters as specified",
+                        "removing all protection",
+                        "disconnecting the governor",
+                        "ignoring fuel quality"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Routine checks prevent failures and maintain reliable operation."
+    },
+    {
+        "id":  "general-14",
+        "topic":  "AC",
+        "text":  "Relative humidity is:",
+        "options":  [
+                        "the ratio of actual water-vapour content to saturation condition at a given temperature, expressed as a percentage",
+                        "a measure of RF gain",
+                        "audio level in dB",
+                        "cable impedance"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Relative humidity compares actual moisture content with the saturation moisture capacity at the same temperature."
+    },
+    {
+        "id":  "general-15",
+        "topic":  "AC",
+        "text":  "The dry-bulb temperature is measured by:",
+        "options":  [
+                        "a conventional air temperature thermometer, shielded from radiation effects as appropriate",
+                        "an RF power meter",
+                        "a lux meter",
+                        "a VIM"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Dry-bulb temperature is the ordinary air temperature measurement used in psychrometrics."
+    },
+    {
+        "id":  "general-16",
+        "topic":  "UPS",
+        "text":  "An inverter converts:",
+        "options":  [
+                        "DC to AC",
+                        "AC to DC only",
+                        "RF to optical",
+                        "audio to RF"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "An inverter produces AC output from a DC source."
+    },
+    {
+        "id":  "general-17",
+        "topic":  "UPS",
+        "text":  "A rectifier converts:",
+        "options":  [
+                        "AC to DC",
+                        "DC to AC",
+                        "light to audio",
+                        "RF to sound"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Rectifiers convert alternating voltage/current to unidirectional DC."
+    },
+    {
+        "id":  "general-18",
+        "topic":  "SMPS",
+        "text":  "An SMPS normally uses high-frequency switching to:",
+        "options":  [
+                        "efficiently regulate and convert power with smaller magnetics",
+                        "eliminate all heat",
+                        "avoid filtering",
+                        "remove feedback"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Switching conversion enables high efficiency and smaller magnetic components, with appropriate filtering."
+    },
+    {
+        "id":  "general-19",
+        "topic":  "Installation",
+        "text":  "Before installing a transmitter, a site survey should verify:",
+        "options":  [
+                        "power, grounding, RF environment, access, coverage and structural/site constraints",
+                        "only wall colour",
+                        "only desk size",
+                        "only microphone type"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Engineering site selection must consider electrical, RF, structural and operational constraints."
+    },
+    {
+        "id":  "general-20",
+        "topic":  "Measurement",
+        "text":  "A spectrum analyser is useful during transmitter commissioning to check:",
+        "options":  [
+                        "frequency components, harmonics and spurious emissions",
+                        "only room temperature",
+                        "only cable length",
+                        "only battery electrolyte"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Spectrum analysis reveals the occupied spectrum and unwanted emissions."
+    },
+    {
+        "id":  "general-21",
+        "topic":  "Measurement",
+        "text":  "An audio analyser can measure parameters such as:",
+        "options":  [
+                        "frequency response, distortion and signal level",
+                        "tower verticality",
+                        "satellite orbit",
+                        "cable tensile strength"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Audio analysers characterize electrical audio performance."
+    },
+    {
+        "id":  "general-22",
+        "topic":  "Measurement",
+        "text":  "A sound level meter measures:",
+        "options":  [
+                        "sound pressure level",
+                        "RF field strength",
+                        "power factor",
+                        "video BER"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Sound level meters measure acoustic sound pressure level, typically in dB SPL."
+    },
+    {
+        "id":  "general-23",
+        "topic":  "Broadcast",
+        "text":  "The RF spectrum is divided into frequency bands mainly to:",
+        "options":  [
+                        "organize services and minimize harmful interference",
+                        "increase all transmitters\u0027 power",
+                        "remove antennas",
+                        "eliminate propagation effects"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Frequency allocation and coordination permit efficient, interference-controlled use of spectrum."
+    },
+    {
+        "id":  "general-24",
+        "topic":  "Propagation",
+        "text":  "Space-wave/LOS propagation is especially important for:",
+        "options":  [
+                        "VHF/UHF and microwave links",
+                        "only very low frequency ground-wave services",
+                        "magnetic tape",
+                        "audio mixers"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "At VHF and above, coverage often depends strongly on line-of-sight/space-wave propagation."
+    },
+    {
+        "id":  "general-25",
+        "topic":  "Antenna",
+        "text":  "Beam tilt is used to:",
+        "options":  [
+                        "adjust the vertical direction of maximum radiation",
+                        "change audio bitrate",
+                        "alter mains frequency",
+                        "increase storage"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Electrical/mechanical beam tilt shapes coverage by directing energy downward or upward."
+    },
+    {
+        "id":  "general-26",
+        "topic":  "Antenna",
+        "text":  "Null fill is used to:",
+        "options":  [
+                        "reduce coverage holes near the site by controlling vertical radiation",
+                        "increase room reverberation",
+                        "compress audio",
+                        "change satellite orbit"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Null fill redistributes energy into areas that might otherwise fall in antenna-pattern nulls."
+    },
+    {
+        "id":  "general-27",
+        "topic":  "Satellite",
+        "text":  "A geostationary satellite must be located above the:",
+        "options":  [
+                        "equator",
+                        "North Pole",
+                        "South Pole",
+                        "Prime Meridian only"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Geostationary orbit is a circular equatorial orbit synchronized with Earth\u0027s rotation."
+    },
+    {
+        "id":  "general-28",
+        "topic":  "Satellite",
+        "text":  "An eclipse period for a geostationary satellite occurs when:",
+        "options":  [
+                        "the satellite passes into Earth\u0027s shadow",
+                        "the antenna loses polarization permanently",
+                        "the transmitter is switched off by law",
+                        "the satellite enters the ocean"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Around equinox periods, a GEO satellite can enter Earth\u0027s shadow and lose solar power temporarily."
+    },
+    {
+        "id":  "general-29",
+        "topic":  "Streaming",
+        "text":  "RTMP is historically associated with:",
+        "options":  [
+                        "live media ingestion/streaming workflows",
+                        "antenna impedance measurement",
+                        "power factor correction",
+                        "satellite look angles"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Real-Time Messaging Protocol has been widely used for live contribution/ingest."
+    },
+    {
+        "id":  "general-30",
+        "topic":  "Streaming",
+        "text":  "SRT is designed to improve live contribution over:",
+        "options":  [
+                        "unreliable IP networks",
+                        "only optical fibre inside a studio",
+                        "only AC mains",
+                        "only local audio cables"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Secure Reliable Transport provides packet recovery and latency controls for live media over IP."
+    },
+    {
+        "id":  "general-31",
+        "topic":  "Streaming",
+        "text":  "Transcoding means:",
+        "options":  [
+                        "converting media from one codec/format/bitrate representation to another",
+                        "changing antenna polarization",
+                        "changing AC frequency",
+                        "measuring field strength"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Media transcoding creates versions suitable for different devices, bitrates or codecs."
+    },
+    {
+        "id":  "general-32",
+        "topic":  "Computer",
+        "text":  "Binary 1010 equals decimal:",
+        "options":  [
+                        "8",
+                        "10",
+                        "12",
+                        "14"
+                    ],
+        "correctIndex":  1,
+        "marks":  2,
+        "explanation":  "1010â‚‚ = 8+2 = 10."
+    },
+    {
+        "id":  "general-33",
+        "topic":  "Boolean",
+        "text":  "The Boolean expression A + 0 simplifies to:",
+        "options":  [
+                        "0",
+                        "A",
+                        "1",
+                        "A\u0027"
+                    ],
+        "correctIndex":  1,
+        "marks":  2,
+        "explanation":  "OR with zero leaves A unchanged."
+    },
+    {
+        "id":  "general-34",
+        "topic":  "Digital Logic",
+        "text":  "An AND gate output is 1 when:",
+        "options":  [
+                        "all inputs are 1",
+                        "any input is 1",
+                        "all inputs are 0",
+                        "exactly one input is 0"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "AND requires every input to be logic 1."
+    },
+    {
+        "id":  "general-35",
+        "topic":  "Digital Logic",
+        "text":  "A counter is a sequential circuit used to:",
+        "options":  [
+                        "progress through a sequence of states",
+                        "amplify RF power",
+                        "measure humidity",
+                        "encode audio only"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Counters advance through predefined binary/state sequences with clock pulses."
+    },
+    {
+        "id":  "general-36",
+        "topic":  "ADC",
+        "text":  "ADC resolution in bits determines the number of ideal quantization levels as:",
+        "options":  [
+                        "2^N",
+                        "N/2",
+                        "N^2",
+                        "10N"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "An ideal N-bit ADC has 2^N quantization codes."
+    },
+    {
+        "id":  "general-37",
+        "topic":  "Microprocessor",
+        "text":  "The ALU in a microprocessor performs:",
+        "options":  [
+                        "arithmetic and logical operations",
+                        "only memory storage",
+                        "only network routing",
+                        "only display illumination"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "The Arithmetic Logic Unit executes arithmetic and logical operations."
+    },
+    {
+        "id":  "general-38",
+        "topic":  "Networking",
+        "text":  "In TCP/IP, IP is primarily responsible for:",
+        "options":  [
+                        "logical addressing and packet routing",
+                        "audio compression",
+                        "physical antenna tuning",
+                        "power conversion"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "IP provides addressing and routing of packets between networks."
+    },
+    {
+        "id":  "general-39",
+        "topic":  "Networking",
+        "text":  "A WAN generally spans:",
+        "options":  [
+                        "large geographic areas and interconnected networks",
+                        "only one room",
+                        "one circuit board",
+                        "one microphone"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Wide Area Networks connect geographically separated locations."
+    },
+    {
+        "id":  "general-40",
+        "topic":  "Cloud",
+        "text":  "IaaS provides:",
+        "options":  [
+                        "virtualized compute, storage and networking resources",
+                        "only a word processor",
+                        "only a microphone",
+                        "only a radio antenna"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Infrastructure as a Service exposes virtual machines and related infrastructure resources."
+    },
+    {
+        "id":  "general-41",
+        "topic":  "Storage",
+        "text":  "RAID is primarily used to provide:",
+        "options":  [
+                        "storage performance, redundancy, or both depending on level",
+                        "RF modulation",
+                        "audio equalization",
+                        "satellite pointing"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "RAID combines disks in defined configurations for performance and/or fault tolerance."
+    },
+    {
+        "id":  "general-42",
+        "topic":  "Measurements",
+        "text":  "The unit dBu is referenced to:",
+        "options":  [
+                        "0.775 V RMS",
+                        "1 mW",
+                        "1 V/m",
+                        "20 ÂµPa"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "0 dBu corresponds to 0.775 V RMS irrespective of load."
+    },
+    {
+        "id":  "general-43",
+        "topic":  "Measurements",
+        "text":  "dBÂµV/m is commonly used for:",
+        "options":  [
+                        "electric field strength",
+                        "audio power",
+                        "battery capacity",
+                        "video resolution"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "dBÂµV/m expresses electric field strength relative to 1 ÂµV/m."
+    },
+    {
+        "id":  "general-44",
+        "topic":  "Radio",
+        "text":  "An AM transmitter\u0027s carrier frequency is normally:",
+        "options":  [
+                        "constant while its amplitude varies with the message",
+                        "varied directly with audio in AM",
+                        "zero during modulation",
+                        "equal to the audio frequency"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Conventional AM keeps carrier frequency constant and varies its amplitude."
+    },
+    {
+        "id":  "general-45",
+        "topic":  "Radio",
+        "text":  "The main function of a frequency synthesizer is to:",
+        "options":  [
+                        "generate accurate selectable frequencies",
+                        "reduce room noise",
+                        "measure illuminance",
+                        "store video"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Synthesizers generate stable, programmable frequencies from references."
+    },
+    {
+        "id":  "general-46",
+        "topic":  "TV",
+        "text":  "The purpose of a video scaler/converter is to:",
+        "options":  [
+                        "convert video spatial/timing formats such as resolution and frame characteristics",
+                        "change RF impedance only",
+                        "supply AC power",
+                        "measure tower verticality"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Video converters adapt signals between supported formats."
+    },
+    {
+        "id":  "general-47",
+        "topic":  "TV",
+        "text":  "A teleprompter assists:",
+        "options":  [
+                        "presenters by displaying script text near the camera",
+                        "RF amplification",
+                        "audio power distribution",
+                        "satellite tracking"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "The prompter allows presenters to read while maintaining camera eye-line."
+    },
+    {
+        "id":  "general-48",
+        "topic":  "TV",
+        "text":  "A frame synchronizer is especially useful when:",
+        "options":  [
+                        "multiple asynchronous video sources must be switched cleanly",
+                        "a battery is being charged",
+                        "an antenna is being grounded",
+                        "a microphone needs phantom power"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Frame synchronizers align source timing so switching and routing can be performed cleanly."
+    },
+    {
+        "id":  "general-49",
+        "topic":  "General",
+        "text":  "The primary purpose of shielding in electronic equipment is to:",
+        "options":  [
+                        "reduce unwanted electromagnetic coupling/interference",
+                        "increase battery voltage",
+                        "increase microphone sensitivity",
+                        "reduce storage capacity"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Shielding limits electric/magnetic field coupling between sensitive circuits and interference sources."
+    },
+    {
+        "id":  "general-50",
+        "topic":  "Station Management",
+        "text":  "The purpose of a security access-control system is to:",
+        "options":  [
+                        "restrict access to authorized persons and protect assets",
+                        "increase RF modulation depth",
+                        "reduce video bitrate",
+                        "measure humidity"
+                    ],
+        "correctIndex":  0,
+        "marks":  2,
+        "explanation":  "Access control limits unauthorized entry to protected facilities and resources."
+    }
+]

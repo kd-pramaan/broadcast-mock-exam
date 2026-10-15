@@ -32,7 +32,7 @@ export default function PayForm() {
       <label>Payment reference / UTR (optional, speeds up verification)</label>
       <input className="input" value={reference} onChange={(e) => setReference(e.target.value)} />
       <button className="btn" disabled={loading} type="submit">
-        {loading ? "Submitting..." : "I've paid"}
+        {loading ? "Submitting..." : "I've paid ₹200"}
       </button>
     </form>
   );
