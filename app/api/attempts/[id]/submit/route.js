@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { prisma } from "../../../../../lib/db.js";
 import { getCurrentUser } from "../../../../../lib/auth.js";
-import { scoreAttempt } from "../../../../../lib/scoring.js";
+import { getScoreBreakdown } from "../../../../../lib/scoring.js";
 
 export async function POST(request, { params }) {
   const user = await getCurrentUser();
@@ -22,12 +22,12 @@ export async function POST(request, { params }) {
   const { answers } = await request.json();
   // Server computes the score from the stored answer key - never trust a
   // client-supplied score.
-  const score = scoreAttempt(attempt.exam.questions, answers || {});
+  const breakdown = getScoreBreakdown(attempt.exam.questions, answers || {});
 
   await prisma.attempt.update({
     where: { id: attempt.id },
-    data: { answers, score, submittedAt: new Date() },
+    data: { answers, score: breakdown.score, submittedAt: new Date() },
   });
 
-  return NextResponse.json({ score, totalMarks: attempt.exam.totalMarks });
+  return NextResponse.json({ ...breakdown, totalMarks: attempt.exam.totalMarks });
 }

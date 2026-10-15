@@ -47,6 +47,14 @@ export async function POST(request) {
   const form = await request.formData();
   const title = (form.get("title") || "").toString().trim();
   const description = (form.get("description") || "").toString().trim();
+  const tags = [...new Map(
+    (form.get("tags") || "")
+      .toString()
+      .split(",")
+      .map((tag) => tag.trim())
+      .filter(Boolean)
+      .map((tag) => [tag.toLocaleLowerCase(), tag]),
+  ).values()];
   const durationMinutes = Number(form.get("durationMinutes"));
   const isPublished = form.get("isPublished") === "on";
   const isFree = form.get("isFree") === "on";
@@ -74,7 +82,7 @@ export async function POST(request) {
   const id = crypto.randomUUID();
 
   const exam = await prisma.exam.create({
-    data: { id, title, description: description || null, durationMinutes, totalMarks, questions, isPublished, isFree },
+    data: { id, title, description: description || null, tags, durationMinutes, totalMarks, questions, isPublished, isFree },
   });
 
   return NextResponse.json({ id: exam.id });

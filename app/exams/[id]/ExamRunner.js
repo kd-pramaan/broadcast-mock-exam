@@ -115,6 +115,17 @@ export default function ExamRunner({ examId, title, durationMinutes, totalMarks,
       <div className="card">
         <h2>Result</h2>
         <p>Score: <b>{result.score} / {result.totalMarks}</b></p>
+        <div className="exam-hero-grid">
+          <div><span className="muted">Correct</span><b>{result.correctCount}</b></div>
+          <div><span className="muted">Wrong</span><b>{result.wrongCount}</b></div>
+          <div><span className="muted">Skipped</span><b>{result.skippedCount}</b></div>
+          <div><span className="muted">Marks earned</span><b>+{result.marksEarned}</b></div>
+          <div><span className="muted">Penalty</span><b>&minus;{result.penalty}</b></div>
+        </div>
+        <p className="muted">
+          Correct answers earn the question's marks; wrong answers lose 25% of those marks;
+          skipped questions have no penalty.
+        </p>
         <button className="btn" onClick={() => setPhase("idle")}>Back</button>
       </div>
     );

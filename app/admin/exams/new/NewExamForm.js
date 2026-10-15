@@ -32,6 +32,13 @@ export default function NewExamForm() {
       <label>Description (optional)</label>
       <input className="input" name="description" />
 
+      <label>Tags (optional, comma-separated)</label>
+      <input
+        className="input"
+        name="tags"
+        placeholder="e.g. Broadcast Engineering, Paper 1, SEA-AE"
+      />
+
       <label>Duration (minutes)</label>
       <input className="input" name="durationMinutes" type="number" min="1" required />
 

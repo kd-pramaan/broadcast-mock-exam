@@ -1,6 +1,7 @@
 import { redirect, notFound } from "next/navigation";
 import { getCurrentUser } from "../../../../../../lib/auth.js";
 import { prisma } from "../../../../../../lib/db.js";
+import { getScoreBreakdown, NEGATIVE_MARK_RATIO } from "../../../../../../lib/scoring.js";
 import Nav from "../../../../../../components/Nav.js";
 
 export default async function ReviewPage({ params }) {
@@ -15,6 +16,7 @@ export default async function ReviewPage({ params }) {
   if (!exam) notFound();
 
   const answers = attempt.answers || {};
+  const breakdown = getScoreBreakdown(exam.questions, answers);
 
   return (
     <div>
@@ -23,6 +25,17 @@ export default async function ReviewPage({ params }) {
         <div className="card">
           <h1>{exam.title} - review (attempt {attempt.attemptNumber})</h1>
           <p className="muted">Score: <b>{attempt.score} / {exam.totalMarks}</b></p>
+          <div className="exam-hero-grid">
+            <div><span className="muted">Correct</span><b>{breakdown.correctCount}</b></div>
+            <div><span className="muted">Wrong</span><b>{breakdown.wrongCount}</b></div>
+            <div><span className="muted">Skipped</span><b>{breakdown.skippedCount}</b></div>
+            <div><span className="muted">Marks earned</span><b>+{breakdown.marksEarned}</b></div>
+            <div><span className="muted">Penalty</span><b>&minus;{breakdown.penalty}</b></div>
+          </div>
+          <p className="muted">
+            Correct answers earn the question's marks; wrong answers lose {NEGATIVE_MARK_RATIO * 100}% of those marks;
+            skipped questions have no penalty.
+          </p>
         </div>
 
         {exam.questions.map((q, i) => {

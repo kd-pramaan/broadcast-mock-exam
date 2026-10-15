@@ -32,6 +32,7 @@ model Exam {
   id              String    @id @default(cuid())
   title           String
   description     String?
+  tags            String[]  @default([])
   durationMinutes Int
   questions       Json      // [{ id, text, topic, options: string[], correctIndex, marks, explanation }] - stored as
                              // jsonb (Prisma's Postgres default for Json), capped only by Postgres's

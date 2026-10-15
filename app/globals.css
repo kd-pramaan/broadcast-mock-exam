@@ -43,6 +43,10 @@ tbody tr:hover{background:var(--bg)}
 .code-block{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:12px 14px;font-size:.8rem;overflow-x:auto}
 .pill{display:inline-block;font-size:.75rem;padding:2px 10px;border-radius:99px;background:var(--border);margin-bottom:12px}
 .exam-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.exam-section{margin-top:24px}
+.exam-section-title{font-size:1.1rem;margin:0 2px 12px}
+.exam-actions{display:flex;flex-direction:column;gap:8px;margin-top:4px}
+.exam-actions .btn{width:100%;text-align:center}
 
 /* exam runner */
 .exam-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:16px}

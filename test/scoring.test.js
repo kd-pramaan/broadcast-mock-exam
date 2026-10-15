@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { scoreAttempt } from "../lib/scoring.js";
+import { getScoreBreakdown, scoreAttempt } from "../lib/scoring.js";
 
 const questions = [
   { id: "q1", correctIndex: 1, marks: 2 },
@@ -20,6 +20,14 @@ test("zero for no answers submitted", () => {
 test("wrong answers lose a quarter of that question's marks, skipped ones don't", () => {
   // q1 correct (+2), q2 wrong (-0.75), q3 skipped (0)
   assert.equal(scoreAttempt(questions, { q1: 1, q2: 1 }), 1.25);
+  assert.deepEqual(getScoreBreakdown(questions, { q1: 1, q2: 1 }), {
+    correctCount: 1,
+    wrongCount: 1,
+    skippedCount: 1,
+    marksEarned: 2,
+    penalty: 0.75,
+    score: 1.25,
+  });
 });
 
 test("negative marking can take the score below zero", () => {
