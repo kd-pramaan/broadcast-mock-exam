@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { prisma } from "../../../../../lib/db.js";
 import { getCurrentUser } from "../../../../../lib/auth.js";
 import { getScoreBreakdown } from "../../../../../lib/scoring.js";
+import { getUserRank } from "../../../../../lib/rank.js";
 
 export async function POST(request, { params }) {
   const user = await getCurrentUser();
@@ -14,6 +15,9 @@ export async function POST(request, { params }) {
   });
   if (!attempt || attempt.userId !== user.id) {
     return NextResponse.json({ error: "Attempt not found." }, { status: 404 });
+  }
+  if (attempt.exam.type !== "short") {
+    return NextResponse.json({ error: "This exam is submitted paper by paper." }, { status: 400 });
   }
   if (attempt.submittedAt) {
     return NextResponse.json({ error: "Already submitted." }, { status: 400 });
@@ -29,5 +33,7 @@ export async function POST(request, { params }) {
     data: { answers, score: breakdown.score, submittedAt: new Date() },
   });
 
-  return NextResponse.json({ ...breakdown, totalMarks: attempt.exam.totalMarks });
+  const rank = await getUserRank(attempt.examId, user.id);
+
+  return NextResponse.json({ ...breakdown, totalMarks: attempt.exam.totalMarks, rank });
 }

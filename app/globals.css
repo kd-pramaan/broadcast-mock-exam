@@ -11,9 +11,10 @@ body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-
 .site-footer{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;padding:16px;font-size:.8rem;color:var(--muted);border-top:1px solid var(--border)}
 .site-footer a{color:var(--muted);text-decoration:none;font-weight:600}
 .site-footer a:hover{color:var(--accent)}
-.wrap{max-width:720px;margin:0 auto;padding:24px 16px}
-.exam-wrap{max-width:1440px;margin:0 auto;padding:24px 16px}
+.wrap{max-width:1280px;margin:0 auto;padding:24px 16px}
+.exam-wrap{max-width:1280px;margin:0 auto;padding:24px 16px}
 .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:20px;margin-bottom:16px;box-shadow:0 1px 2px rgba(20,25,40,.04)}
+.card.narrow{max-width:560px;margin-left:auto;margin-right:auto}
 .input{display:block;width:100%;padding:10px 12px;margin:6px 0 14px;border:1px solid var(--border);border-radius:6px;font-size:1rem;font-family:inherit}
 .input:disabled{background:var(--bg);color:var(--muted)}
 label{font-weight:600;font-size:.9rem}
@@ -83,3 +84,39 @@ tbody tr:hover{background:var(--bg)}
 .exam-qbtn.marked{background:#8b5cf6;color:#fff;border-color:#8b5cf6}
 .exam-qbtn.current{outline:2px solid var(--accent);outline-offset:2px}
 @media (max-width:600px){.exam-palette{grid-template-columns:repeat(8,minmax(0,1fr));max-height:55vh}}
+
+/* paper choice (full exam stream selection) */
+.paper-choice-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:12px 0}
+.paper-choice{display:block;border:2px solid var(--border);border-radius:10px;padding:16px;cursor:pointer;font-weight:400}
+.paper-choice:hover{border-color:var(--accent)}
+.paper-choice.selected{border-color:var(--accent);background:#eef1fd}
+.paper-choice input{width:auto;margin-right:8px}
+.paper-choice b{display:block;font-weight:700}
+.paper-choice .muted{display:block}
+
+/* paper sequence list */
+.paper-list{margin:8px 0;padding-left:0;list-style:none}
+.paper-list li{padding:8px 0;border-bottom:1px solid var(--border)}
+.paper-list li:last-child{border-bottom:none}
+
+/* scorecard / result */
+.result-card{max-width:720px}
+.scorecard-total{font-size:1.8rem;font-weight:800;margin:6px 0 2px}
+
+/* review: neutral "your answer" highlight (Basic plan, no correctness revealed) */
+.exam-option.picked{border-color:var(--accent);background:#eef1fd;justify-content:space-between}
+.exam-option.picked span{display:flex;gap:6px}
+
+/* explanation box (paid plan only) */
+.explanation{background:var(--bg);border-left:4px solid var(--accent);padding:10px 12px;margin-top:12px;border-radius:0 6px 6px 0;font-size:.9rem}
+
+/* upgrade attention-grabber (Basic plan upsell) */
+.upgrade-banner{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;background:linear-gradient(135deg,#1b2140 0%,#3457d5 100%);color:#fff;border-radius:12px;padding:20px 22px;margin:14px 0 0}
+.upgrade-banner h2{margin:0 0 6px;font-size:1.15rem;color:#fff}
+.upgrade-banner p{margin:0 0 10px;color:rgba(255,255,255,.85);font-size:.95rem;max-width:62ch}
+.upgrade-banner ul{margin:0;padding-left:18px;color:rgba(255,255,255,.92);font-size:.9rem}
+.upgrade-banner li{margin:4px 0}
+.upgrade-banner-cta{display:flex;flex-direction:column;align-items:stretch;gap:8px;text-align:center;min-width:180px}
+.upgrade-price{font-weight:800;font-size:1rem}
+.upgrade-btn{background:#ffc94d;color:#1b2140;font-weight:800;padding:12px 22px;border-radius:8px;text-align:center;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.upgrade-btn:hover{background:#ffd166}

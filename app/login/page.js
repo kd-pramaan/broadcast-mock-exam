@@ -27,7 +27,7 @@ export default function LoginPage() {
 
   return (
     <div className="wrap">
-      <div className="card">
+      <div className="card narrow">
         <h1>Log in</h1>
         {error && <p className="error">{error}</p>}
         <form onSubmit={onSubmit}>

@@ -66,9 +66,14 @@ export default async function ExamsPage() {
                   <div key={exam.id} className="card">
                     <h2>
                       {exam.title}{" "}
+                      {exam.type === "full" && <span className="status-tag marked">Full exam</span>}
                       {exam.isFree ? <span className="status-tag answered">Free</span> : !unlocked && <span className="status-tag unanswered">Locked</span>}
                     </h2>
-                    <p className="muted">{exam.durationMinutes} minutes - {exam.totalMarks} marks</p>
+                    <p className="muted">
+                      {exam.type === "full"
+                        ? `${(exam.papers || []).length} papers - ${exam.totalMarks} marks`
+                        : `${exam.durationMinutes} minutes - ${exam.totalMarks} marks`}
+                    </p>
                     <div className="exam-actions">
                       {canAttempt ? (
                         <Link className="btn" href={`/exams/${exam.id}`}>Attempt</Link>

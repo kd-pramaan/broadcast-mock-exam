@@ -32,7 +32,7 @@ export default function RegisterPage() {
 
   return (
     <div className="wrap">
-      <div className="card">
+      <div className="card narrow">
         <h1>Register</h1>
         <p className="muted">
           Create your account and start right away - you'll get free access to a sample paper on the Basic plan.

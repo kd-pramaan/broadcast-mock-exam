@@ -33,10 +33,19 @@ model Exam {
   title           String
   description     String?
   tags            String[]  @default([])
+  // type: "short" (single subject paper, questions in `questions`) or "full"
+  // (multi-paper exam, paper definitions in `papers`).
+  type            String    @default("short")
+  // short exam: whole-exam time limit. full exam: total across the active
+  // papers (informational; each paper enforces its own timer).
   durationMinutes Int
-  questions       Json      // [{ id, text, topic, options: string[], correctIndex, marks, explanation }] - stored as
-                             // jsonb (Prisma's Postgres default for Json), capped only by Postgres's
-                             // ~1GB per-field limit, so 50+ long questions fit with room to spare
+  // short exam questions: [{ id, text, topic, options: string[], correctIndex, marks, explanation }].
+  // full exam: empty array, questions live inside each entry of `papers`.
+  questions       Json      @default("[]")
+  // full exam papers: [{ key, title, durationMinutes, questions, group?, selector? }].
+  // Papers sharing a `group` (e.g. "paper2") are alternatives; the user picks one
+  // via `selector` ("radio" / "tv") before the attempt starts.
+  papers          Json?
   totalMarks      Int
   isPublished     Boolean   @default(true)
   isFree          Boolean   @default(false) // included in the Basic (free) plan
@@ -60,6 +69,11 @@ model Attempt {
   examId        String
   attemptNumber Int
   answers       Json?     // { [questionId]: selectedOptionIndex }
+  // full exams only: which paper-2 stream the user picked ("radio" | "tv").
+  paperChoice   String?
+  // full exams only: per-paper score breakdowns, e.g.
+  // [{ key, title, totalMarks, correctCount, wrongCount, skippedCount, marksEarned, penalty, score }].
+  paperScores   Json?
   score         Float?    // can go negative / fractional: 1/4 negative marking on wrong answers
   startedAt     DateTime  @default(now())
   submittedAt   DateTime?

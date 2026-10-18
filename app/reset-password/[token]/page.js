@@ -8,7 +8,7 @@ export default async function ResetPasswordPage({ params }) {
   if (!user) {
     return (
       <div className="wrap">
-        <div className="card">
+        <div className="card narrow">
           <h1>Link not valid</h1>
           <p>This reset link is invalid or has already been used.</p>
         </div>
@@ -18,7 +18,7 @@ export default async function ResetPasswordPage({ params }) {
 
   return (
     <div className="wrap">
-      <div className="card">
+      <div className="card narrow">
         <h1>Reset your password</h1>
         <p className="muted">Account: <b>{user.email}</b></p>
         <ResetPasswordForm token={token} />

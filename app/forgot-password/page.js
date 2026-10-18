@@ -20,7 +20,7 @@ export default function ForgotPasswordPage() {
 
   return (
     <div className="wrap">
-      <div className="card">
+      <div className="card narrow">
         <h1>Forgot password</h1>
         {sent ? (
           <p>If that email has an account, a reset link is on its way.</p>

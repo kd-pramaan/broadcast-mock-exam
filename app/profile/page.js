@@ -15,7 +15,7 @@ export default async function ProfilePage() {
           <h1>Profile</h1>
           <p>{user.name} - {user.email}</p>
         </div>
-        <div className="card">
+        <div className="card narrow">
           <h2>Change password</h2>
           <ChangePasswordForm />
         </div>

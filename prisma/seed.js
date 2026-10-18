@@ -1,7 +1,64 @@
 import { PrismaClient } from "@prisma/client";
 import bcrypt from "bcryptjs";
+import { readFileSync } from "fs";
+import path from "path";
 
 const prisma = new PrismaClient();
+
+function loadQuestions(file) {
+  const full = path.join(process.cwd(), "exam-data", file);
+  return JSON.parse(readFileSync(full, "utf8"));
+}
+
+async function createShortExam({ title, description, tags, durationMinutes, isFree, file }) {
+  const exists = await prisma.exam.findFirst({ where: { title } });
+  if (exists) return exists;
+  const questions = loadQuestions(file);
+  const totalMarks = questions.reduce((sum, q) => sum + q.marks, 0);
+  return prisma.exam.create({
+    data: { title, description, tags, type: "short", durationMinutes, totalMarks, questions, isPublished: true, isFree },
+  });
+}
+
+async function createFullExam() {
+  const title = "SEA to AE 2026 - Full Mock (3 Papers)";
+  const exists = await prisma.exam.findFirst({ where: { title } });
+  if (exists) return exists;
+
+  const broadcast = loadQuestions("Paper_1_Broadcast_Engineering.json");
+  const radio = loadQuestions("Paper_2A_Radio_Engineering.json");
+  const tv = loadQuestions("Paper_2B_Television_Engineering.json");
+  const general = loadQuestions("Paper_3_General_Subjects.json");
+
+  const papers = [
+    { key: "paper1", title: "Paper 1: Broadcast Engineering", durationMinutes: 60, questions: broadcast },
+    { key: "paper2a", group: "paper2", selector: "radio", title: "Paper 2 (A): Radio Engineering", durationMinutes: 60, questions: radio },
+    { key: "paper2b", group: "paper2", selector: "tv", title: "Paper 2 (B): Television Engineering", durationMinutes: 60, questions: tv },
+    { key: "paper3", title: "Paper 3: General Subjects", durationMinutes: 60, questions: general },
+  ];
+
+  // paper1 + one paper2 variant + paper3
+  const totalMarks =
+    broadcast.reduce((s, q) => s + q.marks, 0) +
+    radio.reduce((s, q) => s + q.marks, 0) +
+    general.reduce((s, q) => s + q.marks, 0);
+  const durationMinutes = 60 * 3;
+
+  return prisma.exam.create({
+    data: {
+      title,
+      description: "Three-paper CBT mock: Broadcast Engineering, your choice of Radio or Television Engineering, then General Subjects.",
+      tags: ["Full-length CBT mocks", "SEA-AE"],
+      type: "full",
+      durationMinutes,
+      questions: [],
+      papers,
+      totalMarks,
+      isPublished: true,
+      isFree: false,
+    },
+  });
+}
 
 async function main() {
   const adminEmail = process.env.ADMIN_EMAIL || "admin@example.com";
@@ -22,12 +79,13 @@ async function main() {
     },
   });
 
-  const exists = await prisma.exam.findFirst({ where: { title: "Broadcast Engineering Basics" } });
-  if (!exists) {
+  const sampleExists = await prisma.exam.findFirst({ where: { title: "Broadcast Engineering Basics" } });
+  if (!sampleExists) {
     await prisma.exam.create({
       data: {
         title: "Broadcast Engineering Basics",
         description: "Sample mock exam covering transmission and signal fundamentals. Replace with real questions.",
+        type: "short",
         durationMinutes: 20,
         totalMarks: 6,
         isPublished: true,
@@ -41,8 +99,43 @@ async function main() {
     });
   }
 
+  await createShortExam({
+    title: "Broadcast Engineering",
+    description: "Single-subject practice paper covering broadcast engineering topics.",
+    tags: ["Broadcast Engineering", "Paper 1"],
+    durationMinutes: 60,
+    isFree: false,
+    file: "Paper_1_Broadcast_Engineering.json",
+  });
+  await createShortExam({
+    title: "Radio Engineering",
+    description: "Single-subject practice paper covering radio engineering topics.",
+    tags: ["Radio Engineering", "Paper 2A"],
+    durationMinutes: 60,
+    isFree: false,
+    file: "Paper_2A_Radio_Engineering.json",
+  });
+  await createShortExam({
+    title: "Television Engineering",
+    description: "Single-subject practice paper covering television engineering topics.",
+    tags: ["Television Engineering", "Paper 2B"],
+    durationMinutes: 60,
+    isFree: false,
+    file: "Paper_2B_Television_Engineering.json",
+  });
+  await createShortExam({
+    title: "General Subjects",
+    description: "Single-subject practice paper covering general subjects.",
+    tags: ["General Subjects", "Paper 3"],
+    durationMinutes: 60,
+    isFree: false,
+    file: "Paper_3_General_Subjects.json",
+  });
+
+  await createFullExam();
+
   console.log(`Seeded admin account: ${adminEmail} / ${adminPassword}`);
-  console.log("Seeded 1 sample exam: Broadcast Engineering Basics");
+  console.log("Seeded sample + 4 subject exams + 1 full 3-paper exam");
 }
 
 main()

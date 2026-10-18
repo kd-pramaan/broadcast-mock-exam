@@ -13,7 +13,7 @@ export default async function PayPage() {
       <div>
         <Nav isAdmin={user.isAdmin} crumbs={[{ label: "Upgrade" }]} />
         <div className="wrap">
-          <div className="card">
+          <div className="card narrow">
             <h1>Payment submitted</h1>
             <p>
               Your payment is awaiting verification by an admin. You'll get access to
@@ -29,7 +29,7 @@ export default async function PayPage() {
     <div>
       <Nav isAdmin={user.isAdmin} crumbs={[{ label: "Upgrade" }]} />
       <div className="wrap">
-        <div className="card">
+        <div className="card narrow">
           <h1>Unlock every mock exam</h1>
           <p className="muted">
             Build confidence with more practice and prepare at your own pace. Upgrade

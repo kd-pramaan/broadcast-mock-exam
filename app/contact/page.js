@@ -9,7 +9,7 @@ export default async function ContactPage() {
     <div>
       {user && <Nav isAdmin={user.isAdmin} crumbs={[{ label: "Contact us" }]} />}
       <div className="wrap">
-        <div className="card">
+        <div className="card narrow">
           <h1>Contact us</h1>
           <p className="muted">Have a question or ran into a problem? Send us a message below.</p>
           <ContactForm defaultEmail={user ? user.email : ""} loggedIn={!!user} />

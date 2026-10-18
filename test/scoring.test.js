@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { getScoreBreakdown, scoreAttempt } from "../lib/scoring.js";
+import { getScoreBreakdown, scoreAttempt, scoreFullExam } from "../lib/scoring.js";
 
 const questions = [
   { id: "q1", correctIndex: 1, marks: 2 },
@@ -37,4 +37,21 @@ test("negative marking can take the score below zero", () => {
 
 test("ignores unknown question ids in the answer payload", () => {
   assert.equal(scoreAttempt(questions, { q1: 1, bogus: 0 }), 2);
+});
+
+test("scores a full exam paper by paper", () => {
+  const papers = [
+    { key: "p1", title: "Paper 1", questions: [
+      { id: "a1", correctIndex: 0, marks: 2 },
+      { id: "a2", correctIndex: 1, marks: 2 },
+    ] },
+    { key: "p2", title: "Paper 2", questions: [
+      { id: "b1", correctIndex: 0, marks: 4 },
+    ] },
+  ];
+  const result = scoreFullExam(papers, { a1: 0, a2: 0, b1: 1 });
+  assert.equal(result.score, 2 - 0.5 - 1); // a1 +2, a2 -0.5, b1 -1
+  assert.equal(result.totalMarks, 8);
+  assert.equal(result.paperResults.length, 2);
+  assert.equal(result.paperResults[0].correctCount, 1);
 });
