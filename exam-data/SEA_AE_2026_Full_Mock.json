@@ -1,0 +1,2836 @@
+{
+  "papers": [
+    {
+      "key": "paper1",
+      "title": "Paper 1: Broadcast Engineering",
+      "durationMinutes": 60,
+      "questions": [
+        {
+          "id": "broadcast-1",
+          "topic": "Semiconductors",
+          "text": "Which device is primarily used as a voltage-controlled current device?",
+          "options": [
+            "MOSFET",
+            "BJT",
+            "SCR",
+            "DIAC"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A MOSFET is controlled by gate voltage and its drain current is controlled by the electric field."
+        },
+        {
+          "id": "broadcast-2",
+          "topic": "Semiconductors",
+          "text": "A circulator is generally a:",
+          "options": [
+            "three-port non-reciprocal microwave device",
+            "two-terminal filter",
+            "four-port reciprocal attenuator",
+            "low-frequency oscillator"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A circulator routes microwave power from one port to the next in a specified direction."
+        },
+        {
+          "id": "broadcast-3",
+          "topic": "Waveguides",
+          "text": "The dominant mode in a rectangular waveguide is:",
+          "options": [
+            "TE10",
+            "TE01",
+            "TM10",
+            "TM11"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "TE10 has the lowest cutoff frequency in a conventional rectangular waveguide."
+        },
+        {
+          "id": "broadcast-4",
+          "topic": "Power Supply",
+          "text": "The ripple frequency of a full-wave rectifier supplied from 50 Hz mains is:",
+          "options": [
+            "50 Hz",
+            "100 Hz",
+            "150 Hz",
+            "25 Hz"
+          ],
+          "correctIndex": 1,
+          "marks": 2,
+          "explanation": "A full-wave rectifier produces two ripple cycles per mains cycle, hence 100 Hz."
+        },
+        {
+          "id": "broadcast-5",
+          "topic": "Power Supply",
+          "text": "In an SMPS, high-frequency switching mainly permits:",
+          "options": [
+            "larger transformers",
+            "smaller magnetics and higher power density",
+            "zero EMI",
+            "operation without feedback"
+          ],
+          "correctIndex": 1,
+          "marks": 2,
+          "explanation": "Higher switching frequency reduces the size of magnetic components, although EMI must be controlled."
+        },
+        {
+          "id": "broadcast-6",
+          "topic": "Amplifiers",
+          "text": "For a common-emitter amplifier, the output voltage is normally:",
+          "options": [
+            "in phase with input",
+            "180° out of phase with input",
+            "90° ahead",
+            "always zero"
+          ],
+          "correctIndex": 1,
+          "marks": 2,
+          "explanation": "The CE configuration gives voltage gain with phase inversion."
+        },
+        {
+          "id": "broadcast-7",
+          "topic": "Amplifiers",
+          "text": "The main purpose of negative feedback in an amplifier is to:",
+          "options": [
+            "increase distortion",
+            "improve stability and reduce distortion",
+            "eliminate bandwidth",
+            "make gain infinite"
+          ],
+          "correctIndex": 1,
+          "marks": 2,
+          "explanation": "Negative feedback trades some gain for improved stability, linearity and bandwidth."
+        },
+        {
+          "id": "broadcast-8",
+          "topic": "Amplifiers",
+          "text": "A push-pull power amplifier is mainly used to:",
+          "options": [
+            "provide high output power with reduced even-harmonic distortion",
+            "generate DC only",
+            "replace a rectifier",
+            "measure frequency"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Complementary or phase-split push-pull operation can cancel many even-order distortion components."
+        },
+        {
+          "id": "broadcast-9",
+          "topic": "Oscillators",
+          "text": "The Barkhausen criterion for sustained sinusoidal oscillation requires loop gain magnitude of approximately:",
+          "options": [
+            "0",
+            "1",
+            "10",
+            "infinite"
+          ],
+          "correctIndex": 1,
+          "marks": 2,
+          "explanation": "At the oscillation frequency, |Aβ|≈1 and total loop phase is 0°/360°."
+        },
+        {
+          "id": "broadcast-10",
+          "topic": "Oscillators",
+          "text": "A crystal oscillator is preferred when the application requires:",
+          "options": [
+            "very poor frequency stability",
+            "high frequency stability",
+            "only low DC voltage",
+            "high rectifier ripple"
+          ],
+          "correctIndex": 1,
+          "marks": 2,
+          "explanation": "Quartz crystals have a high Q and therefore provide excellent frequency stability."
+        },
+        {
+          "id": "broadcast-11",
+          "topic": "Oscillators",
+          "text": "A Schmitt trigger is characterized by:",
+          "options": [
+            "hysteresis",
+            "zero threshold",
+            "only analog integration",
+            "no switching"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A Schmitt trigger has different upper and lower switching thresholds, giving hysteresis."
+        },
+        {
+          "id": "broadcast-12",
+          "topic": "Modulation",
+          "text": "In conventional AM, the carrier power is concentrated:",
+          "options": [
+            "only in the sidebands",
+            "mainly in the carrier",
+            "only in the lower sideband",
+            "equally in noise"
+          ],
+          "correctIndex": 1,
+          "marks": 2,
+          "explanation": "For standard AM with carrier, the carrier component contains most of the transmitted power at ordinary modulation indices."
+        },
+        {
+          "id": "broadcast-13",
+          "topic": "Modulation",
+          "text": "The bandwidth of an FM signal by Carson's rule is approximately:",
+          "options": [
+            "2(Δf+fm)",
+            "Δf/fm",
+            "Δf−fm",
+            "fm/2"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Carson's rule gives BW≈2(peak frequency deviation + highest modulating frequency)."
+        },
+        {
+          "id": "broadcast-14",
+          "topic": "Digital Modulation",
+          "text": "QPSK carries how many bits per symbol?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correctIndex": 1,
+          "marks": 2,
+          "explanation": "QPSK has four phase states, so log2(4)=2 bits/symbol."
+        },
+        {
+          "id": "broadcast-15",
+          "topic": "Digital Modulation",
+          "text": "QAM conveys information by varying:",
+          "options": [
+            "amplitude only",
+            "phase only",
+            "amplitude and phase",
+            "frequency only"
+          ],
+          "correctIndex": 2,
+          "marks": 2,
+          "explanation": "QAM uses both amplitude and phase states to represent symbols."
+        },
+        {
+          "id": "broadcast-16",
+          "topic": "COFDM",
+          "text": "The principal benefit of a cyclic prefix in OFDM/COFDM is to:",
+          "options": [
+            "increase audio bandwidth",
+            "reduce inter-symbol interference from multipath",
+            "remove all noise",
+            "increase carrier frequency"
+          ],
+          "correctIndex": 1,
+          "marks": 2,
+          "explanation": "A cyclic prefix converts much of the multipath-induced delay spread into a guard interval."
+        },
+        {
+          "id": "broadcast-17",
+          "topic": "PLL",
+          "text": "A phase-locked loop can be used for:",
+          "options": [
+            "frequency synthesis and tracking",
+            "only DC amplification",
+            "only audio recording",
+            "mechanical switching"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "PLL systems are widely used for synchronization, carrier recovery and frequency synthesis."
+        },
+        {
+          "id": "broadcast-18",
+          "topic": "ADC/DAC",
+          "text": "An anti-aliasing filter is normally placed:",
+          "options": [
+            "after a DAC only",
+            "before an ADC",
+            "inside a loudspeaker",
+            "after a power amplifier"
+          ],
+          "correctIndex": 1,
+          "marks": 2,
+          "explanation": "It limits input bandwidth before sampling to prevent spectral aliasing."
+        },
+        {
+          "id": "broadcast-19",
+          "topic": "Sampling",
+          "text": "For a baseband signal limited to 15 kHz, the minimum ideal sampling rate is greater than:",
+          "options": [
+            "7.5 kHz",
+            "15 kHz",
+            "30 kHz",
+            "60 Hz"
+          ],
+          "correctIndex": 2,
+          "marks": 2,
+          "explanation": "Nyquist sampling requires a rate greater than twice the highest frequency: >30 kHz."
+        },
+        {
+          "id": "broadcast-20",
+          "topic": "Video",
+          "text": "SD-SDI is primarily an interface for:",
+          "options": [
+            "serial digital video",
+            "RF power",
+            "AC mains",
+            "audio microphone bias"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "SD-SDI carries standard-definition digital video and associated data in a serial digital stream."
+        },
+        {
+          "id": "broadcast-21",
+          "topic": "Video",
+          "text": "HD-SDI differs from SD-SDI mainly in its support for:",
+          "options": [
+            "higher-rate high-definition video",
+            "only analog audio",
+            "lower sampling rates",
+            "DC power distribution"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "HD-SDI provides a higher serial data rate suitable for HD video formats."
+        },
+        {
+          "id": "broadcast-22",
+          "topic": "Compression",
+          "text": "An IRD in a digital broadcast chain commonly performs:",
+          "options": [
+            "receive, demodulate/decode and output programme streams",
+            "only RF amplification",
+            "only antenna tuning",
+            "only power conversion"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Integrated Receiver Decoders receive the broadcast carrier and recover/decode the programme stream."
+        },
+        {
+          "id": "broadcast-23",
+          "topic": "Error Control",
+          "text": "FEC improves a digital link by:",
+          "options": [
+            "adding controlled redundancy for error correction",
+            "removing all bandwidth",
+            "eliminating modulation",
+            "raising antenna height"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Forward error correction adds redundancy so the receiver can correct some errors without retransmission."
+        },
+        {
+          "id": "broadcast-24",
+          "topic": "Measurements",
+          "text": "BER is the ratio of:",
+          "options": [
+            "bit errors to received/transmitted bits considered",
+            "power to voltage",
+            "carrier to noise only",
+            "audio to video"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Bit Error Rate quantifies the fraction of bits received incorrectly."
+        },
+        {
+          "id": "broadcast-25",
+          "topic": "Optical Fibre",
+          "text": "The main cause of attenuation in optical fibre includes:",
+          "options": [
+            "absorption and scattering",
+            "only gravity",
+            "only impedance mismatch at RF",
+            "thermal noise in copper"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Optical loss arises mainly from absorption, Rayleigh scattering and related mechanisms."
+        },
+        {
+          "id": "broadcast-26",
+          "topic": "Optical Fibre",
+          "text": "Single-mode fibre is preferred for long-haul links because it has:",
+          "options": [
+            "less modal dispersion",
+            "more modal dispersion",
+            "no optical source",
+            "only copper conductors"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Single-mode propagation largely removes intermodal dispersion."
+        },
+        {
+          "id": "broadcast-27",
+          "topic": "Optical Devices",
+          "text": "A photodiode is used in an optical receiver to:",
+          "options": [
+            "convert light into electrical current",
+            "convert DC to RF",
+            "generate microwave power",
+            "store audio"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Photodiodes convert incident optical power into a proportional electrical signal."
+        },
+        {
+          "id": "broadcast-28",
+          "topic": "Digital Logic",
+          "text": "A multiplexer performs:",
+          "options": [
+            "many-to-one data selection",
+            "one-to-many power conversion",
+            "analog amplification only",
+            "frequency multiplication"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A multiplexer selects one of multiple inputs and routes it to a single output."
+        },
+        {
+          "id": "broadcast-29",
+          "topic": "Digital Logic",
+          "text": "A demultiplexer performs:",
+          "options": [
+            "one-to-many routing",
+            "many-to-one routing",
+            "only counting",
+            "only inversion"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A demultiplexer routes one input to one selected output."
+        },
+        {
+          "id": "broadcast-30",
+          "topic": "Digital Logic",
+          "text": "A flip-flop is fundamentally a:",
+          "options": [
+            "bistable storage element",
+            "rectifier",
+            "power transistor",
+            "filter"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A flip-flop has two stable states and stores one bit."
+        },
+        {
+          "id": "broadcast-31",
+          "topic": "Memory",
+          "text": "RAM is generally:",
+          "options": [
+            "volatile read/write memory",
+            "permanent optical storage",
+            "only read-only memory",
+            "an RF filter"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Conventional RAM loses stored information when power is removed."
+        },
+        {
+          "id": "broadcast-32",
+          "topic": "Computer",
+          "text": "TCP/IP is best described as:",
+          "options": [
+            "a suite of networking protocols",
+            "a video codec",
+            "a storage medium",
+            "an audio amplifier"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "TCP/IP is the protocol suite used for internetwork communication."
+        },
+        {
+          "id": "broadcast-33",
+          "topic": "Networking",
+          "text": "A LAN normally covers:",
+          "options": [
+            "a limited local area",
+            "the entire globe",
+            "only satellites",
+            "only a single CPU register"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A LAN connects devices within a relatively limited geographic area."
+        },
+        {
+          "id": "broadcast-34",
+          "topic": "Storage",
+          "text": "NAS provides storage primarily over:",
+          "options": [
+            "a network",
+            "a loudspeaker line",
+            "an RF feeder",
+            "a crystal oscillator"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Network Attached Storage exposes file-based storage over a network."
+        },
+        {
+          "id": "broadcast-35",
+          "topic": "Storage",
+          "text": "SAN is primarily associated with:",
+          "options": [
+            "block-level storage networking",
+            "FM modulation",
+            "microphone pickup",
+            "antenna polarization"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A Storage Area Network provides high-speed block-level storage access to servers."
+        },
+        {
+          "id": "broadcast-36",
+          "topic": "Virtualization",
+          "text": "A hypervisor is software/firmware that:",
+          "options": [
+            "creates and manages virtual machines",
+            "compresses audio only",
+            "measures RF power",
+            "controls a microphone diaphragm"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "The hypervisor abstracts hardware resources for virtual machines."
+        },
+        {
+          "id": "broadcast-37",
+          "topic": "Measurements",
+          "text": "An oscilloscope is primarily used to observe:",
+          "options": [
+            "waveform versus time",
+            "only optical attenuation",
+            "only storage capacity",
+            "only antenna height"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "An oscilloscope displays electrical signal amplitude as a function of time."
+        },
+        {
+          "id": "broadcast-38",
+          "topic": "Measurements",
+          "text": "A spectrum analyser displays signal level as a function of:",
+          "options": [
+            "frequency",
+            "time only",
+            "temperature",
+            "distance"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "It shows spectral components and their amplitudes versus frequency."
+        },
+        {
+          "id": "broadcast-39",
+          "topic": "Log Units",
+          "text": "0 dBm corresponds to:",
+          "options": [
+            "1 mW",
+            "1 W",
+            "10 W",
+            "1 μW"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "dBm is referenced to 1 mW, so 0 dBm=1 mW."
+        },
+        {
+          "id": "broadcast-40",
+          "topic": "Propagation",
+          "text": "Ground-wave propagation is especially useful for:",
+          "options": [
+            "lower-frequency surface coverage near the ground",
+            "optical fibre only",
+            "satellite-only links",
+            "UHF studio wiring"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Ground waves follow the Earth's surface and are important at lower frequencies."
+        },
+        {
+          "id": "broadcast-41",
+          "topic": "Propagation",
+          "text": "Sky-wave propagation primarily involves:",
+          "options": [
+            "ionospheric refraction/reflection effects",
+            "optical fibre dispersion",
+            "waveguide cutoff only",
+            "audio compression"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "HF signals can be returned toward Earth through ionospheric propagation."
+        },
+        {
+          "id": "broadcast-42",
+          "topic": "Propagation",
+          "text": "A Fresnel zone is important in:",
+          "options": [
+            "line-of-sight radio links",
+            "DC battery charging only",
+            "audio mixing",
+            "digital storage"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Obstructions in the Fresnel zone can cause diffraction loss and impair LOS links."
+        },
+        {
+          "id": "broadcast-43",
+          "topic": "Antennas",
+          "text": "Antenna gain includes the effect of:",
+          "options": [
+            "directivity and efficiency",
+            "only cable length",
+            "only transmitter voltage",
+            "only microphone impedance"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Gain combines directional concentration with antenna efficiency."
+        },
+        {
+          "id": "broadcast-44",
+          "topic": "Antennas",
+          "text": "Polarization describes the:",
+          "options": [
+            "orientation of the electric-field vector",
+            "RF frequency only",
+            "cable resistance",
+            "audio bit depth"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Polarization is defined by the time-varying orientation of the electric field."
+        },
+        {
+          "id": "broadcast-45",
+          "topic": "Satellite",
+          "text": "A geostationary satellite has an orbital period approximately equal to:",
+          "options": [
+            "one sidereal day",
+            "one hour",
+            "one week",
+            "one minute"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A geostationary satellite orbits in the equatorial plane with a period matching Earth's rotation."
+        },
+        {
+          "id": "broadcast-46",
+          "topic": "Satellite",
+          "text": "A satellite transponder primarily:",
+          "options": [
+            "receives, frequency-converts/amplifies and retransmits signals",
+            "only records video locally",
+            "only supplies mains power",
+            "only measures rainfall"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A transponder is the RF repeater chain between uplink and downlink."
+        },
+        {
+          "id": "broadcast-47",
+          "topic": "Streaming",
+          "text": "HLS is commonly used for:",
+          "options": [
+            "HTTP-based adaptive media streaming",
+            "RF antenna tuning",
+            "power-factor correction",
+            "waveguide measurement"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "HTTP Live Streaming segments media for delivery over HTTP and supports adaptive bitrate."
+        },
+        {
+          "id": "broadcast-48",
+          "topic": "Streaming",
+          "text": "A CDN improves media delivery mainly by:",
+          "options": [
+            "placing content closer to end users",
+            "increasing transmitter carrier frequency",
+            "removing all encoding",
+            "replacing antennas"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A Content Delivery Network distributes cached content across edge locations."
+        },
+        {
+          "id": "broadcast-49",
+          "topic": "Media Streaming",
+          "text": "RTMP, HLS and SRT are examples of technologies used in:",
+          "options": [
+            "media streaming/contribution workflows",
+            "power-factor correction",
+            "antenna grounding",
+            "audio loudspeaker design"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "These protocols/technologies are used in live media delivery or contribution workflows."
+        },
+        {
+          "id": "broadcast-50",
+          "topic": "Computer",
+          "text": "Virtualization allows a physical server to:",
+          "options": [
+            "run multiple isolated virtual machines sharing hardware resources",
+            "operate without an operating system",
+            "eliminate all network traffic",
+            "replace every storage device"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Virtualization abstracts physical resources so multiple virtual machines can share them."
+        }
+      ]
+    },
+    {
+      "key": "paper2a",
+      "title": "Paper 2 (A): Radio Engineering",
+      "durationMinutes": 60,
+      "questions": [
+        {
+          "id": "radio-1",
+          "topic": "STPL",
+          "text": "A studio-transmitter programme link carries:",
+          "options": [
+            "programme audio/data from studio to transmitter site",
+            "only mains power",
+            "only antenna DC",
+            "only cooling water"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "STPL provides the programme feed between studio and transmitter."
+        },
+        {
+          "id": "radio-2",
+          "topic": "Microwave Link",
+          "text": "A microwave link normally requires:",
+          "options": [
+            "line-of-sight path and suitable antennas",
+            "an underwater cable",
+            "only ground-wave propagation",
+            "no frequency planning"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Point-to-point microwave links generally depend on LOS propagation and adequate Fresnel clearance."
+        },
+        {
+          "id": "radio-3",
+          "topic": "Audio Processing",
+          "text": "An audio limiter is used mainly to:",
+          "options": [
+            "prevent excessive peaks/overload",
+            "increase RF carrier frequency",
+            "change antenna polarization",
+            "generate DC"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Limiters constrain peak levels and help protect downstream equipment from overload."
+        },
+        {
+          "id": "radio-4",
+          "topic": "AM Transmitter",
+          "text": "In an AM transmitter, the modulator changes the:",
+          "options": [
+            "amplitude of the RF carrier according to the audio",
+            "antenna height",
+            "mains frequency only",
+            "coolant temperature"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "AM varies carrier amplitude in accordance with the modulating signal."
+        },
+        {
+          "id": "radio-5",
+          "topic": "AM Transmitter",
+          "text": "A dummy load is connected to a transmitter to:",
+          "options": [
+            "provide a known non-radiating load for testing",
+            "increase antenna radiation",
+            "replace the exciter permanently",
+            "cool the studio"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A dummy load absorbs RF power so transmitter tests can be performed without radiating."
+        },
+        {
+          "id": "radio-6",
+          "topic": "AM Transmitter",
+          "text": "DSB in AM means:",
+          "options": [
+            "double sideband",
+            "digital sound bandwidth",
+            "dual source battery",
+            "direct spectrum balance"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "DSB transmission contains both upper and lower sidebands."
+        },
+        {
+          "id": "radio-7",
+          "topic": "Digital Transmitter",
+          "text": "PWM stands for:",
+          "options": [
+            "Pulse Width Modulation",
+            "Power Wave Mixing",
+            "Phase Wave Measurement",
+            "Pulse Watt Matching"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "PWM varies pulse width according to the modulating/control signal."
+        },
+        {
+          "id": "radio-8",
+          "topic": "AM Power",
+          "text": "For ideal AM with carrier, increasing modulation depth primarily increases:",
+          "options": [
+            "sideband power",
+            "carrier frequency",
+            "antenna height",
+            "mains voltage"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "The sidebands carry the information and their power rises with modulation index."
+        },
+        {
+          "id": "radio-9",
+          "topic": "Aerial",
+          "text": "An ATU is used mainly for:",
+          "options": [
+            "antenna/feeder impedance matching",
+            "audio compression",
+            "battery charging",
+            "video switching"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "An Antenna Tuning Unit transforms the antenna impedance toward the required feeder/transmitter impedance."
+        },
+        {
+          "id": "radio-10",
+          "topic": "Transmission Line",
+          "text": "Characteristic impedance of a lossless line is determined by:",
+          "options": [
+            "its distributed inductance and capacitance per unit length",
+            "transmitter brand",
+            "audio level",
+            "tower height only"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "For a lossless line, Z0=sqrt(L/C)."
+        },
+        {
+          "id": "radio-11",
+          "topic": "Transmission Line",
+          "text": "VSWR=1 indicates:",
+          "options": [
+            "perfect impedance match",
+            "complete reflection",
+            "maximum mismatch",
+            "open circuit always"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A VSWR of 1 corresponds to reflection coefficient magnitude zero."
+        },
+        {
+          "id": "radio-12",
+          "topic": "Transmission Line",
+          "text": "Return loss is related to:",
+          "options": [
+            "reflection coefficient magnitude",
+            "audio sampling rate",
+            "tower loading only",
+            "battery capacity"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Return loss is -20 log10|Γ|; larger return loss indicates better matching."
+        },
+        {
+          "id": "radio-13",
+          "topic": "Transmission Line",
+          "text": "A quarter-wave line can be used to:",
+          "options": [
+            "transform impedances",
+            "convert AC to DC without components",
+            "measure audio pitch",
+            "remove all harmonics"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A λ/4 line provides impedance transformation depending on its characteristic impedance and termination."
+        },
+        {
+          "id": "radio-14",
+          "topic": "Smith Chart",
+          "text": "A Smith chart is primarily used for:",
+          "options": [
+            "transmission-line impedance/admittance calculations",
+            "video compression",
+            "sound recording",
+            "power-factor correction"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "It graphically handles complex impedances, reflection coefficients and matching."
+        },
+        {
+          "id": "radio-15",
+          "topic": "AM Aerial",
+          "text": "Directional AM arrays use multiple radiators mainly to:",
+          "options": [
+            "shape the horizontal radiation pattern",
+            "reduce audio bandwidth",
+            "create optical signals",
+            "increase microphone sensitivity"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Relative amplitudes/phases of array elements produce desired azimuthal radiation."
+        },
+        {
+          "id": "radio-16",
+          "topic": "Earth System",
+          "text": "Earth radials at an MW transmitting site help:",
+          "options": [
+            "provide a low-loss RF return path near the ground",
+            "cool the transmitter",
+            "increase audio sampling",
+            "replace the feeder"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A radial ground system reduces ground losses for vertically polarized MW radiation."
+        },
+        {
+          "id": "radio-17",
+          "topic": "FM",
+          "text": "FM conveys information by varying the carrier's:",
+          "options": [
+            "instantaneous frequency",
+            "amplitude only",
+            "DC voltage",
+            "antenna impedance"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Frequency modulation varies instantaneous frequency according to the message."
+        },
+        {
+          "id": "radio-18",
+          "topic": "FM Antenna",
+          "text": "A common FM broadcast antenna is a:",
+          "options": [
+            "polarized VHF dipole/panel array",
+            "LF loop only",
+            "waveguide slot used as microphone",
+            "audio transformer"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "FM broadcast stations use VHF antenna arrays such as dipoles/panels."
+        },
+        {
+          "id": "radio-19",
+          "topic": "RF Combiner",
+          "text": "An RF combiner is used to:",
+          "options": [
+            "combine RF power from multiple transmitters/channels",
+            "convert audio to light",
+            "measure BER only",
+            "store programme files"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Combiners combine RF outputs while maintaining controlled impedance and isolation."
+        },
+        {
+          "id": "radio-20",
+          "topic": "Coupler",
+          "text": "A directional coupler is used to:",
+          "options": [
+            "sample a known fraction of travelling RF power",
+            "supply phantom power",
+            "convert video to audio",
+            "store RF"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Directional couplers provide a coupled sample with defined coupling/directivity."
+        },
+        {
+          "id": "radio-21",
+          "topic": "Diplexer",
+          "text": "A diplexer generally allows:",
+          "options": [
+            "two frequency bands/channels to share a common antenna path",
+            "DC and AC to short together",
+            "two batteries to be paralleled without protection",
+            "audio and mains to mix"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A diplexer combines/separates two frequency bands with isolation."
+        },
+        {
+          "id": "radio-22",
+          "topic": "Dehydrator",
+          "text": "A feeder dehydrator is used to:",
+          "options": [
+            "keep pressurized transmission lines dry",
+            "increase RF modulation",
+            "generate stereo audio",
+            "measure room noise"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Dry air/nitrogen pressurization prevents moisture entering RF feeder systems."
+        },
+        {
+          "id": "radio-23",
+          "topic": "Power Distribution",
+          "text": "In a three-phase system, load balancing aims to:",
+          "options": [
+            "reduce phase imbalance and neutral/feeder stress",
+            "increase harmonic distortion",
+            "eliminate earthing",
+            "remove the need for protection"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Balanced loading improves system performance and reduces unwanted current imbalance."
+        },
+        {
+          "id": "radio-24",
+          "topic": "UPS",
+          "text": "A UPS primarily provides:",
+          "options": [
+            "continuity/conditioned power during supply interruptions",
+            "RF modulation",
+            "antenna polarization",
+            "audio compression"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A UPS bridges mains interruptions and can provide conditioned power to critical loads."
+        },
+        {
+          "id": "radio-25",
+          "topic": "Earthing",
+          "text": "Equipment earthing primarily provides:",
+          "options": [
+            "a low-impedance fault path for safety",
+            "higher audio gain",
+            "higher VSWR",
+            "more carrier power"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Protective earthing helps fault current operate protective devices and limits touch voltage."
+        },
+        {
+          "id": "radio-26",
+          "topic": "Sound",
+          "text": "Sound pressure level is commonly expressed in:",
+          "options": [
+            "dB SPL",
+            "dBm only",
+            "dBuV/m only",
+            "Hz"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Sound pressure level is referenced to 20 µPa and expressed in dB SPL."
+        },
+        {
+          "id": "radio-27",
+          "topic": "Microphones",
+          "text": "A condenser microphone normally requires:",
+          "options": [
+            "polarization/electronics power, often phantom power",
+            "a high-power RF transmitter",
+            "a feeder dehydrator",
+            "a waveguide"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Condenser microphones use an electrically biased capsule and internal electronics; many use phantom power."
+        },
+        {
+          "id": "radio-28",
+          "topic": "Microphones",
+          "text": "A cardioid microphone has maximum sensitivity primarily:",
+          "options": [
+            "toward the front",
+            "equally in all directions",
+            "only at the rear",
+            "only upward"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Cardioid polar response favours sound arriving from the front and rejects much of the rear."
+        },
+        {
+          "id": "radio-29",
+          "topic": "Phantom Power",
+          "text": "Standard phantom power for many studio condenser microphones is:",
+          "options": [
+            "48 V DC",
+            "5 V AC",
+            "230 V AC",
+            "1.2 V DC"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "48 V phantom power is a common professional microphone powering standard."
+        },
+        {
+          "id": "radio-30",
+          "topic": "Speakers",
+          "text": "A loudspeaker converts:",
+          "options": [
+            "electrical energy into acoustic energy",
+            "light into RF",
+            "RF into DC only",
+            "mechanical motion into data"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "The loudspeaker's transducer converts electrical signal into diaphragm motion and sound."
+        },
+        {
+          "id": "radio-31",
+          "topic": "Audio Recording",
+          "text": "A DAW primarily provides:",
+          "options": [
+            "digital recording, editing and playback",
+            "RF antenna matching",
+            "power distribution",
+            "satellite orbit control"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Digital Audio Workstations handle recording, editing, mixing and playback."
+        },
+        {
+          "id": "radio-32",
+          "topic": "Audio Compression",
+          "text": "Lossy audio compression:",
+          "options": [
+            "discards information judged less perceptually important",
+            "always preserves every sample bit-for-bit",
+            "increases RF power",
+            "replaces microphones"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Lossy codecs reduce bitrate by removing or approximating perceptually less important information."
+        },
+        {
+          "id": "radio-33",
+          "topic": "Studio",
+          "text": "Reverberation time is commonly defined using:",
+          "options": [
+            "the time for sound level to decay by 60 dB",
+            "the time for RF to travel 1 km",
+            "microphone sensitivity",
+            "bit rate"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "RT60 is the time required for a 60 dB decay after the source stops."
+        },
+        {
+          "id": "radio-34",
+          "topic": "Audio Mixer",
+          "text": "A mixer channel typically provides:",
+          "options": [
+            "level, routing and processing controls",
+            "antenna beam tilt only",
+            "RF carrier generation",
+            "UPS charging"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A mixing console controls gain/level, routing, EQ and other audio functions."
+        },
+        {
+          "id": "radio-35",
+          "topic": "OB",
+          "text": "An OB van is designed primarily for:",
+          "options": [
+            "outside-broadcast acquisition, mixing and transmission/recording",
+            "only transmitter cooling",
+            "only satellite orbit control",
+            "only antenna construction"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "OB facilities provide mobile production for outdoor events."
+        },
+        {
+          "id": "radio-36",
+          "topic": "Radio Receiver",
+          "text": "A superheterodyne receiver uses a local oscillator and mixer to create:",
+          "options": [
+            "an intermediate frequency",
+            "only DC",
+            "a second antenna",
+            "optical modulation"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "The mixer converts the received RF to a fixed IF for selective amplification/demodulation."
+        },
+        {
+          "id": "radio-37",
+          "topic": "AM Receiver",
+          "text": "An envelope detector is suitable for:",
+          "options": [
+            "conventional AM with carrier",
+            "FM only",
+            "QAM only",
+            "PCM only"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "The envelope contains the AM message when the carrier is sufficiently large and the modulation is appropriate."
+        },
+        {
+          "id": "radio-38",
+          "topic": "FM Receiver",
+          "text": "The discriminator in an FM receiver converts:",
+          "options": [
+            "frequency variations into amplitude/voltage variations",
+            "audio into optical power",
+            "DC into RF only",
+            "video into storage"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "FM discriminators produce an output proportional to instantaneous frequency deviation."
+        },
+        {
+          "id": "radio-39",
+          "topic": "Performance",
+          "text": "THD measures:",
+          "options": [
+            "harmonic distortion relative to the desired signal",
+            "antenna height",
+            "battery capacity",
+            "RF wavelength"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Total Harmonic Distortion quantifies unwanted harmonics relative to the fundamental/reference signal."
+        },
+        {
+          "id": "radio-40",
+          "topic": "Performance",
+          "text": "A VIM is associated with measurement of:",
+          "options": [
+            "vector impedance",
+            "audio loudness only",
+            "optical attenuation only",
+            "video frame rate"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A Vector Impedance Meter measures impedance magnitude and phase-related parameters."
+        },
+        {
+          "id": "radio-41",
+          "topic": "Satellite Networking",
+          "text": "SCPC means:",
+          "options": [
+            "Single Channel Per Carrier",
+            "Serial Carrier Power Control",
+            "Satellite Channel Phase Converter",
+            "Single Codec Per Console"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "SCPC allocates a dedicated carrier to a single channel."
+        },
+        {
+          "id": "radio-42",
+          "topic": "Satellite Networking",
+          "text": "MCPC means:",
+          "options": [
+            "Multiple Channels Per Carrier",
+            "Multiple Carrier Power Correction",
+            "Microwave Channel Phase Control",
+            "Main Carrier Power Coupler"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "MCPC multiplexes multiple programme channels onto one carrier."
+        },
+        {
+          "id": "radio-43",
+          "topic": "Satellite Link",
+          "text": "Link budget accounts for:",
+          "options": [
+            "gains and losses from transmitter to receiver",
+            "only studio noise",
+            "only antenna weight",
+            "only AC frequency"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A link budget sums transmit power, antenna gains, propagation losses and other gains/losses."
+        },
+        {
+          "id": "radio-44",
+          "topic": "Satellite",
+          "text": "Look angles from an earth station describe:",
+          "options": [
+            "azimuth/elevation pointing toward the satellite",
+            "audio phase",
+            "RF modulation depth",
+            "room reverberation"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Look angles determine where the earth-station antenna must point."
+        },
+        {
+          "id": "radio-45",
+          "topic": "Earth Station",
+          "text": "An HPA in an earth station is a:",
+          "options": [
+            "High Power Amplifier",
+            "High Phase Antenna",
+            "Harmonic Processing Adapter",
+            "Horizontal Power Attenuator"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "The HPA amplifies the uplink RF signal to the required transmit power."
+        },
+        {
+          "id": "radio-46",
+          "topic": "Audio Measurements",
+          "text": "Frequency response of an audio chain describes:",
+          "options": [
+            "variation of level with frequency",
+            "variation of RF power with tower height",
+            "battery voltage versus time",
+            "satellite elevation only"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Frequency response shows how the system gain changes across the audio frequency range."
+        },
+        {
+          "id": "radio-47",
+          "topic": "Studio",
+          "text": "A phone-in system in broadcasting is intended to:",
+          "options": [
+            "interface telephone callers with the studio audio chain",
+            "provide RF antenna matching",
+            "generate satellite uplink power",
+            "measure VSWR"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Phone-in equipment interfaces telephone audio to the studio console with suitable isolation and level control."
+        },
+        {
+          "id": "radio-48",
+          "topic": "Satellite",
+          "text": "An IRD at a satellite receiving terminal is used to:",
+          "options": [
+            "demodulate/decode received programme services",
+            "increase antenna height",
+            "generate uplink RF",
+            "cool the HPA"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "An Integrated Receiver Decoder recovers the transport/programme streams from the satellite signal."
+        },
+        {
+          "id": "radio-49",
+          "topic": "Audio",
+          "text": "The purpose of an audio equalizer in a transmitter input chain is to:",
+          "options": [
+            "shape frequency response of the programme signal",
+            "change satellite orbit",
+            "measure VSWR",
+            "provide DC backup"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "An equalizer shapes spectral response to meet the required transmission characteristic."
+        },
+        {
+          "id": "radio-50",
+          "topic": "Power",
+          "text": "A voltage stabilizer at a transmitting station is used primarily to:",
+          "options": [
+            "maintain supply voltage within an acceptable range",
+            "modulate FM",
+            "increase antenna gain",
+            "decode MPEG"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A stabilizer regulates variations in supply voltage for connected equipment."
+        }
+      ],
+      "group": "paper2",
+      "selector": "radio"
+    },
+    {
+      "key": "paper2b",
+      "title": "Paper 2 (B): Television Engineering",
+      "durationMinutes": 60,
+      "questions": [
+        {
+          "id": "tv-1",
+          "topic": "STPL",
+          "text": "An IP-based studio-transmitter link primarily carries:",
+          "options": [
+            "encoded programme streams over an IP network",
+            "only analog mains",
+            "only antenna DC",
+            "only cooling air"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "IP STL transports programme content using packet networks."
+        },
+        {
+          "id": "tv-2",
+          "topic": "TV Transmitter",
+          "text": "A modern digital TV transmitter normally includes:",
+          "options": [
+            "source processing/encoding, modulation and RF amplification",
+            "only an audio amplifier",
+            "only a microphone",
+            "only a battery"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Digital TV transmission requires baseband processing, channel coding/modulation and RF amplification."
+        },
+        {
+          "id": "tv-3",
+          "topic": "TV Modulation",
+          "text": "In analogue terrestrial TV, the vision carrier traditionally uses:",
+          "options": [
+            "vestigial sideband AM",
+            "pure FM only",
+            "QPSK only",
+            "FSK only"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Analogue television vision transmission uses AM with vestigial sideband to reduce bandwidth."
+        },
+        {
+          "id": "tv-4",
+          "topic": "TV Modulation",
+          "text": "In analogue TV, the sound carrier is commonly:",
+          "options": [
+            "FM modulated",
+            "AM suppressed carrier only",
+            "PCM without RF",
+            "unmodulated DC"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Analogue TV sound is typically FM modulated on a separate sound carrier."
+        },
+        {
+          "id": "tv-5",
+          "topic": "VHF/UHF",
+          "text": "A VHF/UHF TV transmitter's exciter primarily:",
+          "options": [
+            "generates/modulates the RF signal at the required channel frequency",
+            "provides room acoustics",
+            "stores programme archives",
+            "controls studio lighting only"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "The exciter produces the low-power modulated RF signal that is subsequently amplified."
+        },
+        {
+          "id": "tv-6",
+          "topic": "TV RF",
+          "text": "A diplexer in a TV transmitter installation can:",
+          "options": [
+            "combine separate vision/sound RF paths toward a common antenna",
+            "convert RF to audio",
+            "measure lux",
+            "compress video"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A diplexer/combining network permits appropriate frequency-separated signals to share antenna infrastructure."
+        },
+        {
+          "id": "tv-7",
+          "topic": "Dummy Load",
+          "text": "A TV transmitter dummy load should present:",
+          "options": [
+            "a suitable matched non-radiating load",
+            "an open circuit",
+            "a short circuit",
+            "a microphone input"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A matched dummy load absorbs RF power while minimizing reflections."
+        },
+        {
+          "id": "tv-8",
+          "topic": "TV Antenna",
+          "text": "A VHF/UHF broadcast antenna array is designed mainly to control:",
+          "options": [
+            "coverage pattern, polarization and gain",
+            "audio reverberation",
+            "storage capacity",
+            "UPS runtime"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Antenna arrays determine radiation pattern, gain, polarization and coverage."
+        },
+        {
+          "id": "tv-9",
+          "topic": "DTH",
+          "text": "A DTH downlink is received at the user's premises by:",
+          "options": [
+            "satellite dish and LNB/LNBF",
+            "AM loop only",
+            "audio mixer",
+            "field strength meter alone"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "The dish collects the Ku/C-band signal and the LNB/LNBF converts it to a lower IF/L-band range."
+        },
+        {
+          "id": "tv-10",
+          "topic": "LNB",
+          "text": "An LNB primarily:",
+          "options": [
+            "provides low-noise amplification and frequency conversion",
+            "performs studio mixing",
+            "creates mains power",
+            "measures MER only"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "The Low Noise Block downconverter amplifies the weak satellite signal and converts it to a lower frequency."
+        },
+        {
+          "id": "tv-11",
+          "topic": "ASI",
+          "text": "ASI is commonly associated with:",
+          "options": [
+            "transport-stream serial interface in broadcast equipment",
+            "audio speaker impedance",
+            "AC mains",
+            "antenna grounding"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Asynchronous Serial Interface is widely used for MPEG transport streams in broadcast chains."
+        },
+        {
+          "id": "tv-12",
+          "topic": "MPEG",
+          "text": "MPEG-4 is generally associated with:",
+          "options": [
+            "digital audio/video compression standards",
+            "RF earthing",
+            "antenna polarization",
+            "mains protection"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "MPEG-4 includes standards for efficient digital media representation/compression."
+        },
+        {
+          "id": "tv-13",
+          "topic": "HEVC",
+          "text": "HEVC/H.265 was developed mainly to provide:",
+          "options": [
+            "higher coding efficiency than earlier video coding generations",
+            "higher RF voltage",
+            "larger antenna size",
+            "more audio channels without coding"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "HEVC targets substantially improved compression efficiency at comparable visual quality."
+        },
+        {
+          "id": "tv-14",
+          "topic": "DVB-S2",
+          "text": "DVB-S2 is a standard for:",
+          "options": [
+            "digital satellite broadcasting",
+            "analog FM broadcasting",
+            "audio tape recording",
+            "TV studio lighting"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "DVB-S2 specifies satellite transmission techniques including advanced modulation and FEC."
+        },
+        {
+          "id": "tv-15",
+          "topic": "FEC",
+          "text": "In DTH systems, FEC is used to:",
+          "options": [
+            "improve robustness against transmission errors",
+            "increase camera resolution directly",
+            "remove the dish",
+            "replace the LNB"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Forward error correction adds redundancy so the receiver can correct some channel errors."
+        },
+        {
+          "id": "tv-16",
+          "topic": "STB",
+          "text": "An STB in a DTH setup performs functions such as:",
+          "options": [
+            "demodulation/decoding and service presentation",
+            "tower erection",
+            "RF power generation",
+            "studio acoustic treatment"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A set-top box receives, demodulates, decrypts where applicable, decodes and presents services."
+        },
+        {
+          "id": "tv-17",
+          "topic": "Satellite",
+          "text": "Ku-band is widely used for:",
+          "options": [
+            "satellite communication and DTH links",
+            "only LF ground wave",
+            "audio studio wiring",
+            "DC battery charging"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Ku-band is common in satellite contribution and DTH services."
+        },
+        {
+          "id": "tv-18",
+          "topic": "DSNG",
+          "text": "DSNG is designed mainly for:",
+          "options": [
+            "mobile satellite news gathering",
+            "digital studio noise generation",
+            "DC supply networking",
+            "audio-only tape recording"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Digital Satellite News Gathering provides portable/vehicle-based satellite contribution."
+        },
+        {
+          "id": "tv-19",
+          "topic": "Satellite",
+          "text": "An uplink normally operates at:",
+          "options": [
+            "a higher frequency than its corresponding downlink",
+            "exactly the same frequency always",
+            "audio frequency",
+            "DC"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Satellite transponders use frequency translation, commonly with uplink above downlink."
+        },
+        {
+          "id": "tv-20",
+          "topic": "Link Budget",
+          "text": "Eb/N0 is a measure related to:",
+          "options": [
+            "energy per bit relative to noise spectral density",
+            "video frame size",
+            "antenna height",
+            "audio dynamic range"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Eb/N0 is widely used to characterize digital link quality."
+        },
+        {
+          "id": "tv-21",
+          "topic": "MER",
+          "text": "MER is particularly useful for assessing:",
+          "options": [
+            "digital modulation quality",
+            "microphone directionality",
+            "AC power factor",
+            "room reverberation"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Modulation Error Ratio compares ideal constellation signal power with modulation error power."
+        },
+        {
+          "id": "tv-22",
+          "topic": "BER",
+          "text": "A lower BER generally indicates:",
+          "options": [
+            "better digital reception quality",
+            "higher antenna loss",
+            "worse link quality",
+            "more compression artifacts always"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "BER is the fraction of bits received incorrectly; lower values generally indicate better link quality."
+        },
+        {
+          "id": "tv-23",
+          "topic": "Studio Sync",
+          "text": "An SPG in a TV studio provides:",
+          "options": [
+            "reference synchronization signals",
+            "RF high power",
+            "audio storage",
+            "air conditioning"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A Sync Pulse Generator supplies timing references such as black/bilevel/trilevel sync as required."
+        },
+        {
+          "id": "tv-24",
+          "topic": "Sync",
+          "text": "Genlocking means:",
+          "options": [
+            "locking equipment timing to a common reference",
+            "locking a camera physically",
+            "compressing a video file",
+            "tuning an antenna"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Genlock synchronizes video timing among sources and studio equipment."
+        },
+        {
+          "id": "tv-25",
+          "topic": "Frame Synchronizer",
+          "text": "A frame synchronizer is used to:",
+          "options": [
+            "align an incoming asynchronous video source to local timing",
+            "increase transmitter power",
+            "replace a camera lens",
+            "generate mains"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "It buffers and retimes incoming video to match the facility's reference."
+        },
+        {
+          "id": "tv-26",
+          "topic": "VDA",
+          "text": "A VDA/DVDA is mainly used for:",
+          "options": [
+            "video distribution/amplification",
+            "RF frequency synthesis only",
+            "audio recording only",
+            "satellite pointing"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Video distribution amplifiers distribute and buffer video signals to multiple destinations."
+        },
+        {
+          "id": "tv-27",
+          "topic": "ARC",
+          "text": "An aspect ratio converter changes:",
+          "options": [
+            "image aspect ratio while managing geometry/cropping/letterboxing",
+            "RF impedance only",
+            "audio sample rate only",
+            "power factor"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "ARC equipment converts between formats such as 4:3 and 16:9."
+        },
+        {
+          "id": "tv-28",
+          "topic": "Camera",
+          "text": "CCD is a type of:",
+          "options": [
+            "image sensor",
+            "RF amplifier",
+            "audio codec",
+            "satellite antenna"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A CCD is an electronic image sensor used in cameras."
+        },
+        {
+          "id": "tv-29",
+          "topic": "SDI",
+          "text": "HD-SDI is a:",
+          "options": [
+            "serial digital interface for high-definition video",
+            "satellite frequency band",
+            "microphone connector",
+            "power relay"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "HD-SDI transports uncompressed/low-compression baseband HD video in serial form."
+        },
+        {
+          "id": "tv-30",
+          "topic": "UHD",
+          "text": "4K/UHD refers primarily to:",
+          "options": [
+            "higher-resolution television/video formats",
+            "RF power level",
+            "audio sample frequency only",
+            "antenna polarization"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "4K/UHD denotes high-resolution video formats, commonly around 3840×2160 for UHDTV."
+        },
+        {
+          "id": "tv-31",
+          "topic": "Video Codec",
+          "text": "A codec performs:",
+          "options": [
+            "encoding and/or decoding of media",
+            "only antenna tuning",
+            "only AC conversion",
+            "only camera focusing"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Codec is a contraction of coder-decoder and refers to media encoding/decoding technology."
+        },
+        {
+          "id": "tv-32",
+          "topic": "Container",
+          "text": "A media container such as MXF primarily:",
+          "options": [
+            "packages video, audio and metadata streams",
+            "defines RF carrier frequency",
+            "replaces a codec",
+            "measures BER"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Containers organize one or more encoded streams and associated metadata."
+        },
+        {
+          "id": "tv-33",
+          "topic": "Video Switcher",
+          "text": "A vision mixer/video switcher is used to:",
+          "options": [
+            "select and transition between video sources",
+            "measure antenna gain",
+            "control UPS batteries",
+            "convert RF to DC"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Switchers select sources and create transitions, keys and programme outputs."
+        },
+        {
+          "id": "tv-34",
+          "topic": "Keying",
+          "text": "Chroma keying selects an image region based mainly on:",
+          "options": [
+            "colour characteristics",
+            "RF frequency",
+            "audio impedance",
+            "mains phase"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Chroma key removes/keys a selected colour range, often green or blue."
+        },
+        {
+          "id": "tv-35",
+          "topic": "Lighting",
+          "text": "Three-point lighting uses:",
+          "options": [
+            "key, fill and back/rim lights",
+            "three antennas",
+            "three microphones only",
+            "three RF carriers"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "The classic arrangement uses key, fill and back light to shape the subject."
+        },
+        {
+          "id": "tv-36",
+          "topic": "Colour Temperature",
+          "text": "Colour temperature is expressed in:",
+          "options": [
+            "kelvin",
+            "ohm",
+            "dBm",
+            "hertz"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Colour temperature of a light source is expressed in kelvin."
+        },
+        {
+          "id": "tv-37",
+          "topic": "Lux Meter",
+          "text": "A lux meter measures:",
+          "options": [
+            "illuminance",
+            "audio SPL",
+            "RF power",
+            "video bitrate"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Illuminance is measured in lux."
+        },
+        {
+          "id": "tv-38",
+          "topic": "DMX",
+          "text": "DMX512 is widely used for:",
+          "options": [
+            "lighting control",
+            "audio compression",
+            "satellite uplink",
+            "RF matching"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "DMX512 is a digital control protocol widely used for stage/studio lighting."
+        },
+        {
+          "id": "tv-39",
+          "topic": "VTR",
+          "text": "A video tape recorder stores signals using:",
+          "options": [
+            "magnetic recording on tape",
+            "only optical pits",
+            "only semiconductor memory",
+            "RF radiation in air"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "VTRs record video/audio magnetically on tape."
+        },
+        {
+          "id": "tv-40",
+          "topic": "TBC",
+          "text": "A time base corrector is used to:",
+          "options": [
+            "correct timing variations in recorded video",
+            "increase satellite power",
+            "measure sound pressure",
+            "compress audio"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "TBCs correct timing instability such as jitter and sync variations from tape playback."
+        },
+        {
+          "id": "tv-41",
+          "topic": "TV Monitor",
+          "text": "A professional video monitor is designed primarily to:",
+          "options": [
+            "display and assess video accurately",
+            "transmit RF power",
+            "perform satellite uplink",
+            "provide UPS output"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Broadcast monitors are used for accurate picture evaluation and monitoring."
+        },
+        {
+          "id": "tv-42",
+          "topic": "Multiviewer",
+          "text": "A multiviewer displays:",
+          "options": [
+            "multiple video/audio source previews and status on one screen",
+            "multiple RF transmitters physically",
+            "only one camera sensor",
+            "only power readings"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Multiviewers combine several source thumbnails and monitoring information."
+        },
+        {
+          "id": "tv-43",
+          "topic": "TV OB",
+          "text": "An ENG camera is intended mainly for:",
+          "options": [
+            "electronic news gathering and field production",
+            "satellite orbit control",
+            "AC distribution",
+            "audio-only recording"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "ENG cameras are designed for portable news and field acquisition."
+        },
+        {
+          "id": "tv-44",
+          "topic": "Backpack",
+          "text": "A backpack live-production system is useful for:",
+          "options": [
+            "portable IP contribution from field locations",
+            "high-power RF broadcasting",
+            "tower grounding",
+            "studio acoustic treatment"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Backpack systems combine cameras/encoders/network links for mobile contribution."
+        },
+        {
+          "id": "tv-45",
+          "topic": "Video Measurement",
+          "text": "CNR in a video/RF system compares:",
+          "options": [
+            "carrier signal level to noise level",
+            "camera colour to luminance",
+            "audio to video bitrate",
+            "RF to DC voltage"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Carrier-to-noise ratio indicates the strength of the carrier relative to noise."
+        },
+        {
+          "id": "tv-46",
+          "topic": "Video Measurement",
+          "text": "PER in packetized digital systems means:",
+          "options": [
+            "Packet Error Rate",
+            "Picture Exposure Ratio",
+            "Power Efficiency Reading",
+            "Phase Error Receiver"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "PER measures the fraction of transmitted/received packets containing errors."
+        },
+        {
+          "id": "tv-47",
+          "topic": "SNR",
+          "text": "A higher SNR generally means:",
+          "options": [
+            "signal is stronger relative to noise",
+            "more noise relative to signal",
+            "lower link margin always",
+            "zero carrier"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Signal-to-noise ratio improves as desired signal becomes larger relative to noise."
+        },
+        {
+          "id": "tv-48",
+          "topic": "TV Studio",
+          "text": "A teleprompter is positioned so that:",
+          "options": [
+            "the presenter can read script while maintaining an appropriate camera eye-line",
+            "the antenna can be tuned",
+            "the HPA can be cooled",
+            "the LNB can be powered"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "The prompter displays script close to the lens to support natural on-camera delivery."
+        },
+        {
+          "id": "tv-49",
+          "topic": "TV Performance",
+          "text": "Link margin in a digital satellite link indicates:",
+          "options": [
+            "available performance headroom between actual and required link quality",
+            "camera focal length",
+            "audio loudness",
+            "tower height"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Link margin is the excess received link quality/power above the required threshold."
+        },
+        {
+          "id": "tv-50",
+          "topic": "TV Performance",
+          "text": "A higher CNR generally provides:",
+          "options": [
+            "better resistance to noise-induced degradation",
+            "more antenna mismatch",
+            "lower received signal quality",
+            "more tape jitter"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A higher carrier-to-noise ratio generally improves the quality of a received RF/digital link."
+        }
+      ],
+      "group": "paper2",
+      "selector": "tv"
+    },
+    {
+      "key": "paper3",
+      "title": "Paper 3: General Subjects",
+      "durationMinutes": 60,
+      "questions": [
+        {
+          "id": "general-1",
+          "topic": "Safety",
+          "text": "The most important reason for electrical isolation before maintenance is to:",
+          "options": [
+            "prevent accidental energization and shock",
+            "increase RF power",
+            "improve audio quality",
+            "reduce video resolution"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Isolation removes the hazardous energy source before work."
+        },
+        {
+          "id": "general-2",
+          "topic": "Safety",
+          "text": "A fire extinguisher should be selected based primarily on:",
+          "options": [
+            "the class/type of fire and equipment involved",
+            "its colour alone",
+            "its weight only",
+            "the nearest location only"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Extinguishing media must be compatible with the fire and hazards present."
+        },
+        {
+          "id": "general-3",
+          "topic": "Safety",
+          "text": "Artificial respiration/CPR should be started when:",
+          "options": [
+            "a casualty is not breathing normally and it is safe to intervene, following trained procedure",
+            "the person is fully conscious and breathing normally",
+            "equipment is still live",
+            "only after several hours"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Resuscitation is an emergency response for absent/abnormal breathing after ensuring scene safety."
+        },
+        {
+          "id": "general-4",
+          "topic": "Stores",
+          "text": "Surplus and unserviceable stores should be:",
+          "options": [
+            "disposed of through prescribed procedures and records",
+            "discarded secretly",
+            "mixed with essential spares",
+            "sold privately without authorization"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Government stores require controlled disposal and documentation."
+        },
+        {
+          "id": "general-5",
+          "topic": "Stores",
+          "text": "Transit insurance is intended to cover:",
+          "options": [
+            "specified risks/losses while goods are in transit",
+            "studio reverberation",
+            "RF reflection",
+            "air conditioner efficiency"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Transit insurance protects consignments against covered transport risks."
+        },
+        {
+          "id": "general-6",
+          "topic": "Procurement",
+          "text": "GST is primarily a:",
+          "options": [
+            "goods and services tax",
+            "generator safety test",
+            "grounding standard",
+            "gain setting tool"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "GST is India's indirect tax on specified supplies of goods and services."
+        },
+        {
+          "id": "general-7",
+          "topic": "Power",
+          "text": "Power factor is the ratio of:",
+          "options": [
+            "real power to apparent power",
+            "reactive power to voltage",
+            "current to resistance",
+            "frequency to wavelength"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Power factor = P/S for sinusoidal steady-state systems under the usual definition."
+        },
+        {
+          "id": "general-8",
+          "topic": "Power",
+          "text": "A CT in a power system is used mainly to:",
+          "options": [
+            "step down current for measurement/protection",
+            "step up voltage for transmission",
+            "cool transformers",
+            "generate audio"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Current transformers provide scaled current signals to meters and protective relays."
+        },
+        {
+          "id": "general-9",
+          "topic": "Power",
+          "text": "A PT/VT is used mainly to:",
+          "options": [
+            "provide a scaled voltage for measurement/protection",
+            "increase antenna gain",
+            "compress video",
+            "supply microphone phantom power"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Potential/voltage transformers provide isolated, scaled voltage signals."
+        },
+        {
+          "id": "general-10",
+          "topic": "Protection",
+          "text": "A series trip coil is used to:",
+          "options": [
+            "trip a circuit breaker through its trip mechanism",
+            "measure audio level",
+            "increase UPS capacity",
+            "control camera focus"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "A trip coil actuates breaker opening when energized by the protection/control circuit."
+        },
+        {
+          "id": "general-11",
+          "topic": "Protection",
+          "text": "An overcurrent relay operates when:",
+          "options": [
+            "current exceeds its configured pickup characteristic",
+            "temperature reaches room temperature only",
+            "audio becomes stereo",
+            "RF frequency falls to zero"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Overcurrent relays detect current above a set threshold according to their characteristic."
+        },
+        {
+          "id": "general-12",
+          "topic": "DG",
+          "text": "The frequency of an alternator in a generator set depends directly on:",
+          "options": [
+            "rotational speed and number of poles",
+            "fuel colour",
+            "battery capacity only",
+            "room temperature only"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "f = PN/120 for an alternator, with P poles and N rpm."
+        },
+        {
+          "id": "general-13",
+          "topic": "DG",
+          "text": "Preventive maintenance of a DG set commonly includes:",
+          "options": [
+            "checking oil, coolant, batteries, belts and filters as specified",
+            "removing all protection",
+            "disconnecting the governor",
+            "ignoring fuel quality"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Routine checks prevent failures and maintain reliable operation."
+        },
+        {
+          "id": "general-14",
+          "topic": "AC",
+          "text": "Relative humidity is:",
+          "options": [
+            "the ratio of actual water-vapour content to saturation condition at a given temperature, expressed as a percentage",
+            "a measure of RF gain",
+            "audio level in dB",
+            "cable impedance"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Relative humidity compares actual moisture content with the saturation moisture capacity at the same temperature."
+        },
+        {
+          "id": "general-15",
+          "topic": "AC",
+          "text": "The dry-bulb temperature is measured by:",
+          "options": [
+            "a conventional air temperature thermometer, shielded from radiation effects as appropriate",
+            "an RF power meter",
+            "a lux meter",
+            "a VIM"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Dry-bulb temperature is the ordinary air temperature measurement used in psychrometrics."
+        },
+        {
+          "id": "general-16",
+          "topic": "UPS",
+          "text": "An inverter converts:",
+          "options": [
+            "DC to AC",
+            "AC to DC only",
+            "RF to optical",
+            "audio to RF"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "An inverter produces AC output from a DC source."
+        },
+        {
+          "id": "general-17",
+          "topic": "UPS",
+          "text": "A rectifier converts:",
+          "options": [
+            "AC to DC",
+            "DC to AC",
+            "light to audio",
+            "RF to sound"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Rectifiers convert alternating voltage/current to unidirectional DC."
+        },
+        {
+          "id": "general-18",
+          "topic": "SMPS",
+          "text": "An SMPS normally uses high-frequency switching to:",
+          "options": [
+            "efficiently regulate and convert power with smaller magnetics",
+            "eliminate all heat",
+            "avoid filtering",
+            "remove feedback"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Switching conversion enables high efficiency and smaller magnetic components, with appropriate filtering."
+        },
+        {
+          "id": "general-19",
+          "topic": "Installation",
+          "text": "Before installing a transmitter, a site survey should verify:",
+          "options": [
+            "power, grounding, RF environment, access, coverage and structural/site constraints",
+            "only wall colour",
+            "only desk size",
+            "only microphone type"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Engineering site selection must consider electrical, RF, structural and operational constraints."
+        },
+        {
+          "id": "general-20",
+          "topic": "Measurement",
+          "text": "A spectrum analyser is useful during transmitter commissioning to check:",
+          "options": [
+            "frequency components, harmonics and spurious emissions",
+            "only room temperature",
+            "only cable length",
+            "only battery electrolyte"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Spectrum analysis reveals the occupied spectrum and unwanted emissions."
+        },
+        {
+          "id": "general-21",
+          "topic": "Measurement",
+          "text": "An audio analyser can measure parameters such as:",
+          "options": [
+            "frequency response, distortion and signal level",
+            "tower verticality",
+            "satellite orbit",
+            "cable tensile strength"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Audio analysers characterize electrical audio performance."
+        },
+        {
+          "id": "general-22",
+          "topic": "Measurement",
+          "text": "A sound level meter measures:",
+          "options": [
+            "sound pressure level",
+            "RF field strength",
+            "power factor",
+            "video BER"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Sound level meters measure acoustic sound pressure level, typically in dB SPL."
+        },
+        {
+          "id": "general-23",
+          "topic": "Broadcast",
+          "text": "The RF spectrum is divided into frequency bands mainly to:",
+          "options": [
+            "organize services and minimize harmful interference",
+            "increase all transmitters' power",
+            "remove antennas",
+            "eliminate propagation effects"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Frequency allocation and coordination permit efficient, interference-controlled use of spectrum."
+        },
+        {
+          "id": "general-24",
+          "topic": "Propagation",
+          "text": "Space-wave/LOS propagation is especially important for:",
+          "options": [
+            "VHF/UHF and microwave links",
+            "only very low frequency ground-wave services",
+            "magnetic tape",
+            "audio mixers"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "At VHF and above, coverage often depends strongly on line-of-sight/space-wave propagation."
+        },
+        {
+          "id": "general-25",
+          "topic": "Antenna",
+          "text": "Beam tilt is used to:",
+          "options": [
+            "adjust the vertical direction of maximum radiation",
+            "change audio bitrate",
+            "alter mains frequency",
+            "increase storage"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Electrical/mechanical beam tilt shapes coverage by directing energy downward or upward."
+        },
+        {
+          "id": "general-26",
+          "topic": "Antenna",
+          "text": "Null fill is used to:",
+          "options": [
+            "reduce coverage holes near the site by controlling vertical radiation",
+            "increase room reverberation",
+            "compress audio",
+            "change satellite orbit"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Null fill redistributes energy into areas that might otherwise fall in antenna-pattern nulls."
+        },
+        {
+          "id": "general-27",
+          "topic": "Satellite",
+          "text": "A geostationary satellite must be located above the:",
+          "options": [
+            "equator",
+            "North Pole",
+            "South Pole",
+            "Prime Meridian only"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Geostationary orbit is a circular equatorial orbit synchronized with Earth's rotation."
+        },
+        {
+          "id": "general-28",
+          "topic": "Satellite",
+          "text": "An eclipse period for a geostationary satellite occurs when:",
+          "options": [
+            "the satellite passes into Earth's shadow",
+            "the antenna loses polarization permanently",
+            "the transmitter is switched off by law",
+            "the satellite enters the ocean"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Around equinox periods, a GEO satellite can enter Earth's shadow and lose solar power temporarily."
+        },
+        {
+          "id": "general-29",
+          "topic": "Streaming",
+          "text": "RTMP is historically associated with:",
+          "options": [
+            "live media ingestion/streaming workflows",
+            "antenna impedance measurement",
+            "power factor correction",
+            "satellite look angles"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Real-Time Messaging Protocol has been widely used for live contribution/ingest."
+        },
+        {
+          "id": "general-30",
+          "topic": "Streaming",
+          "text": "SRT is designed to improve live contribution over:",
+          "options": [
+            "unreliable IP networks",
+            "only optical fibre inside a studio",
+            "only AC mains",
+            "only local audio cables"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Secure Reliable Transport provides packet recovery and latency controls for live media over IP."
+        },
+        {
+          "id": "general-31",
+          "topic": "Streaming",
+          "text": "Transcoding means:",
+          "options": [
+            "converting media from one codec/format/bitrate representation to another",
+            "changing antenna polarization",
+            "changing AC frequency",
+            "measuring field strength"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Media transcoding creates versions suitable for different devices, bitrates or codecs."
+        },
+        {
+          "id": "general-32",
+          "topic": "Computer",
+          "text": "Binary 1010 equals decimal:",
+          "options": [
+            "8",
+            "10",
+            "12",
+            "14"
+          ],
+          "correctIndex": 1,
+          "marks": 2,
+          "explanation": "1010₂ = 8+2 = 10."
+        },
+        {
+          "id": "general-33",
+          "topic": "Boolean",
+          "text": "The Boolean expression A + 0 simplifies to:",
+          "options": [
+            "0",
+            "A",
+            "1",
+            "A'"
+          ],
+          "correctIndex": 1,
+          "marks": 2,
+          "explanation": "OR with zero leaves A unchanged."
+        },
+        {
+          "id": "general-34",
+          "topic": "Digital Logic",
+          "text": "An AND gate output is 1 when:",
+          "options": [
+            "all inputs are 1",
+            "any input is 1",
+            "all inputs are 0",
+            "exactly one input is 0"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "AND requires every input to be logic 1."
+        },
+        {
+          "id": "general-35",
+          "topic": "Digital Logic",
+          "text": "A counter is a sequential circuit used to:",
+          "options": [
+            "progress through a sequence of states",
+            "amplify RF power",
+            "measure humidity",
+            "encode audio only"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Counters advance through predefined binary/state sequences with clock pulses."
+        },
+        {
+          "id": "general-36",
+          "topic": "ADC",
+          "text": "ADC resolution in bits determines the number of ideal quantization levels as:",
+          "options": [
+            "2^N",
+            "N/2",
+            "N^2",
+            "10N"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "An ideal N-bit ADC has 2^N quantization codes."
+        },
+        {
+          "id": "general-37",
+          "topic": "Microprocessor",
+          "text": "The ALU in a microprocessor performs:",
+          "options": [
+            "arithmetic and logical operations",
+            "only memory storage",
+            "only network routing",
+            "only display illumination"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "The Arithmetic Logic Unit executes arithmetic and logical operations."
+        },
+        {
+          "id": "general-38",
+          "topic": "Networking",
+          "text": "In TCP/IP, IP is primarily responsible for:",
+          "options": [
+            "logical addressing and packet routing",
+            "audio compression",
+            "physical antenna tuning",
+            "power conversion"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "IP provides addressing and routing of packets between networks."
+        },
+        {
+          "id": "general-39",
+          "topic": "Networking",
+          "text": "A WAN generally spans:",
+          "options": [
+            "large geographic areas and interconnected networks",
+            "only one room",
+            "one circuit board",
+            "one microphone"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Wide Area Networks connect geographically separated locations."
+        },
+        {
+          "id": "general-40",
+          "topic": "Cloud",
+          "text": "IaaS provides:",
+          "options": [
+            "virtualized compute, storage and networking resources",
+            "only a word processor",
+            "only a microphone",
+            "only a radio antenna"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Infrastructure as a Service exposes virtual machines and related infrastructure resources."
+        },
+        {
+          "id": "general-41",
+          "topic": "Storage",
+          "text": "RAID is primarily used to provide:",
+          "options": [
+            "storage performance, redundancy, or both depending on level",
+            "RF modulation",
+            "audio equalization",
+            "satellite pointing"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "RAID combines disks in defined configurations for performance and/or fault tolerance."
+        },
+        {
+          "id": "general-42",
+          "topic": "Measurements",
+          "text": "The unit dBu is referenced to:",
+          "options": [
+            "0.775 V RMS",
+            "1 mW",
+            "1 V/m",
+            "20 µPa"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "0 dBu corresponds to 0.775 V RMS irrespective of load."
+        },
+        {
+          "id": "general-43",
+          "topic": "Measurements",
+          "text": "dBµV/m is commonly used for:",
+          "options": [
+            "electric field strength",
+            "audio power",
+            "battery capacity",
+            "video resolution"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "dBµV/m expresses electric field strength relative to 1 µV/m."
+        },
+        {
+          "id": "general-44",
+          "topic": "Radio",
+          "text": "An AM transmitter's carrier frequency is normally:",
+          "options": [
+            "constant while its amplitude varies with the message",
+            "varied directly with audio in AM",
+            "zero during modulation",
+            "equal to the audio frequency"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Conventional AM keeps carrier frequency constant and varies its amplitude."
+        },
+        {
+          "id": "general-45",
+          "topic": "Radio",
+          "text": "The main function of a frequency synthesizer is to:",
+          "options": [
+            "generate accurate selectable frequencies",
+            "reduce room noise",
+            "measure illuminance",
+            "store video"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Synthesizers generate stable, programmable frequencies from references."
+        },
+        {
+          "id": "general-46",
+          "topic": "TV",
+          "text": "The purpose of a video scaler/converter is to:",
+          "options": [
+            "convert video spatial/timing formats such as resolution and frame characteristics",
+            "change RF impedance only",
+            "supply AC power",
+            "measure tower verticality"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Video converters adapt signals between supported formats."
+        },
+        {
+          "id": "general-47",
+          "topic": "TV",
+          "text": "A teleprompter assists:",
+          "options": [
+            "presenters by displaying script text near the camera",
+            "RF amplification",
+            "audio power distribution",
+            "satellite tracking"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "The prompter allows presenters to read while maintaining camera eye-line."
+        },
+        {
+          "id": "general-48",
+          "topic": "TV",
+          "text": "A frame synchronizer is especially useful when:",
+          "options": [
+            "multiple asynchronous video sources must be switched cleanly",
+            "a battery is being charged",
+            "an antenna is being grounded",
+            "a microphone needs phantom power"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Frame synchronizers align source timing so switching and routing can be performed cleanly."
+        },
+        {
+          "id": "general-49",
+          "topic": "General",
+          "text": "The primary purpose of shielding in electronic equipment is to:",
+          "options": [
+            "reduce unwanted electromagnetic coupling/interference",
+            "increase battery voltage",
+            "increase microphone sensitivity",
+            "reduce storage capacity"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Shielding limits electric/magnetic field coupling between sensitive circuits and interference sources."
+        },
+        {
+          "id": "general-50",
+          "topic": "Station Management",
+          "text": "The purpose of a security access-control system is to:",
+          "options": [
+            "restrict access to authorized persons and protect assets",
+            "increase RF modulation depth",
+            "reduce video bitrate",
+            "measure humidity"
+          ],
+          "correctIndex": 0,
+          "marks": 2,
+          "explanation": "Access control limits unauthorized entry to protected facilities and resources."
+        }
+      ]
+    }
+  ]
+}

@@ -35,9 +35,9 @@ export default async function PayPage() {
             Build confidence with more practice and prepare at your own pace. Upgrade
             from the free sample paper to full mock-exam access with one simple payment.
           </p>
-          <h2>Full access for just ₹200</h2>
+          <h2>Full access for just ₹199</h2>
           <p className="muted">One-time payment. No recurring subscription.</p>
-          <p>Scan the QR code to pay ₹200, then submit your payment reference to get started.</p>
+          <p>Scan the QR code to pay ₹199, then submit your payment reference to get started.</p>
           <img className="qr" src="/qr-code.png" alt="Payment QR code" />
           <PayForm />
         </div>

@@ -16,7 +16,7 @@ export default function UpgradeBanner() {
         </ul>
       </div>
       <div className="upgrade-banner-cta">
-        <span className="upgrade-price">Just ₹200</span>
+        <span className="upgrade-price">Just ₹199</span>
         <Link className="btn upgrade-btn" href="/pay">Upgrade now</Link>
       </div>
     </div>
