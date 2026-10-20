@@ -2,7 +2,7 @@ import { redirect } from "next/navigation";
 import Link from "next/link";
 import { getCurrentUser } from "../../lib/auth.js";
 import { prisma } from "../../lib/db.js";
-import Nav from "../../components/Nav.js";
+import Breadcrumbs from "../../components/Breadcrumbs.js";
 import ActivateButton from "./ActivateButton.js";
 
 export default async function AdminPage() {
@@ -22,7 +22,7 @@ export default async function AdminPage() {
 
   return (
     <div>
-      <Nav isAdmin={user.isAdmin} crumbs={[{ label: "Admin" }]} />
+      <Breadcrumbs items={[{ label: "Admin" }]} />
       <div className="exam-wrap">
         <div className="card">
           <h1>Exams</h1>

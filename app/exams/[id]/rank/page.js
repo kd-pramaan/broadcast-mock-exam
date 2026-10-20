@@ -1,7 +1,7 @@
 import { redirect, notFound } from "next/navigation";
 import { getCurrentUser } from "../../../../lib/auth.js";
 import { prisma } from "../../../../lib/db.js";
-import Nav from "../../../../components/Nav.js";
+import Breadcrumbs from "../../../../components/Breadcrumbs.js";
 
 export default async function RankPage({ params }) {
   const user = await getCurrentUser();
@@ -20,7 +20,7 @@ export default async function RankPage({ params }) {
 
   return (
     <div>
-      <Nav isAdmin={user.isAdmin} crumbs={[{ label: "Exams", href: "/exams" }, { label: exam.title, href: `/exams/${exam.id}` }, { label: "Leaderboard" }]} />
+      <Breadcrumbs items={[{ label: "Exams", href: "/exams" }, { label: exam.title, href: `/exams/${exam.id}` }, { label: "Leaderboard" }]} />
       <div className="exam-wrap">
         <div className="card">
           <h1>{exam.title} - leaderboard</h1>

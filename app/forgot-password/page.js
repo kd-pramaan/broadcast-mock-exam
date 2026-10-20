@@ -1,5 +1,7 @@
 "use client";
+
 import { useState } from "react";
+import Link from "next/link";
 
 export default function ForgotPasswordPage() {
   const [email, setEmail] = useState("");
@@ -15,26 +17,43 @@ export default function ForgotPasswordPage() {
       body: JSON.stringify({ email }),
     });
     setLoading(false);
-    setSent(true); // same message whether or not the account exists
+    setSent(true);
   }
 
   return (
-    <div className="wrap">
-      <div className="card narrow">
+    <div className="auth-page-single">
+      <section className="auth-page-card auth-page-card-single">
+        <span className="auth-page-kicker">Account help</span>
         <h1>Forgot password</h1>
+        <p className="auth-page-sub">
+          Enter the email linked to your MarQ account and we will send you a reset link.
+        </p>
+
         {sent ? (
-          <p>If that email has an account, a reset link is on its way.</p>
+          <>
+            <p>If that email has an account, a reset link is on its way.</p>
+            <p className="auth-simple-note">Check your spam folder if it does not arrive within a few minutes.</p>
+          </>
         ) : (
-          <form onSubmit={onSubmit}>
-            <label>Email</label>
-            <input className="input" type="email" required value={email}
-              onChange={(e) => setEmail(e.target.value)} />
-            <button className="btn" disabled={loading} type="submit">
+          <form className="auth-page-form" onSubmit={onSubmit}>
+            <label htmlFor="forgot-email">Email</label>
+            <input
+              id="forgot-email"
+              className="input"
+              type="email"
+              autoComplete="email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <button className="btn auth-page-submit" disabled={loading} type="submit">
               {loading ? "Sending..." : "Send reset link"}
             </button>
           </form>
         )}
-      </div>
+
+        <Link className="auth-back" href="/login">&larr; Back to login</Link>
+      </section>
     </div>
   );
 }

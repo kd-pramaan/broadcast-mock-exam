@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 import { getCurrentUser } from "../../lib/auth.js";
-import Nav from "../../components/Nav.js";
+import Breadcrumbs from "../../components/Breadcrumbs.js";
 import PayForm from "./PayForm.js";
 
 export default async function PayPage() {
@@ -11,7 +11,7 @@ export default async function PayPage() {
   if (user.plan === "pending_approval") {
     return (
       <div>
-        <Nav isAdmin={user.isAdmin} crumbs={[{ label: "Upgrade" }]} />
+        <Breadcrumbs items={[{ label: "Upgrade" }]} />
         <div className="wrap">
           <div className="card narrow">
             <h1>Payment submitted</h1>
@@ -27,7 +27,7 @@ export default async function PayPage() {
 
   return (
     <div>
-      <Nav isAdmin={user.isAdmin} crumbs={[{ label: "Upgrade" }]} />
+      <Breadcrumbs items={[{ label: "Upgrade" }]} />
       <div className="wrap">
         <div className="card narrow">
           <h1>Unlock every mock exam</h1>

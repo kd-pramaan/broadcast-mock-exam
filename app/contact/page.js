@@ -1,5 +1,5 @@
 import { getCurrentUser } from "../../lib/auth.js";
-import Nav from "../../components/Nav.js";
+import Breadcrumbs from "../../components/Breadcrumbs.js";
 import ContactForm from "./ContactForm.js";
 
 export default async function ContactPage() {
@@ -7,7 +7,10 @@ export default async function ContactPage() {
 
   return (
     <div>
-      {user && <Nav isAdmin={user.isAdmin} crumbs={[{ label: "Contact us" }]} />}
+      <Breadcrumbs
+        items={[{ label: "Contact us" }]}
+        root={user ? undefined : { label: "Home", href: "/" }}
+      />
       <div className="wrap">
         <div className="card narrow">
           <h1>Contact us</h1>

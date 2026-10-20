@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { prisma } from "../../../lib/db.js";
 import ResetPasswordForm from "./ResetPasswordForm.js";
 
@@ -7,22 +8,28 @@ export default async function ResetPasswordPage({ params }) {
 
   if (!user) {
     return (
-      <div className="wrap">
-        <div className="card narrow">
+      <div className="auth-page-single">
+        <section className="auth-page-card auth-page-card-single">
+          <span className="auth-page-kicker">Account help</span>
           <h1>Link not valid</h1>
-          <p>This reset link is invalid or has already been used.</p>
-        </div>
+          <p className="auth-page-sub">This reset link is invalid or has already been used.</p>
+          <Link className="auth-back" href="/forgot-password">Request a new link &rarr;</Link>
+        </section>
       </div>
     );
   }
 
   return (
-    <div className="wrap">
-      <div className="card narrow">
+    <div className="auth-page-single">
+      <section className="auth-page-card auth-page-card-single">
+        <span className="auth-page-kicker">Account help</span>
         <h1>Reset your password</h1>
-        <p className="muted">Account: <b>{user.email}</b></p>
-        <ResetPasswordForm token={token} />
-      </div>
+        <p className="auth-page-sub">Account: <b>{user.email}</b></p>
+        <div className="auth-page-form">
+          <ResetPasswordForm token={token} />
+        </div>
+        <Link className="auth-back" href="/login">&larr; Back to login</Link>
+      </section>
     </div>
   );
 }

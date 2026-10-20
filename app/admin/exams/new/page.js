@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 import { getCurrentUser } from "../../../../lib/auth.js";
-import Nav from "../../../../components/Nav.js";
+import Breadcrumbs from "../../../../components/Breadcrumbs.js";
 import NewExamForm from "./NewExamForm.js";
 
 export default async function NewExamPage() {
@@ -10,7 +10,7 @@ export default async function NewExamPage() {
 
   return (
     <div>
-      <Nav isAdmin={user.isAdmin} crumbs={[{ label: "Admin", href: "/admin" }, { label: "New exam" }]} />
+      <Breadcrumbs items={[{ label: "Admin", href: "/admin" }, { label: "New exam" }]} />
       <div className="wrap">
         <div className="card">
           <h1>Create exam</h1>

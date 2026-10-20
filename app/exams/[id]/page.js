@@ -1,7 +1,7 @@
 import { redirect, notFound } from "next/navigation";
 import { getCurrentUser } from "../../../lib/auth.js";
 import { prisma } from "../../../lib/db.js";
-import Nav from "../../../components/Nav.js";
+import Breadcrumbs from "../../../components/Breadcrumbs.js";
 import ExamRunner from "./ExamRunner.js";
 
 export default async function ExamPage({ params }) {
@@ -45,7 +45,7 @@ export default async function ExamPage({ params }) {
 
   return (
     <div>
-      <Nav isAdmin={user.isAdmin} crumbs={[{ label: "Exams", href: "/exams" }, { label: exam.title }]} />
+      <Breadcrumbs items={[{ label: "Exams", href: "/exams" }, { label: exam.title }]} />
       <div className="exam-wrap">
         <ExamRunner
           exam={examForRunner}

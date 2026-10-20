@@ -2,7 +2,6 @@ import { redirect } from "next/navigation";
 import Link from "next/link";
 import { getCurrentUser } from "../../lib/auth.js";
 import { prisma } from "../../lib/db.js";
-import Nav from "../../components/Nav.js";
 
 export default async function DashboardPage() {
   const user = await getCurrentUser();
@@ -22,7 +21,6 @@ export default async function DashboardPage() {
 
   return (
     <div>
-      <Nav isAdmin={user.isAdmin} />
       <div className="exam-wrap">
         <div className="card exam-hero">
           <h1>Welcome, {user.name}</h1>

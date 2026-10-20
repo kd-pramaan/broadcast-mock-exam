@@ -3,7 +3,7 @@ import { getCurrentUser } from "../../../../../../lib/auth.js";
 import { prisma } from "../../../../../../lib/db.js";
 import { getScoreBreakdown, NEGATIVE_MARK_RATIO } from "../../../../../../lib/scoring.js";
 import { selectPapers } from "../../../../../../lib/exams.js";
-import Nav from "../../../../../../components/Nav.js";
+import Breadcrumbs from "../../../../../../components/Breadcrumbs.js";
 import UpgradeBanner from "../../../../../../components/UpgradeBanner.js";
 
 function QuestionReview({ q, i, picked, reveal }) {
@@ -66,7 +66,7 @@ export default async function ReviewPage({ params }) {
 
   return (
     <div>
-      <Nav isAdmin={user.isAdmin} crumbs={[{ label: "Exams", href: "/exams" }, { label: exam.title, href: `/exams/${id}` }, { label: "Review" }]} />
+      <Breadcrumbs items={[{ label: "Exams", href: "/exams" }, { label: exam.title, href: `/exams/${id}` }, { label: "Review" }]} />
       <div className="wrap">
         <div className="card">
           <h1>{exam.title} - review (attempt {attempt.attemptNumber})</h1>

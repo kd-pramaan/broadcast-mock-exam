@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 import { getCurrentUser } from "../../lib/auth.js";
-import Nav from "../../components/Nav.js";
+import Breadcrumbs from "../../components/Breadcrumbs.js";
 import ChangePasswordForm from "./ChangePasswordForm.js";
 
 export default async function ProfilePage() {
@@ -9,7 +9,7 @@ export default async function ProfilePage() {
 
   return (
     <div>
-      <Nav isAdmin={user.isAdmin} crumbs={[{ label: "Profile" }]} />
+      <Breadcrumbs items={[{ label: "Profile" }]} />
       <div className="wrap">
         <div className="card">
           <h1>Profile</h1>

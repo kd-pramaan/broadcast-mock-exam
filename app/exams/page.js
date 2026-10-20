@@ -2,7 +2,7 @@ import { redirect } from "next/navigation";
 import Link from "next/link";
 import { getCurrentUser } from "../../lib/auth.js";
 import { prisma } from "../../lib/db.js";
-import Nav from "../../components/Nav.js";
+import Breadcrumbs from "../../components/Breadcrumbs.js";
 
 const SUBJECT_ORDER = [
   "Full-length CBT mocks",
@@ -45,7 +45,7 @@ export default async function ExamsPage() {
 
   return (
     <div>
-      <Nav isAdmin={user.isAdmin} crumbs={[{ label: "Exams" }]} />
+      <Breadcrumbs items={[{ label: "Exams" }]} />
       <div className="exam-wrap">
         <div className="card">
           <h1>Mock exams</h1>

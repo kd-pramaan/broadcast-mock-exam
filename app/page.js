@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { getCurrentUser } from "../lib/auth.js";
-import HomeHeader from "../components/HomeHeader.js";
 import HomeCarousel from "../components/HomeCarousel.js";
 import HomeAuth from "../components/HomeAuth.js";
 import CountdownTimer from "../components/CountdownTimer.js";
@@ -39,8 +38,6 @@ export default async function Home() {
 
   return (
     <div className="home-page">
-      <HomeHeader user={user} />
-
       <main className="home-wrap">
         <section className="countdown-bar" aria-label="Exam countdown">
           <div className="countdown-copy">
